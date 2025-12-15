@@ -370,86 +370,131 @@ footer a:hover {
 /* ================= PREMIUM LOCATION ================= */
 
 .location-section {
-  background: #f8fafc;
+  background: linear-gradient(180deg, #f8fafc, #eef2ff);
 }
 
-.location-premium-card {
-  margin-top: 40px;
+.location-header {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.location-header h2 {
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin: 12px 0;
+}
+
+.location-header p {
+  color: #475569;
+}
+
+.location-badge {
+  display: inline-block;
+  background: rgba(56,189,248,0.15);
+  color: var(--accent);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.location-premium {
+  margin-top: 45px;
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 35px;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+}
+
+/* Main Card */
+.location-card-main {
   background: white;
   padding: 40px;
-  border-radius: 24px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+  border-radius: 26px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.1);
 }
 
-.location-details h3 {
-  font-size: 1.6rem;
-  color: var(--primary);
-  margin-bottom: 12px;
+.location-card-main h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
 .location-address {
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--dark);
   margin-bottom: 12px;
 }
 
 .location-phone a {
+  font-weight: 700;
   color: var(--accent);
-  font-weight: 600;
   text-decoration: none;
 }
 
-.location-buttons {
-  margin-top: 22px;
+.location-cta {
+  margin-top: 24px;
   display: flex;
-  gap: 14px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
-/* Service Areas */
-.service-areas-box {
-  background: #f1f5f9;
-  padding: 25px;
-  border-radius: 20px;
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
 }
 
-.service-areas-box h4 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
+.btn-glass {
+  background: white;
+  border: 2px solid #38bdf8;
+  color: #0284c7;
+}
+
+.btn-glass:hover {
+  background: #e0f2fe;
+}
+
+/* Trust */
+.trust-points {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+/* Areas */
+.location-areas {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 26px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.location-areas h4 {
+  margin-bottom: 18px;
   color: var(--primary);
 }
 
-.area-tags {
+.area-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.area-tags span {
+.area-grid span {
   background: white;
-  padding: 7px 14px;
+  padding: 8px 16px;
   border-radius: 999px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
 }
 
-.area-note {
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #475569;
-  line-height: 1.6;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .location-premium-card {
+/* Mobile */
+@media (max-width: 900px) {
+  .location-premium {
     grid-template-columns: 1fr;
-    padding: 28px;
   }
 }
-

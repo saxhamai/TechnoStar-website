@@ -240,6 +240,21 @@ header {
   font-size: 0.95rem;
 }
 
+@media (max-width: 900px) {
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+  }
+
+  .stat-card {
+    padding: 18px;
+  }
+
+  .stat-card h3 {
+    font-size: 1.4rem;
+  }
+}
+
 /* ================= CARDS ================= */
 
 .card {

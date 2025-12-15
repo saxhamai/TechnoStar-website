@@ -367,65 +367,89 @@ footer a:hover {
   border-color: #38bdf8;
 }
 
-/* ================= LOCATION SECTION ================= */
+/* ================= PREMIUM LOCATION ================= */
 
 .location-section {
   background: #f8fafc;
 }
 
-.location-card {
+.location-premium-card {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 35px;
   background: white;
-  padding: 35px;
-  border-radius: 22px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
 }
 
-.location-info h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+.location-details h3 {
+  font-size: 1.6rem;
   color: var(--primary);
+  margin-bottom: 12px;
 }
 
-.location-info .address {
+.location-address {
   font-size: 1rem;
-  color: var(--dark);
   line-height: 1.7;
-  margin-bottom: 14px;
+  color: var(--dark);
+  margin-bottom: 12px;
 }
 
-.location-info .contact a {
+.location-phone a {
   color: var(--accent);
   font-weight: 600;
   text-decoration: none;
 }
 
-.location-actions {
-  margin-top: 20px;
+.location-buttons {
+  margin-top: 22px;
   display: flex;
-  gap: 15px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
-.location-map iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 260px;
-  border: 0;
-  border-radius: 18px;
+/* Service Areas */
+.service-areas-box {
+  background: #f1f5f9;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.service-areas-box h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.area-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.area-tags span {
+  background: white;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.area-note {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .location-card {
+  .location-premium-card {
     grid-template-columns: 1fr;
-    padding: 25px;
-  }
-
-  .location-map iframe {
-    min-height: 220px;
+    padding: 28px;
   }
 }
+

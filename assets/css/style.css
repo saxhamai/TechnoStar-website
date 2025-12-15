@@ -498,3 +498,72 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* ================= HERO LAYOUT FIX ================= */
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero-buttons {
+  margin-top: 28px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* HERO STATS */
+.hero-stats {
+  display: grid;
+  gap: 20px;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 18px;
+  padding: 26px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.12);
+}
+
+.stat-card h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.stat-card p {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}

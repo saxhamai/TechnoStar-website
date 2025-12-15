@@ -1,0 +1,167 @@
+/* ===============================
+   TechnoStar - Global Styles
+   Used by ALL pages
+================================ */
+
+:root {
+  --primary: #0f172a;
+  --accent: #38bdf8;
+  --success: #22c55e;
+  --light: #f8fafc;
+  --dark: #020617;
+  --gray: #64748b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ================= COMMON ================= */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.section-subtitle {
+  color: var(--gray);
+  max-width: 700px;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: var(--accent);
+}
+
+/* ================= BUTTONS ================= */
+
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background: var(--accent);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--primary);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: white;
+}
+
+/* ================= HERO (COMMON) ================= */
+
+.services-hero {
+  background: linear-gradient(120deg, #020617, #0f172a);
+  color: white;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.services-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+}
+
+.services-hero p {
+  color: #cbd5f5;
+  max-width: 720px;
+  margin: auto;
+}
+
+/* ================= CARD GRID ================= */
+
+.why-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+}
+
+.why-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* ================= CTA ================= */
+
+.cta {
+  background: linear-gradient(120deg, #38bdf8, #0ea5e9);
+  padding: 70px 0;
+}
+
+.cta-box {
+  text-align: center;
+  color: white;
+}
+
+.cta-box h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;

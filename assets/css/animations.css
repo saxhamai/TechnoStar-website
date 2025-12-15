@@ -1,0 +1,36 @@
+/* ================= TIMELINE ================= */
+
+.timeline {
+  margin-top: 50px;
+  position: relative;
+  padding-left: 40px;
+  border-left: 3px solid #38bdf8;
+}
+
+.timeline-step {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.step-number {
+  width: 42px;
+  height: 42px;
+  background: #38bdf8;
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-content h3 {
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.step-content p {
+  color: #475569;
+  max-width: 700px;
+}

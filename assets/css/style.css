@@ -230,3 +230,40 @@ footer { background: var(--primary-dark); color: rgba(255,255,255,0.7); padding:
 .nav-link.active::after {
   width: 100%; /* Underline effect */
 }
+
+/* --- FIX: Contact Us Button in Navbar (Outline Style) --- */
+.main-header .btn-nav {
+  background: transparent !important; /* Background hata diya */
+  border: 2px solid var(--primary) !important; /* Sirf Border rakha */
+  color: var(--primary) !important; /* Text Blue */
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.main-header .btn-nav:hover {
+  background: var(--primary) !important; /* Hover karne par Blue hoga */
+  color: white !important;
+}
+
+/* --- FIX: WhatsApp Hero Button (Green Outline) --- */
+.hero-btns .btn-whatsapp-hero {
+  background: white !important;
+  border: 2px solid #25D366 !important; /* Green Border */
+  color: #25D366 !important; /* Green Text */
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.hero-btns .btn-whatsapp-hero:hover {
+  background: #25D366 !important; /* Hover par Solid Green */
+  color: white !important;
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+

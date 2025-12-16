@@ -222,48 +222,50 @@ footer { background: var(--primary-dark); color: rgba(255,255,255,0.7); padding:
   }
 }
 
-/* Active Link Color (Blue) */
+/* ================= NEW MENU STYLES (Clean & Premium) ================= */
+
+/* 1. All Links Styling (Mobile & Desktop) */
+.nav-link {
+  color: var(--text-dark);
+  font-weight: 500;
+  padding: 8px 16px; /* Thoda space diya taaki button jaisa feel aye */
+  border-radius: 8px; /* Gol kinare */
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* 2. Remove the old Underline effect */
+.nav-link::after {
+  content: none !important; 
+  display: none !important;
+}
+
+/* 3. NEW ACTIVE STATE (Soft Blue Background pill) */
 .nav-link.active {
-  color: var(--primary); /* Blue Color */
+  background-color: rgba(56, 189, 248, 0.15); /* Light Blue BG */
+  color: var(--primary) !important; /* Dark Blue Text */
   font-weight: 700;
-}
-.nav-link.active::after {
-  width: 100%; /* Underline effect */
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.1); /* Halka sa border border */
 }
 
-/* --- FIX: Contact Us Button in Navbar (Outline Style) --- */
-.main-header .btn-nav {
-  background: transparent !important; /* Background hata diya */
-  border: 2px solid var(--primary) !important; /* Sirf Border rakha */
-  color: var(--primary) !important; /* Text Blue */
-  font-weight: 600;
-  padding: 8px 20px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+/* 4. Hover Effect for other links */
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.03); /* Halka grey hover */
+  color: var(--primary);
 }
 
-.main-header .btn-nav:hover {
-  background: var(--primary) !important; /* Hover karne par Blue hoga */
-  color: white !important;
+/* 5. Mobile Menu Fixes */
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 10px; /* Mobile me thoda gap kam */
+    padding: 15px;
+  }
+  
+  .nav-link {
+    display: block;
+    width: 100%; /* Mobile me full width */
+    text-align: left;
+  }
 }
 
-/* --- FIX: WhatsApp Hero Button (Green Outline) --- */
-.hero-btns .btn-whatsapp-hero {
-  background: white !important;
-  border: 2px solid #25D366 !important; /* Green Border */
-  color: #25D366 !important; /* Green Text */
-  font-weight: 600;
-  padding: 12px 28px;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-}
-
-.hero-btns .btn-whatsapp-hero:hover {
-  background: #25D366 !important; /* Hover par Solid Green */
-  color: white !important;
-  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
-}
 

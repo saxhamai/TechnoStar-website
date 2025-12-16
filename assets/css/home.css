@@ -110,7 +110,6 @@
 }
 
 /* --- 5. Testimonial / Why Choose Us Grid --- */
-/* Agar future mein testimonials add karte ho */
 
 .why-grid {
   display: grid;
@@ -137,6 +136,6 @@
 @media (max-width: 768px) {
   .hero-visual img {
     margin-top: 30px;
-    max-width: 80%;
+    max-width: 100%; /* Changed from 80% to 100% for better view */
   }
 }

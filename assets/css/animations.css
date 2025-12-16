@@ -1,36 +1,149 @@
-/* ================= TIMELINE ================= */
+/* =========================================================
+   TechnoStar Infotech – Animations & Timeline Styles
+   Usage: Linked in how-it-works.html
+========================================================= */
 
-.timeline {
-  margin-top: 50px;
-  position: relative;
-  padding-left: 40px;
-  border-left: 3px solid #38bdf8;
+/* --- 1. Keyframe Animations --- */
+
+/* Slide Up & Fade In Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.timeline-step {
+/* Pulse Effect for Numbers */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(56, 189, 248, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0); }
+}
+
+/* --- 2. Timeline Container Layout --- */
+
+.timeline-container {
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Vertical Connecting Line (Optional - Dotted Line) */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  bottom: 50px;
+  left: 24px; /* Adjust based on step-num size */
+  width: 2px;
+  background-image: linear-gradient(to bottom, #ccc 33%, rgba(255,255,255,0) 0%);
+  background-position: right;
+  background-size: 2px 10px;
+  background-repeat: repeat-y;
+  z-index: 0;
+}
+
+/* --- 3. Timeline Items --- */
+
+.timeline-item {
   display: flex;
   gap: 25px;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+  opacity: 0; /* Hidden initially for animation */
+  animation: fadeInUp 0.8s ease-out forwards;
 }
 
-.step-number {
-  width: 42px;
-  height: 42px;
-  background: #38bdf8;
-  color: white;
-  font-weight: 700;
+/* Staggered Animation Delays (One by one aana) */
+.timeline-item:nth-child(1) { animation-delay: 0.2s; }
+.timeline-item:nth-child(2) { animation-delay: 0.4s; }
+.timeline-item:nth-child(3) { animation-delay: 0.6s; }
+.timeline-item:nth-child(4) { animation-delay: 0.8s; }
+.timeline-item:nth-child(5) { animation-delay: 1.0s; }
+
+/* --- 4. Step Number Styling --- */
+
+.step-num {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border: 4px solid white; /* White ring border */
+  z-index: 2;
+  position: relative;
 }
 
-.step-content h3 {
-  margin-bottom: 8px;
-  color: #0f172a;
+/* Add Pulse Animation to Numbers on Hover */
+.timeline-item:hover .step-num {
+  animation: pulseGlow 1.5s infinite;
 }
 
-.step-content p {
-  color: #475569;
-  max-width: 700px;
+/* --- 5. Timeline Content (Glass Card Override) --- */
+
+.timeline-item .glass-card {
+  width: 100%;
+  text-align: left;
+  padding: 25px 30px;
+  border-left: 5px solid transparent; /* Accent border preparation */
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect on Content */
+.timeline-item:hover .glass-card {
+  transform: translateX(10px); /* Thoda right shift */
+  border-left-color: inherit; /* Inherits color from step number logic via JS or specific CSS */
+  border-left-color: var(--accent, #38bdf8);
+}
+
+.timeline-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.timeline-item p {
+  color: #64748b; /* Text Gray */
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- 6. Responsive Adjustments --- */
+
+@media (max-width: 768px) {
+  .timeline-container::before {
+    left: 20px;
+  }
+  
+  .step-num {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    border-width: 3px;
+  }
+  
+  .timeline-item {
+    gap: 15px;
+  }
+  
+  .timeline-item .glass-card {
+    padding: 20px;
+  }
+  
+  .timeline-item h3 {
+    font-size: 1.1rem;
+  }
 }

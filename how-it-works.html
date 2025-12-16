@@ -4,22 +4,22 @@
   <meta charset="UTF-8">
   <title>How It Works | TechnoStar Infotech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Understand the transparent 5-step repair process at TechnoStar Infotech.">
+  <meta name="description" content="Understand our transparent 5-step laptop and PC repair process. From diagnosis to delivery, we ensure quality.">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    /* Hero Image styling for mobile */
+    /* Hero Image Responsive */
     .hero-visual img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 
-    /* --- NEW TIMELINE CSS (Renamed to avoid conflicts) --- */
+    /* --- TIMELINE LAYOUT FIX --- */
     .process-timeline {
       max-width: 800px;
       margin: 0 auto;
@@ -27,13 +27,13 @@
       position: relative;
     }
 
-    /* The Vertical Line */
+    /* Vertical Line */
     .process-timeline::before {
       content: '';
       position: absolute;
-      left: 24px;
-      top: 20px;
-      bottom: 20px;
+      left: 24px; /* Center of the dots */
+      top: 25px;
+      bottom: 50px;
       width: 2px;
       background: #e2e8f0;
       z-index: 0;
@@ -47,6 +47,7 @@
       z-index: 1;
     }
 
+    /* Number Circle */
     .process-num {
       width: 50px;
       height: 50px;
@@ -59,10 +60,11 @@
       font-size: 1.2rem;
       color: white;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      border: 4px solid white; /* White ring */
-      background: var(--primary); /* Default color fallback */
+      border: 4px solid white;
+      background: var(--primary);
     }
 
+    /* Content Card */
     .process-card {
       background: white;
       border: 1px solid #e2e8f0;
@@ -70,7 +72,7 @@
       padding: 25px;
       width: 100%;
       box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
+      transition: transform 0.3s ease;
     }
 
     .process-card:hover {
@@ -80,7 +82,7 @@
 
     .process-card h3 {
       margin-top: 0;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       font-size: 1.2rem;
       color: #0b2c5f;
     }
@@ -89,32 +91,32 @@
       color: #64748b;
       margin: 0;
       font-size: 0.95rem;
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
-    /* Colors for specific steps */
-    .num-1 { background: #0b2c5f; } /* Blue */
-    .num-2 { background: #38bdf8; } /* Sky */
+    /* Step Colors */
+    .num-1 { background: #0b2c5f; } /* Deep Blue */
+    .num-2 { background: #38bdf8; } /* Sky Blue */
     .num-3 { background: #8b5cf6; } /* Purple */
     .num-4 { background: #10b981; } /* Green */
     .num-5 { background: #0f172a; } /* Dark */
 
-    /* Mobile Responsive Fix */
+    /* Mobile Adjustments */
     @media (max-width: 600px) {
       .process-timeline::before {
-        left: 20px; /* Align line with smaller dots if needed */
+        left: 20px;
       }
       .process-item {
-        gap: 15px; /* Kam gap mobile ke liye */
-      }
-      .process-card {
-        padding: 20px; /* Thoda compact padding */
+        gap: 15px;
       }
       .process-num {
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
         font-size: 1rem;
         border-width: 3px;
+      }
+      .process-card {
+        padding: 20px;
       }
     }
   </style>
@@ -143,7 +145,7 @@
       <a href="index.html" class="nav-link">Home</a>
       <a href="services.html" class="nav-link">Services</a>
       <a href="how-it-works.html" class="nav-link active">Process</a>
-      <a href="contact.html" class="btn-nav">Contact Us</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
     </nav>
 
     <div class="mobile-toggle">
@@ -159,8 +161,8 @@
       <span class="badge-pill">⚙️ Transparent Process</span>
       <h1>How We <span class="text-gradient">Fix It</span></h1>
       <p>
-        Transparency is our priority. From diagnosis to delivery, 
-        see exactly how we bring your device back to life.
+        We follow a strictly transparent repair process. No hidden charges, 
+        no surprise costs—just honest technical service.
       </p>
       
       <div class="hero-btns">
@@ -169,7 +171,7 @@
     </div>
 
     <div class="hero-visual">
-              <img src="https://img.freepik.com/free-vector/computer-repair-concept-illustration_114360-26463.jpg" alt="Technical Laptop Repair Process" class="floating-img" style="border-radius: 20px;">
+       <img src="https://img.freepik.com/free-vector/computer-repair-concept-illustration_114360-26463.jpg" alt="Chip Level Repair Process" class="floating-img">
     </div>
 
   </div>
@@ -179,7 +181,7 @@
   <div class="container">
     <div class="section-header text-center">
       <h2>Our 5-Step Repair Journey</h2>
-      <p>A systematic approach to solve hardware and software issues.</p>
+      <p>Systematic diagnosis and precision repair for your devices.</p>
     </div>
 
     <div class="process-timeline">
@@ -188,7 +190,7 @@
         <div class="process-num num-1">01</div>
         <div class="process-card">
           <h3>Problem Identification</h3>
-          <p>You bring the device or we pick it up. We listen to the specific issues (e.g., overheating, dead screen, slow speed) and perform a physical check.</p>
+          <p>We analyze the device symptoms and discuss the specific issues with you directly.</p>
         </div>
       </div>
 
@@ -196,7 +198,7 @@
         <div class="process-num num-2">02</div>
         <div class="process-card">
           <h3>Diagnosis & Estimation</h3>
-          <p>We open the device to find the root cause (chip-level). We inform you about the <strong>exact cost</strong>. We start work ONLY after your approval.</p>
+          <p>A thorough check reveals the root cause, followed by an exact cost estimate for your approval.</p>
         </div>
       </div>
 
@@ -204,7 +206,7 @@
         <div class="process-num num-3">03</div>
         <div class="process-card">
           <h3>Expert Repair</h3>
-          <p>Technicians fix the issue using genuine parts. This includes soldering, component replacement, thermal paste application, and deep cleaning.</p>
+          <p>Skilled technicians perform chip-level repairs using precision tools and genuine spare parts.</p>
         </div>
       </div>
 
@@ -212,7 +214,7 @@
         <div class="process-num num-4">04</div>
         <div class="process-card">
           <h3>QC Testing</h3>
-          <p>We run stress tests (benchmark) to ensure the system is stable, temperature is normal, and the issue is permanently resolved.</p>
+          <p>Rigorous stress testing ensures system stability and prevents issue recurrence.</p>
         </div>
       </div>
 
@@ -220,7 +222,7 @@
         <div class="process-num num-5">05</div>
         <div class="process-card">
           <h3>Delivery & Warranty</h3>
-          <p>You verify the device performance yourself. Once satisfied, you make the payment. We provide a service warranty for peace of mind.</p>
+          <p>Verify the fix yourself before payment, backed by our service warranty for peace of mind.</p>
         </div>
       </div>
 

@@ -1,419 +1,132 @@
 /* =========================================================
-   TechnoStar Infotech – Final Advanced Style
-   Theme: Glassmorphism + Modern Clean UI
+   TechnoStar Infotech – Final Production CSS
+   Theme: Modern UI + Backward Compatibility
 ========================================================= */
 
-/* ================= 1. VARIABLES & SETUP ================= */
 :root {
-  /* Brand Colors (From your original file) */
-  --primary: #0b2c5f;       /* Deep Blue */
-  --primary-dark: #07162f;  /* Darker Blue */
-  --accent: #38bdf8;        /* Sky Blue */
+  /* Brand Colors */
+  --primary: #0b2c5f;
+  --primary-dark: #07162f;
+  --accent: #38bdf8;
   --accent-soft: rgba(56, 189, 248, 0.12);
-  --success: #22c55e;       /* Green */
-  
-  /* UI Colors */
   --bg-light: #f8fafc;
-  --bg-white: #ffffff;
   --text-dark: #020617;
   --text-gray: #64748b;
   --border: #e2e8f0;
-
-  /* Gradients */
   --gradient-main: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%);
-  --gradient-text: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+* { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--bg-light);
-  color: var(--text-dark);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Poppins', sans-serif; /* Headings ke liye bold font */
-  color: var(--primary-dark);
-  font-weight: 700;
-}
-
+body { font-family: 'Inter', sans-serif; background: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; color: var(--primary-dark); font-weight: 700; }
 a { text-decoration: none; transition: 0.3s; }
-ul { list-style: none; }
-
-/* Utility Classes */
 .container { max-width: 1200px; width: 90%; margin: 0 auto; }
 .section { padding: 80px 0; }
 .text-center { text-align: center; }
-.bg-light { background: #f1f5f9; }
 
 /* ================= 2. BUTTONS ================= */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 28px;
-  border-radius: 50px; /* Pill shape looks more modern */
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  gap: 8px;
-}
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; border-radius: 50px; font-weight: 600; border: none; cursor: pointer; transition: 0.3s; gap: 8px; }
+.btn-primary { background: var(--gradient-main); color: white; box-shadow: 0 4px 15px rgba(11, 44, 95, 0.3); }
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(11, 44, 95, 0.4); }
+.btn-secondary { background: white; color: var(--primary); border: 1px solid var(--border); }
+.btn-whatsapp { background: #25D366; color: white; }
 
-.btn-primary {
-  background: var(--gradient-main);
-  color: white;
-  box-shadow: 0 4px 15px rgba(11, 44, 95, 0.3);
-}
+/* ================= 3. HEADER & LOGO FIX ================= */
+.top-bar { background: var(--primary-dark); color: #c7ddff; padding: 10px 0; font-size: 0.85rem; }
+.top-bar-content { display: flex; justify-content: space-between; }
 
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(11, 44, 95, 0.4);
-}
+.main-header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0,0,0,0.05); padding: 10px 0; }
+.navbar { display: flex; justify-content: space-between; align-items: center; }
 
-.btn-secondary {
-  background: white;
-  color: var(--primary);
-  border: 1px solid var(--border);
-}
+/* Brand Styling Updated */
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand-logo-img { width: 50px; height: auto; }
+.brand-text h1 { font-size: 1.4rem; line-height: 1.1; margin: 0; color: var(--primary); }
+.brand-text p { font-size: 0.75rem; color: var(--text-gray); margin: 0; font-weight: 500; }
 
-.btn-secondary:hover {
-  border-color: var(--primary);
-  background: var(--bg-light);
-}
-
-.btn-whatsapp {
-  background: #25D366;
-  color: white;
-}
-
-/* ================= 3. TOP BAR (NEW) ================= */
-.top-bar {
-  background: var(--primary-dark);
-  color: #c7ddff;
-  padding: 10px 0;
-  font-size: 0.85rem;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.top-bar-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.top-bar i { margin-right: 6px; color: var(--accent); }
-
-/* ================= 4. HEADER & NAVBAR ================= */
-.main-header {
-  background: rgba(255, 255, 255, 0.9); /* Glass Effect */
-  backdrop-filter: blur(12px);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  height: 75px;
-  display: flex;
-  align-items: center;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.brand-text h1 {
-  font-size: 1.5rem;
-  color: var(--primary);
-  letter-spacing: -0.5px;
-}
-
-.highlight { color: var(--accent); }
-
-/* Navigation Menu */
-.nav-menu { display: flex; align-items: center; gap: 30px; }
-
-.nav-link {
-  color: var(--text-dark);
-  font-weight: 500;
-  font-size: 0.95rem;
-  position: relative;
-}
-
+.nav-menu { display: flex; gap: 30px; align-items: center; }
+.nav-link { color: var(--text-dark); font-weight: 500; position: relative; }
 .nav-link:hover, .nav-link.active { color: var(--primary); }
-
-/* Underline animation for links */
-.nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--accent);
-  transition: width 0.3s;
-}
-
+.nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: var(--accent); transition: 0.3s; }
 .nav-link:hover::after { width: 100%; }
+.nav-menu .btn-nav { background: var(--primary); color: white; padding: 8px 20px; border-radius: 6px; font-size: 0.9rem; }
+.mobile-toggle { display: none; font-size: 1.5rem; color: var(--primary); }
 
-.nav-menu .btn-nav {
-  background: var(--primary);
-  color: white;
-  padding: 8px 20px;
-  border-radius: 6px;
-  font-size: 0.9rem;
-}
+/* ================= 4. HERO SECTION ================= */
+.hero-section { padding: 60px 0 80px; background: white; position: relative; overflow: hidden; }
+.hero-container { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; align-items: center; }
+.badge-pill { background: var(--accent-soft); color: var(--primary); padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; display: inline-block; margin-bottom: 20px; }
+.hero-text h1 { font-size: 3rem; line-height: 1.2; margin-bottom: 20px; }
+.text-gradient { background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero-text p { font-size: 1.1rem; color: var(--text-gray); margin-bottom: 30px; }
+.hero-btns { display: flex; gap: 15px; margin-bottom: 30px; }
+.hero-stats { display: flex; gap: 40px; padding-top: 25px; border-top: 1px solid var(--border); }
+.stat-item strong { display: block; font-size: 1.8rem; color: var(--primary); line-height: 1; }
+.floating-img { width: 100%; animation: float 5s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
 
-.mobile-toggle { display: none; font-size: 1.5rem; color: var(--primary); cursor: pointer; }
+/* ================= 5. CARDS & PROCESS ================= */
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+.glass-card { background: white; padding: 40px 30px; border-radius: 20px; border: 1px solid var(--border); transition: 0.3s; position: relative; }
+.glass-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); border-color: var(--accent); }
+.icon-box { font-size: 2.5rem; margin-bottom: 20px; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; background: var(--bg-light); border-radius: 16px; }
+.link-arrow { color: var(--primary); font-weight: 700; display: inline-flex; align-items: center; gap: 8px; margin-top: 15px; }
 
-/* ================= 5. HERO SECTION ================= */
-.hero-section {
-  padding: 60px 0 80px;
-  background: white;
-  position: relative;
-  overflow: hidden;
-}
+/* Process Steps Detail */
+.process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-top: 40px; }
+.step-card-detail { background: white; padding: 30px; border-radius: 16px; text-align: center; border: 1px solid var(--border); transition: 0.3s; position: relative; }
+.step-card-detail:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+.step-num { position: absolute; top: 15px; right: 15px; font-size: 2.5rem; font-weight: 800; color: rgba(0,0,0,0.05); }
+.step-icon { font-size: 2rem; color: var(--accent); margin-bottom: 15px; }
 
-.hero-container {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 50px;
-  align-items: center;
-}
+/* ================= 6. LOCATION & MAPS ================= */
+.location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; background: white; border-radius: 24px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.location-info .address-text { font-size: 1.1rem; color: var(--text-dark); margin-bottom: 20px; }
+.contact-rows p { margin-bottom: 10px; font-size: 1.05rem; display: flex; align-items: center; gap: 10px; }
+.map-frame-shop iframe { border-radius: 16px; }
+.wide-map-container iframe { width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
 
-/* Badge */
-.badge-pill {
-  background: var(--accent-soft);
-  color: var(--primary);
-  padding: 6px 16px;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  display: inline-block;
-  margin-bottom: 20px;
-}
+/* ================= 7. FOOTER ================= */
+footer { background: var(--primary-dark); color: rgba(255,255,255,0.7); padding: 50px 0; border-top: 4px solid var(--accent); }
+.footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+.footer-col h3 { color: white; margin-bottom: 10px; }
 
-/* Typography */
-.hero-text h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.text-gradient {
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero-text p {
-  font-size: 1.1rem;
-  color: var(--text-gray);
-  margin-bottom: 30px;
-  max-width: 550px;
-}
-
-.hero-btns { display: flex; gap: 15px; }
-
-/* Stats */
-.hero-stats {
-  display: flex;
-  gap: 40px;
-  margin-top: 50px;
-  padding-top: 25px;
-  border-top: 1px solid var(--border);
-}
-
-.stat-item strong {
-  display: block;
-  font-size: 1.8rem;
-  color: var(--primary);
-  line-height: 1;
-}
-
-.stat-item { font-size: 0.9rem; color: var(--text-gray); }
-
-/* Floating Image Animation */
-.hero-visual { text-align: right; }
-.floating-img {
-  width: 100%;
-  max-width: 500px;
-  animation: float 5s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-}
-
-/* ================= 6. SERVICES (GLASS CARDS) ================= */
-.section-header h2 { font-size: 2.2rem; margin-bottom: 10px; }
-.section-header p { color: var(--text-gray); margin-bottom: 50px; }
-
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.glass-card {
-  background: white;
-  padding: 40px 30px;
-  border-radius: 20px;
-  border: 1px solid var(--border);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.glass-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-  border-color: var(--accent);
-}
-
-.icon-box {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-light);
-  border-radius: 16px;
-}
-
-.glass-card h3 { margin-bottom: 12px; font-size: 1.3rem; }
-.glass-card p { color: var(--text-gray); margin-bottom: 20px; font-size: 0.95rem; }
-
-.link-arrow {
-  color: var(--primary);
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.link-arrow:hover { gap: 12px; color: var(--accent); }
-
-/* ================= 7. PROCESS STEPS ================= */
-.process-steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.step {
-  text-align: center;
-  padding: 20px;
-  transition: 0.3s;
-}
-
-.step:hover { transform: translateY(-5px); }
-
-.step-num {
-  width: 60px;
-  height: 60px;
-  background: white;
-  color: var(--accent);
-  font-size: 1.5rem;
-  font-weight: 800;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-  border: 2px solid var(--bg-light);
-}
-
-.step h4 { margin-bottom: 8px; font-size: 1.1rem; }
-.step p { color: var(--text-gray); font-size: 0.9rem; }
-
-/* ================= 8. LOCATION & FOOTER ================= */
-.location-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-  background: white;
-  border-radius: 24px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.location-info h2 { margin-bottom: 20px; }
-.location-info p { margin-bottom: 10px; color: var(--text-gray); }
-.location-info strong { color: var(--text-dark); }
-
-.cta-buttons { margin-top: 25px; display: flex; gap: 15px; }
-.map-frame iframe { border-radius: 16px; }
-
-/* Footer */
-footer {
-  background: var(--primary-dark);
-  color: rgba(255,255,255,0.7);
-  padding: 30px 0;
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 50px;
-}
-
-/* ================= 9. FLOATING WHATSAPP ================= */
-.float-wa {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 32px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-}
-
+/* ================= 8. FLOATING WA ================= */
+.float-wa { position: fixed; width: 60px; height: 60px; bottom: 25px; right: 25px; background-color: #25d366; color: #FFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 9999; }
 .float-wa:hover { transform: scale(1.1); }
+
+/* =========================================================
+   9. LEGACY SUPPORT (IMPORTANT FOR OTHER PAGES)
+   Ye code hatana mat, warna baaki pages toot jayenge.
+========================================================= */
+
+/* Old Hero Class Support */
+.hero { background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white; padding: 100px 0; text-align: center; }
+.hero h1 { color: white; font-size: 2.5rem; margin-bottom: 15px; }
+.hero p { color: #dbeafe; font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
+
+/* Old Service Cards Support */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 36px; margin-top: 40px; }
+.service-card { background: white; border-radius: 26px; padding: 40px 34px; text-align: center; box-shadow: 0 22px 46px rgba(0,0,0,0.08); border: 1px solid var(--border); }
+.service-card h3 { color: var(--primary); margin-bottom: 10px; }
+
+/* Old Button Classes Support */
+.btn-outline { background: transparent; border: 2px solid var(--accent); color: var(--accent); padding: 10px 25px; border-radius: 50px; }
+.btn-outline:hover { background: var(--accent); color: white; }
 
 /* ================= 10. RESPONSIVE ================= */
 @media (max-width: 900px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .hero-text h1 { font-size: 2.5rem; }
-  .hero-btns { justify-content: center; }
-  .hero-stats { justify-content: center; }
-  .hero-visual { display: none; } /* Mobile pe image hide kar sakte hain ya chota */
-  
-  .process-steps { grid-template-columns: 1fr 1fr; }
+  .hero-container { grid-template-columns: 1fr; text-align: center; }
+  .hero-text h1 { font-size: 2.2rem; }
+  .hero-visual { display: none; }
+  .cards-grid, .process-steps { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
-  .top-bar { display: none; } /* Mobile pe top bar hide */
-  
-  .nav-menu { display: none; } /* JavaScript chahiye menu toggle ke liye */
+  .top-bar { display: none; }
+  .nav-menu { display: none; } 
   .mobile-toggle { display: block; }
-
-  .location-grid { grid-template-columns: 1fr; padding: 20px; }
+  .location-grid { grid-template-columns: 1fr; padding: 25px; }
   .cta-buttons { flex-direction: column; }
 }

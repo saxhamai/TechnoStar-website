@@ -184,3 +184,49 @@ footer { background: var(--primary-dark); color: rgba(255,255,255,0.7); padding:
     justify-content: center;
   }
 }
+
+
+/* --- MOBILE MENU & BUTTONS FIX (Add to style.css) --- */
+
+@media (max-width: 768px) {
+  /* 1. Fix for 3 Buttons (Chat, Call, Direction) */
+  .cta-buttons {
+    display: flex;
+    flex-direction: column; /* Buttons ko ek ke niche ek layega */
+    gap: 15px;
+    width: 100%;
+  }
+
+  .cta-buttons .btn {
+    width: 100%; /* Button full width lega */
+    justify-content: center;
+  }
+
+  /* 2. Mobile Menu Dropdown Fix */
+  .nav-menu {
+    display: none; /* Pehle chupayega */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-top: 2px solid var(--primary);
+  }
+
+  /* Javascript is class ko add karega tab menu dikhega */
+  .nav-menu.active {
+    display: flex; 
+  }
+}
+
+/* Active Link Color (Blue) */
+.nav-link.active {
+  color: var(--primary); /* Blue Color */
+  font-weight: 700;
+}
+.nav-link.active::after {
+  width: 100%; /* Underline effect */
+}

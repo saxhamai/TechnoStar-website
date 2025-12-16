@@ -130,3 +130,57 @@ footer { background: var(--primary-dark); color: rgba(255,255,255,0.7); padding:
   .location-grid { grid-template-columns: 1fr; padding: 25px; }
   .cta-buttons { flex-direction: column; }
 }
+
+
+/* --- Location Section Fixes --- */
+
+/* Address Text Styling */
+.address-box {
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+}
+
+.contact-row {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+/* Button Layout Fix */
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Agar screen choti ho to niche aa jaye */
+  gap: 12px;
+  margin-top: 25px;
+}
+
+/* New 'Get Direction' Button Style */
+.btn-direction {
+  background: white;
+  color: #ea4335; /* Google Maps Red color */
+  border: 2px solid #ea4335;
+  font-weight: 700;
+}
+
+.btn-direction:hover {
+  background: #ea4335;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(234, 67, 53, 0.3);
+}
+
+/* Mobile Responsive Fix for Buttons */
+@media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column; /* Mobile pe buttons ek ke niche ek ayenge */
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%; /* Mobile pe full width button */
+    justify-content: center;
+  }
+}

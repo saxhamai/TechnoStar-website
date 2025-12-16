@@ -434,11 +434,15 @@ footer a:hover {
   font-weight: 600;
 }
 
-.location-premium {
+.location-single {
   margin-top: 45px;
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.location-single .location-card-main {
+  max-width: 760px;   /* premium centered width */
+  width: 100%;
 }
 
 /* Main Card */

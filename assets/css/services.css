@@ -5,7 +5,6 @@
 ========================================================= */
 
 /* ================= 1. ICON BOXES (The Heart of Service Cards) ================= */
-/* Ye classes Service cards ke andar ke icons (Laptop, Printer, etc.) ko color deti hain */
 
 .icon-box {
   width: 70px;
@@ -59,40 +58,35 @@
 }
 
 /* ================= 2. SERVICE LIST STYLING ================= */
-/* Ye code <ul> lists ko style karta hai jo cards ke andar hain */
 
 .glass-card ul {
   padding-left: 0;
-  list-style: none;
+  list-style: none; /* No bullets */
   margin-bottom: 25px;
 }
 
 .glass-card li {
   position: relative;
-  padding-left: 25px;
+  /* padding-left hataya kyunki ab icon inline hai */
   margin-bottom: 12px;
   color: var(--text-gray);
   font-size: 0.95rem;
   line-height: 1.5;
+  display: flex; /* Flexbox for perfect alignment of icon and text */
+  align-items: flex-start;
 }
 
-/* Custom Checkmark Icon using CSS */
-.glass-card li::before {
-  content: '\f00c'; /* FontAwesome Check Icon */
-  font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
-  position: absolute;
-  left: 0;
-  top: 2px;
-  color: var(--success, #22c55e);
-  font-size: 0.9rem;
+.glass-card li i {
+  margin-top: 4px; /* Icon ko thoda niche layega text ke barabar */
 }
+
+/* REMOVED: .glass-card li::before (This was causing the double tick) */
 
 /* ================= 3. SPECIAL SECTIONS (Repair & Cyber) ================= */
 
 /* Software Section (Light Background) */
 .soft-section {
-  background-color: #f8fafc; /* Very light gray */
+  background-color: #f8fafc;
   border-top: 1px solid #e2e8f0;
   border-bottom: 1px solid #e2e8f0;
 }

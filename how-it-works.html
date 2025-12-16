@@ -4,12 +4,120 @@
   <meta charset="UTF-8">
   <title>How It Works | TechnoStar Infotech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Understand the transparent 5-step repair process at TechnoStar Infotech. From diagnosis to delivery, we ensure quality and trust.">
+  <meta name="description" content="Understand the transparent 5-step repair process at TechnoStar Infotech.">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Hero Image styling for mobile */
+    .hero-visual img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    /* --- NEW TIMELINE CSS (Renamed to avoid conflicts) --- */
+    .process-timeline {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px 0;
+      position: relative;
+    }
+
+    /* The Vertical Line */
+    .process-timeline::before {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 20px;
+      bottom: 20px;
+      width: 2px;
+      background: #e2e8f0;
+      z-index: 0;
+    }
+
+    .process-item {
+      display: flex;
+      gap: 25px;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .process-num {
+      width: 50px;
+      height: 50px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      border: 4px solid white; /* White ring */
+      background: var(--primary); /* Default color fallback */
+    }
+
+    .process-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 25px;
+      width: 100%;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .process-card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+
+    .process-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #0b2c5f;
+    }
+
+    .process-card p {
+      color: #64748b;
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* Colors for specific steps */
+    .num-1 { background: #0b2c5f; } /* Blue */
+    .num-2 { background: #38bdf8; } /* Sky */
+    .num-3 { background: #8b5cf6; } /* Purple */
+    .num-4 { background: #10b981; } /* Green */
+    .num-5 { background: #0f172a; } /* Dark */
+
+    /* Mobile Responsive Fix */
+    @media (max-width: 600px) {
+      .process-timeline::before {
+        left: 20px; /* Align line with smaller dots if needed */
+      }
+      .process-item {
+        gap: 15px; /* Kam gap mobile ke liye */
+      }
+      .process-card {
+        padding: 20px; /* Thoda compact padding */
+      }
+      .process-num {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        border-width: 3px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -34,7 +142,8 @@
     <nav class="nav-menu">
       <a href="index.html" class="nav-link">Home</a>
       <a href="services.html" class="nav-link">Services</a>
-      <a href="how-it-works.html" class="nav-link active">Process</a> <a href="contact.html" class="btn-nav">Contact Us</a>
+      <a href="how-it-works.html" class="nav-link active">Process</a>
+      <a href="contact.html" class="btn-nav">Contact Us</a>
     </nav>
 
     <div class="mobile-toggle">
@@ -50,8 +159,8 @@
       <span class="badge-pill">⚙️ Transparent Process</span>
       <h1>How We <span class="text-gradient">Fix It</span></h1>
       <p>
-        We believe in complete transparency. No hidden charges, no surprise costs. 
-        Here is exactly how we handle your device from start to finish.
+        Transparency is our priority. From diagnosis to delivery, 
+        see exactly how we bring your device back to life.
       </p>
       
       <div class="hero-btns">
@@ -60,7 +169,7 @@
     </div>
 
     <div class="hero-visual">
-       <img src="https://img.freepik.com/free-vector/workflow-process-concept-illustration_114360-1596.jpg" alt="Process Flow" class="floating-img" style="border-radius: 20px;">
+              <img src="https://img.freepik.com/free-vector/computer-repair-concept-illustration_114360-26463.jpg" alt="Technical Laptop Repair Process" class="floating-img" style="border-radius: 20px;">
     </div>
 
   </div>
@@ -70,48 +179,48 @@
   <div class="container">
     <div class="section-header text-center">
       <h2>Our 5-Step Repair Journey</h2>
-      <p>From the moment you contact us, to the moment you get your device back.</p>
+      <p>A systematic approach to solve hardware and software issues.</p>
     </div>
 
-    <div class="timeline-container" style="max-width: 800px; margin: 0 auto; position: relative;">
+    <div class="process-timeline">
       
-      <div class="timeline-item" style="display: flex; gap: 20px; margin-bottom: 40px;">
-        <div class="step-num" style="flex-shrink: 0; background: var(--primary); color: white; border: none;">01</div>
-        <div class="glass-card" style="width: 100%; text-align: left; padding: 25px;">
-          <h3 style="color: var(--primary);">Problem Identification</h3>
-          <p>You bring the device to us or we pick it up. We listen to your issues (slow speed, broken screen, etc.) and perform a preliminary physical check.</p>
+      <div class="process-item">
+        <div class="process-num num-1">01</div>
+        <div class="process-card">
+          <h3>Problem Identification</h3>
+          <p>You bring the device or we pick it up. We listen to the specific issues (e.g., overheating, dead screen, slow speed) and perform a physical check.</p>
         </div>
       </div>
 
-      <div class="timeline-item" style="display: flex; gap: 20px; margin-bottom: 40px;">
-        <div class="step-num" style="flex-shrink: 0; background: var(--accent); color: white; border: none;">02</div>
-        <div class="glass-card" style="width: 100%; text-align: left; padding: 25px;">
-          <h3 style="color: var(--accent);">Diagnosis & Estimation</h3>
-          <p>We open the device safely and find the root cause. We then inform you about the <strong>exact cost</strong> and time required. We proceed ONLY after your approval.</p>
+      <div class="process-item">
+        <div class="process-num num-2">02</div>
+        <div class="process-card">
+          <h3>Diagnosis & Estimation</h3>
+          <p>We open the device to find the root cause (chip-level). We inform you about the <strong>exact cost</strong>. We start work ONLY after your approval.</p>
         </div>
       </div>
 
-      <div class="timeline-item" style="display: flex; gap: 20px; margin-bottom: 40px;">
-        <div class="step-num" style="flex-shrink: 0; background: #8b5cf6; color: white; border: none;">03</div>
-        <div class="glass-card" style="width: 100%; text-align: left; padding: 25px;">
-          <h3 style="color: #8b5cf6;">Expert Repair</h3>
-          <p>Our technicians fix the issue using quality parts. This includes motherboard repair, part replacement, thermal paste application, and dust cleaning.</p>
+      <div class="process-item">
+        <div class="process-num num-3">03</div>
+        <div class="process-card">
+          <h3>Expert Repair</h3>
+          <p>Technicians fix the issue using genuine parts. This includes soldering, component replacement, thermal paste application, and deep cleaning.</p>
         </div>
       </div>
 
-      <div class="timeline-item" style="display: flex; gap: 20px; margin-bottom: 40px;">
-        <div class="step-num" style="flex-shrink: 0; background: #10b981; color: white; border: none;">04</div>
-        <div class="glass-card" style="width: 100%; text-align: left; padding: 25px;">
-          <h3 style="color: #10b981;">QC Testing</h3>
-          <p>We don't just fix; we test. We run stress tests to ensure the problem is solved permanently and the system is stable.</p>
+      <div class="process-item">
+        <div class="process-num num-4">04</div>
+        <div class="process-card">
+          <h3>QC Testing</h3>
+          <p>We run stress tests (benchmark) to ensure the system is stable, temperature is normal, and the issue is permanently resolved.</p>
         </div>
       </div>
 
-      <div class="timeline-item" style="display: flex; gap: 20px; margin-bottom: 0;">
-        <div class="step-num" style="flex-shrink: 0; background: var(--primary-dark); color: white; border: none;">05</div>
-        <div class="glass-card" style="width: 100%; text-align: left; padding: 25px;">
-          <h3 style="color: var(--primary-dark);">Delivery & Warranty</h3>
-          <p>You verify the device yourself. Once satisfied, you pay. We provide a warranty on specific repairs for your peace of mind.</p>
+      <div class="process-item">
+        <div class="process-num num-5">05</div>
+        <div class="process-card">
+          <h3>Delivery & Warranty</h3>
+          <p>You verify the device performance yourself. Once satisfied, you make the payment. We provide a service warranty for peace of mind.</p>
         </div>
       </div>
 
@@ -122,7 +231,7 @@
 <section class="section">
   <div class="container text-center">
     <h2>Ready to fix your device?</h2>
-    <p style="margin-bottom: 30px; color: var(--text-gray);">Experience the TechnoStar difference today.</p>
+    <p style="margin-bottom: 30px; color: #64748b;">Experience the TechnoStar difference today.</p>
     <a href="contact.html" class="btn btn-primary">Book an Appointment</a>
   </div>
 </section>

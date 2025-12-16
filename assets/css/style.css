@@ -343,3 +343,113 @@ footer {
     padding: 70px 0;
   }
 }
+
+/* ================= HOW IT WORKS (PREMIUM STYLE) ================= */
+.how-works {
+  background: linear-gradient(180deg, #f8fafc, #eef2ff);
+  text-align: center;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.step-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.step-icon {
+  font-size: 2rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 14px;
+}
+
+.step-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+.center-btn {
+  margin-top: 40px;
+}
+
+/* ================= LOCATION (ENHANCED) ================= */
+.location-premium {
+  background: linear-gradient(180deg, #eef2ff, #f8fafc);
+}
+
+.location-card-main.enhanced {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 28px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.location-card-main.enhanced:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.12);
+}
+
+.location-card-main.enhanced::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 200px;
+  background: radial-gradient(circle at center, rgba(56, 189, 248, 0.15), transparent);
+  z-index: 0;
+}
+
+.location-card-main.enhanced * {
+  position: relative;
+  z-index: 1;
+}
+
+.location-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .step-card {
+    padding: 22px;
+  }
+  .location-card-main.enhanced {
+    padding: 32px 24px;
+  }
+}

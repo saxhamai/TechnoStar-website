@@ -287,6 +287,7 @@ footer { background: var(--primary-dark); color: rgba(255,255,255,0.7); padding:
   color: white !important;
   box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
 }
+
 @media (max-width: 768px) {
   .cta-buttons .btn-direction {
     display: inline-block !important; /* Forces the button to be visible */

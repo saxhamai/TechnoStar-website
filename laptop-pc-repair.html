@@ -2,170 +2,194 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Laptop & PC Repair | TechnoStar</title>
-
+  <title>Laptop & PC Repair | TechnoStar Infotech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional Laptop and PC Repair services including hardware repair, software installation, virus removal and performance optimization.">
+  <meta name="description" content="Expert Laptop and PC Repair Services in Ghansoli. Screen Replacement, Motherboard Repair, SSD Upgrades, and Software Solutions.">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<header>
+<div class="top-bar">
+  <div class="container top-bar-content">
+    <span><i class="fa-solid fa-location-dot"></i> Ghansoli, Navi Mumbai</span>
+    <span><i class="fa-solid fa-phone"></i> +91 74983 80071</span>
+  </div>
+</div>
+
+<header class="main-header">
   <div class="container navbar">
-    <div class="logo">Techno<span>Star</span></div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html" class="active">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+    <a href="index.html" class="brand">
+      <img src="assets/images/technostar-logo.png" alt="TechnoStar Logo" class="brand-logo-img">
+      <div class="brand-text">
+        <h1>TechnoStar Infotech</h1>
+        <p>Keeping Your Tech Running Smoothly.</p>
+      </div>
+    </a>
+
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link active">Services</a>
+      <a href="how-it-works.html" class="nav-link">Process</a>
+      <a href="contact.html" class="btn-nav">Contact Us</a>
     </nav>
+
+    <div class="mobile-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
   </div>
 </header>
 
-<!-- ================= PAGE HERO ================= -->
-<section class="services-hero">
-  <div class="container">
-    <h1>Laptop & PC Repair Services</h1>
-    <p>
-      Complete repair and technical support solutions
-      for laptops and desktop computers.
-    </p>
+<section class="hero-section">
+  <div class="container hero-container">
+    
+    <div class="hero-text">
+      <span class="badge-pill">🛠️ Expert Hardware & Software Fixes</span>
+      <h1>Revive Your <span class="text-gradient">Laptop & PC</span></h1>
+      <p>
+        From broken screens and dead motherboards to slow performance and viruses. 
+        We provide chip-level repair with genuine parts and warranty.
+      </p>
+      
+      <div class="hero-btns">
+        <a href="#hardware" class="btn btn-primary">Check Services <i class="fa-solid fa-arrow-down"></i></a>
+        <a href="https://wa.me/917498380071" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Get Estimate</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+       <img src="https://img.freepik.com/free-vector/computer-service-abstract-concept-illustration_335657-1249.jpg" alt="Laptop Repair" class="floating-img" style="border-radius: 20px;">
+    </div>
+
   </div>
 </section>
 
-<!-- ================= HARDWARE SERVICES ================= -->
-<section class="section">
+<section class="section" id="hardware">
   <div class="container">
-    <h2 class="section-title">Hardware Repair Services</h2>
-    <p class="section-subtitle">
-      Physical component diagnosis, repair and replacement
-      using genuine and reliable parts.
-    </p>
+    <div class="section-header text-center">
+      <h2>Hardware Solutions</h2>
+      <p>Precision repair for physical components using high-quality spares.</p>
+    </div>
 
-    <div class="repair-grid hardware">
-      <div class="repair-card">
+    <div class="cards-grid">
+      
+      <div class="glass-card">
+        <div class="icon-box blue-icon"><i class="fa-solid fa-microchip"></i></div>
         <h3>Motherboard Repair</h3>
-        <p>Chip-level diagnosis and motherboard issue fixing.</p>
+        <p>Advanced chip-level diagnosis for dead laptops, no display, and charging IC issues.</p>
       </div>
 
-      <div class="repair-card">
-        <h3>RAM / SSD / HDD Upgrade</h3>
-        <p>Performance boost with memory and storage upgrades.</p>
-      </div>
-
-      <div class="repair-card">
+      <div class="glass-card">
+        <div class="icon-box purple-icon"><i class="fa-solid fa-laptop-medical"></i></div>
         <h3>Screen Replacement</h3>
-        <p>Cracked or flickering laptop display replacement.</p>
+        <p>Fix cracked, flickering, or lined displays. We stock screens for all major brands.</p>
       </div>
 
-      <div class="repair-card">
-        <h3>Keyboard & Touchpad</h3>
-        <p>Non-working keys and touchpad repair.</p>
+      <div class="glass-card">
+        <div class="icon-box green-icon"><i class="fa-solid fa-memory"></i></div>
+        <h3>SSD & RAM Upgrade</h3>
+        <p>Boost your slow PC speed by 10x with NVMe SSDs and RAM expansion.</p>
       </div>
 
-      <div class="repair-card">
-        <h3>Battery & Power Issue</h3>
-        <p>Charging problems and battery replacement.</p>
+      <div class="glass-card">
+        <div class="icon-box blue-icon"><i class="fa-solid fa-keyboard"></i></div>
+        <h3>Keyboard & Trackpad</h3>
+        <p>Replacement for non-working keys, liquid damage, or stuck trackpads.</p>
       </div>
 
-      <div class="repair-card">
-        <h3>Overheating & Fan Issue</h3>
-        <p>Thermal cleaning and cooling system repair.</p>
+      <div class="glass-card">
+        <div class="icon-box purple-icon"><i class="fa-solid fa-battery-full"></i></div>
+        <h3>Battery & Charger</h3>
+        <p>Original quality battery replacement for poor backup and charger repair.</p>
       </div>
+
+      <div class="glass-card">
+        <div class="icon-box green-icon"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+        <h3>Overheating Fix</h3>
+        <p>Thermal paste application, fan cleaning, and hinge fabrication for smooth usage.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ================= SOFTWARE SERVICES ================= -->
-<section class="section soft-section">
+<section class="section bg-light" id="software">
   <div class="container">
-    <h2 class="section-title">Software & Technical Services</h2>
-    <p class="section-subtitle">
-      Secure and optimized software solutions
-      to keep your system fast and stable.
-    </p>
+    <div class="section-header text-center">
+      <h2>Software & Optimization</h2>
+      <p>Keep your system secure, fast, and up-to-date.</p>
+    </div>
 
-    <div class="repair-grid software">
-      <div class="repair-card">
-        <h3>Windows / Linux Installation</h3>
-        <p>Fresh OS install with proper drivers.</p>
+    <div class="cards-grid">
+      
+      <div class="glass-card">
+        <div class="icon-box blue-icon"><i class="fa-brands fa-windows"></i></div>
+        <h3>OS Installation</h3>
+        <p>Windows 10, Windows 11, and Linux installation with complete driver setup.</p>
       </div>
 
-      <div class="repair-card">
-        <h3>Virus & Malware Removal</h3>
-        <p>Complete system cleanup and security setup.</p>
+      <div class="glass-card">
+        <div class="icon-box purple-icon"><i class="fa-solid fa-shield-virus"></i></div>
+        <h3>Virus Removal</h3>
+        <p>Complete scanning and removal of malware, spyware, and ransomware.</p>
       </div>
 
-      <div class="repair-card">
-        <h3>Data Backup & Recovery</h3>
-        <p>Data recovery from corrupted or damaged disks.</p>
+      <div class="glass-card">
+        <div class="icon-box green-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Data Recovery</h3>
+        <p>Recover lost or deleted files from corrupted hard drives and pen drives.</p>
       </div>
 
-      <div class="repair-card">
-        <h3>System Optimization</h3>
-        <p>Speed improvement and unnecessary junk cleanup.</p>
+      <div class="glass-card">
+        <div class="icon-box blue-icon"><i class="fa-solid fa-gauge-high"></i></div>
+        <h3>Speed Optimization</h3>
+        <p>Removal of junk files and background apps to make your PC run like new.</p>
       </div>
 
-      <div class="repair-card">
-        <h3>Driver & Software Issues</h3>
-        <p>Fix driver conflicts and application errors.</p>
-      </div>
-
-      <div class="repair-card">
-        <h3>Remote Support</h3>
-        <p>Quick remote assistance for minor issues.</p>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= REPAIR CTA ================= -->
-<section class="repair-cta">
-  <div class="container repair-box">
-    <h2>Need Laptop or PC Repair?</h2>
-    <p>Contact TechnoStar now for quick diagnosis and reliable repair.</p>
-
-    <div class="cta-buttons">
-      <a href="https://wa.me/91XXXXXXXXXX" class="btn">WhatsApp Now</a>
-      <a href="tel:+91XXXXXXXXXX" class="btn btn-outline">Call Now</a>
+<section class="section">
+  <div class="container text-center">
+    <h2>Is your laptop giving you trouble?</h2>
+    <p style="margin-bottom: 30px; color: var(--text-gray);">Don't wait for it to get worse. Get a free consultation today.</p>
+    
+    <div class="cta-buttons" style="justify-content: center;">
+      <a href="tel:+917498380071" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call Expert</a>
+      <a href="https://wa.me/917498380071" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
     </div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer>
-  <div class="container footer-grid">
-    <div>
-      <h4>TechnoStar</h4>
-      <p>Laptop, PC Repair & Cyber Cafe Services.</p>
+  <div class="container footer-content">
+    <div class="footer-col">
+        <h3>TechnoStar.</h3>
+        <p>Laptop Repair & Cyber Cafe Experts in Ghansoli.</p>
     </div>
-
-    <div>
-      <h4>Quick Links</h4>
-      <p><a href="services.html">Services</a></p>
-      <p><a href="contact.html">Contact</a></p>
+    <div class="footer-col">
+        <p>© 2025 TechnoStar Infotech. All Rights Reserved.</p>
     </div>
-
-    <div>
-      <h4>Support</h4>
-      <p>Fast & Trusted Repair</p>
-      <p>Affordable Pricing</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    © 2025 TechnoStar. All Rights Reserved.
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<a href="https://wa.me/917498380071" class="float-wa" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+  const mobileBtn = document.querySelector('.mobile-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  mobileBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>

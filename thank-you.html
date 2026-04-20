@@ -7,16 +7,15 @@
   <meta name="description" content="Thank you for contacting SaXham Technologies. We will get back to you shortly.">
 
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/services.css"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body style="display: flex; flex-direction: column; min-height: 100vh;">
+<body style="display:flex; flex-direction:column; min-height:100vh;">
 
+<!-- TOP BAR -->
 <div class="top-bar">
   <div class="container top-bar-content">
     <span><i class="fa-solid fa-location-dot"></i> Ghansoli, Navi Mumbai</span>
@@ -24,22 +23,23 @@
   </div>
 </div>
 
+<!-- HEADER -->
 <header class="main-header">
   <div class="container navbar">
     <a href="index.html" class="brand">
-      <img src="assets/images/saxham-logo.png" alt="SaXham Technologies Logo" class="brand-logo-img">
+      <img src="assets/images/saxham-logo.png" class="brand-logo-img">
       <div class="brand-text">
         <h1>SaXham Technologies</h1>
-        <p style="font-size: 0.75rem; color: var(--text-gray); margin-top: -2px;"><strong>Reliable IT & Computer Services</strong></p>
+        <p>Complete Business Setup Solutions</p>
       </div>
     </a>
 
     <nav class="nav-menu">
       <a href="index.html" class="nav-link">Home</a>
       <a href="services.html" class="nav-link">Services</a>
-      <a href="how-it-works.html" class="nav-link">Process</a>
+      <a href="packages.html" class="nav-link">Packages</a>
       <a href="about.html" class="nav-link">About</a> 
-      <a href="contact.html" class="nav-link">Contact Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </nav>
 
     <div class="mobile-toggle">
@@ -48,39 +48,57 @@
   </div>
 </header>
 
-<section class="section bg-light" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+<!-- THANK YOU SECTION -->
+<section class="section bg-light" style="flex:1; display:flex; align-items:center; justify-content:center;">
   <div class="container text-center">
-    
-    <div class="glass-card" style="max-width: 550px; margin: 0 auto; padding: 50px 30px;">
-      <i class="fa-solid fa-circle-check" style="font-size: 70px; color: #22c55e; margin-bottom: 20px;"></i>
-      
-      <h1 style="color: #0b2c5f; margin-bottom: 15px; font-family: 'Poppins', sans-serif;">Thank You!</h1>
-      
-      <p style="color: #64748b; margin-bottom: 30px; font-size: 1.1rem; line-height: 1.6;">
-        Your business inquiry has been successfully submitted. Our technical team will review your requirements and contact you shortly.
+
+    <div class="glass-card" style="max-width:550px; margin:auto; padding:60px 40px;">
+
+      <div class="icon-box green-icon" style="width:80px; height:80px; font-size:2.5rem; margin:0 auto 25px;">
+        <i class="fa-solid fa-check"></i>
+      </div>
+
+      <h1 style="margin-bottom:15px; font-size:2.3rem;">Thank You!</h1>
+
+      <p style="color:#666; margin-bottom:25px; font-size:1.05rem;">
+        Your request has been successfully submitted.
       </p>
-      
-      <a href="index.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
-        <i class="fa-solid fa-arrow-left"></i> Back to Home
-      </a>
+
+      <p style="color:#888; margin-bottom:35px;">
+        Our team will contact you shortly. Meanwhile, you can directly chat with us on WhatsApp for faster response.
+      </p>
+
+      <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+
+        <a href="https://wa.me/919702855005" class="btn btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> Chat Now
+        </a>
+
+        <a href="index.html" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-left"></i> Back to Home
+        </a>
+
+      </div>
+
     </div>
 
   </div>
 </section>
 
-<footer style="margin-top: auto;">
+<!-- FOOTER -->
+<footer style="margin-top:auto;">
   <div class="container footer-content">
-    <div class="footer-col">
-        <h3>SaXham Technologies</h3>
-        <p>Reliable IT & Computer Services.</p>
+    <div>
+      <h3>SaXham Technologies</h3>
+      <p>Complete Business Setup & IT Services</p>
     </div>
-    <div class="footer-col" style="text-align: right;">
-        <p>© 2026 SaXham Technologies. All Rights Reserved.</p>
+    <div>
+      <p>© 2026 All Rights Reserved</p>
     </div>
   </div>
 </footer>
 
-<a href="https://wa.me/919702855005" target="_blank" class="float-wa">
+<a href="https://wa.me/919702855005" class="float-wa">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 

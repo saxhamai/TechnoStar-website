@@ -444,3 +444,15 @@ footer {
     gap: 15px;
   }
 }
+/* Outline Button (Fix for secondary buttons) */
+.btn-outline {
+  background: transparent;
+  color: var(--primary-navy);
+  border: 2px solid var(--primary-navy);
+}
+
+.btn-outline:hover {
+  background: var(--primary-navy);
+  color: #fff;
+  transform: translateY(-2px);
+}

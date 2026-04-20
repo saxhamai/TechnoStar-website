@@ -1,3 +1,98 @@
+/* =========================================================
+   SaXham Technologies – Final Production CSS (Updated)
+========================================================= */
+
+:root {
+  --primary: #0b2c5f;
+  --primary-dark: #07162f;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.12);
+  --bg-light: #f8fafc;
+  --text-dark: #020617;
+  --text-gray: #64748b;
+  --border: #e2e8f0;
+  --gradient-main: linear-gradient(135deg, var(--primary), #1e40af);
+}
+
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg-light); color: var(--text-dark); }
+h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+
+.container { max-width: 1200px; width: 90%; margin: auto; }
+.section { padding: 80px 0; }
+
+/* ================= BUTTON ================= */
+.btn {
+  padding: 12px 28px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--gradient-main);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+/* ================= NAVBAR ================= */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+.nav-link.active {
+  background: rgba(56,189,248,0.2);
+}
+
+/* ================= HERO ================= */
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 15px;
+}
+
+/* ================= CARDS ================= */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 30px;
+}
+
+.glass-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  transition: 0.3s;
+  position: relative;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
 /* ================= PACKAGES HIGHLIGHT ================= */
 
 .glass-card.featured {
@@ -18,4 +113,84 @@
   font-size: 0.75rem;
   padding: 5px 12px;
   border-radius: 20px;
+}
+
+/* ================= FORM FIX ================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #f9fafb;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--primary);
+  background: white;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 50px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: var(--primary-dark);
+  color: white;
+  padding: 40px;
+}
+
+/* ================= WHATSAPP ================= */
+.float-wa {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .nav-menu {
+    display: none;
+  }
 }

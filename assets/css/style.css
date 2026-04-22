@@ -435,7 +435,7 @@ footer {
 
   .mobile-toggle {
     display: block;
-    color: var(--primary-navy);
+    color: var(--primary-navy);   
   }
 
   .footer-content {
@@ -455,4 +455,9 @@ footer {
   background: var(--primary-navy);
   color: #fff;
   transform: translateY(-2px);
+}
+.hero-visual img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

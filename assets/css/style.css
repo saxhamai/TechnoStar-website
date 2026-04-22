@@ -461,3 +461,85 @@ footer {
   height: auto;
   object-fit: cover;
 }
+/* ===== FIX: FULL WIDTH FOOTER ===== */
+footer {
+  background: var(--primary-navy);
+  color: white;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* ===== FIX: CARD HEIGHT SAME ===== */
+.glass-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.glass-card a.btn {
+  margin-top: auto;
+}
+
+/* ===== FIX: BUTTON CONSISTENCY ===== */
+.btn-secondary,
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary-navy);
+  color: var(--primary-navy);
+}
+
+.btn-secondary:hover,
+.btn-outline:hover {
+  background: var(--primary-navy);
+  color: #fff;
+}
+
+/* ===== FIX: HERO IMAGE CLEAN ===== */
+.hero-visual img {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* ===== FIX: SECTION GAP ===== */
+.section {
+  padding: 80px 0;
+}
+
+.section:last-child {
+  padding-bottom: 100px;
+}
+
+/* ===== MOBILE IMPROVEMENT ===== */
+@media (max-width: 768px) {
+
+  .cards-grid {
+    gap: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .glass-card {
+    text-align: center;
+  }
+}

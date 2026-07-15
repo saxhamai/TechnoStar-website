@@ -10694,3 +10694,2641 @@ display:none;
 }
 
 }
+/*==========================================================
+PART 3D-1
+ICON CIRCLES + GRADIENT ICONS
+SaXham Technologies Enterprise UI Framework
+==========================================================*/
+
+/*==========================================================
+ICON WRAPPER
+==========================================================*/
+
+.icon-group{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:20px;
+}
+
+/*==========================================================
+BASE ICON
+==========================================================*/
+
+.icon{
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+flex-shrink:0;
+
+width:68px;
+height:68px;
+
+border-radius:20px;
+
+background:#F8FAFC;
+
+border:1px solid var(--border);
+
+color:var(--accent);
+
+font-size:1.6rem;
+
+transition:all .35s ease;
+
+box-shadow:
+0 10px 25px rgba(15,23,42,.05);
+
+}
+
+.icon:hover{
+
+transform:translateY(-6px);
+
+border-color:var(--accent);
+
+box-shadow:
+0 25px 45px rgba(37,99,235,.15);
+
+}
+
+/*==========================================================
+ICON CIRCLE
+==========================================================*/
+
+.icon-circle{
+
+border-radius:50%;
+
+}
+
+/*==========================================================
+ICON ROUNDED
+==========================================================*/
+
+.icon-rounded{
+
+border-radius:18px;
+
+}
+
+/*==========================================================
+SMALL ICON
+==========================================================*/
+
+.icon-sm{
+
+width:52px;
+height:52px;
+
+font-size:1.15rem;
+
+}
+
+/*==========================================================
+LARGE ICON
+==========================================================*/
+
+.icon-lg{
+
+width:82px;
+height:82px;
+
+font-size:2rem;
+
+}
+
+/*==========================================================
+EXTRA LARGE ICON
+==========================================================*/
+
+.icon-xl{
+
+width:100px;
+height:100px;
+
+font-size:2.5rem;
+
+}
+
+/*==========================================================
+GRADIENT ICON
+==========================================================*/
+
+.icon-gradient{
+
+background:
+linear-gradient(
+135deg,
+#2563EB,
+#3B82F6);
+
+color:#ffffff;
+
+border:none;
+
+box-shadow:
+0 18px 40px rgba(37,99,235,.25);
+
+}
+
+.icon-gradient:hover{
+
+transform:translateY(-8px) scale(1.05);
+
+box-shadow:
+0 28px 60px rgba(37,99,235,.35);
+
+}
+
+/*==========================================================
+BLUE
+==========================================================*/
+
+.icon-blue{
+
+background:
+linear-gradient(
+135deg,
+#2563EB,
+#60A5FA);
+
+}
+
+/*==========================================================
+GREEN
+==========================================================*/
+
+.icon-green{
+
+background:
+linear-gradient(
+135deg,
+#16A34A,
+#22C55E);
+
+}
+
+/*==========================================================
+PURPLE
+==========================================================*/
+
+.icon-purple{
+
+background:
+linear-gradient(
+135deg,
+#7C3AED,
+#A855F7);
+
+}
+
+/*==========================================================
+ORANGE
+==========================================================*/
+
+.icon-orange{
+
+background:
+linear-gradient(
+135deg,
+#EA580C,
+#FB923C);
+
+}
+
+/*==========================================================
+RED
+==========================================================*/
+
+.icon-red{
+
+background:
+linear-gradient(
+135deg,
+#DC2626,
+#EF4444);
+
+}
+
+/*==========================================================
+DARK
+==========================================================*/
+
+.icon-dark{
+
+background:
+linear-gradient(
+135deg,
+#0F172A,
+#334155);
+
+}
+
+/*==========================================================
+SOFT ICONS
+==========================================================*/
+
+.icon-soft-blue{
+
+background:#DBEAFE;
+color:#2563EB;
+
+}
+
+.icon-soft-green{
+
+background:#DCFCE7;
+color:#16A34A;
+
+}
+
+.icon-soft-orange{
+
+background:#FFEDD5;
+color:#EA580C;
+
+}
+
+.icon-soft-purple{
+
+background:#F3E8FF;
+color:#7C3AED;
+
+}
+
+.icon-soft-red{
+
+background:#FEE2E2;
+color:#DC2626;
+
+}
+
+/*==========================================================
+BORDER ICON
+==========================================================*/
+
+.icon-outline{
+
+background:transparent;
+
+border:2px solid var(--accent);
+
+color:var(--accent);
+
+}
+
+.icon-outline:hover{
+
+background:var(--accent);
+
+color:#ffffff;
+
+}
+
+/*==========================================================
+ICON SHADOW
+==========================================================*/
+
+.icon-shadow{
+
+box-shadow:
+0 18px 40px rgba(15,23,42,.10);
+
+}
+
+/*==========================================================
+ICON GLOW
+==========================================================*/
+
+.icon-glow:hover{
+
+box-shadow:
+
+0 0 0 8px rgba(37,99,235,.08),
+
+0 20px 45px rgba(37,99,235,.18);
+
+}
+
+/*==========================================================
+ROTATE
+==========================================================*/
+
+.icon-rotate:hover{
+
+transform:
+translateY(-5px)
+rotate(12deg);
+
+}
+
+/*==========================================================
+SCALE
+==========================================================*/
+
+.icon-scale:hover{
+
+transform:
+scale(1.12);
+
+}
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .icon{
+
+background:#0F172A;
+
+border-color:#334155;
+
+color:#E2E8F0;
+
+}
+
+body.dark-mode .icon-outline{
+
+background:transparent;
+
+border-color:#60A5FA;
+
+color:#60A5FA;
+
+}
+
+body.dark-mode .icon-outline:hover{
+
+background:#2563EB;
+
+color:#ffffff;
+
+}
+
+body.dark-mode .icon-soft-blue{
+
+background:#172554;
+
+color:#93C5FD;
+
+}
+
+body.dark-mode .icon-soft-green{
+
+background:#052E16;
+
+color:#6EE7B7;
+
+}
+
+body.dark-mode .icon-soft-orange{
+
+background:#431407;
+
+color:#FDBA74;
+
+}
+
+body.dark-mode .icon-soft-purple{
+
+background:#2E1065;
+
+color:#C4B5FD;
+
+}
+
+body.dark-mode .icon-soft-red{
+
+background:#450A0A;
+
+color:#FCA5A5;
+
+}
+
+/*==========================================================
+RESPONSIVE
+==========================================================*/
+
+@media(max-width:768px){
+
+.icon-group{
+
+justify-content:center;
+
+gap:16px;
+
+}
+
+.icon{
+
+width:60px;
+height:60px;
+
+font-size:1.4rem;
+
+}
+
+.icon-lg{
+
+width:72px;
+height:72px;
+
+font-size:1.8rem;
+
+}
+
+.icon-xl{
+
+width:88px;
+height:88px;
+
+font-size:2.2rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.icon{
+
+width:56px;
+height:56px;
+
+font-size:1.25rem;
+
+}
+
+.icon-lg{
+
+width:66px;
+height:66px;
+
+}
+
+.icon-xl{
+
+width:78px;
+height:78px;
+
+font-size:2rem;
+
+}
+
+}
+/*==========================================================
+PART 3D-2
+FEATURE ICONS • SOCIAL ICONS • CTA ICONS
+ANIMATED ICON CONTAINERS
+SaXham Technologies Enterprise UI Framework
+==========================================================*/
+
+/*==========================================================
+FEATURE ICON
+==========================================================*/
+
+.feature-icon{
+
+width:84px;
+height:84px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+margin-bottom:24px;
+
+border-radius:24px;
+
+background:linear-gradient(
+135deg,
+#2563EB,
+#3B82F6);
+
+color:#fff;
+
+font-size:2rem;
+
+box-shadow:
+0 18px 40px rgba(37,99,235,.25);
+
+transition:all .35s ease;
+
+}
+
+.feature-icon:hover{
+
+transform:translateY(-8px) rotate(8deg);
+
+box-shadow:
+0 30px 60px rgba(37,99,235,.35);
+
+}
+
+/*==========================================================
+CTA ICON
+==========================================================*/
+
+.cta-icon{
+
+width:74px;
+height:74px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+background:linear-gradient(
+135deg,
+#16A34A,
+#22C55E);
+
+color:#fff;
+
+font-size:1.8rem;
+
+box-shadow:
+0 15px 35px rgba(34,197,94,.28);
+
+transition:.35s;
+
+}
+
+.cta-icon:hover{
+
+transform:scale(1.08);
+
+box-shadow:
+0 25px 50px rgba(34,197,94,.35);
+
+}
+
+/*==========================================================
+SOCIAL ICONS
+==========================================================*/
+
+.social-icons{
+
+display:flex;
+
+align-items:center;
+
+gap:16px;
+
+}
+
+.social-icon{
+
+width:56px;
+height:56px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+background:#fff;
+
+border:1px solid var(--border);
+
+color:var(--primary);
+
+font-size:1.2rem;
+
+transition:.35s;
+
+box-shadow:
+0 10px 25px rgba(15,23,42,.05);
+
+}
+
+.social-icon:hover{
+
+transform:translateY(-6px);
+
+background:#2563EB;
+
+color:#fff;
+
+border-color:#2563EB;
+
+box-shadow:
+0 20px 40px rgba(37,99,235,.25);
+
+}
+
+/*==========================================================
+ANIMATED CONTAINER
+==========================================================*/
+
+.icon-container{
+
+position:relative;
+
+display:inline-flex;
+
+padding:18px;
+
+border-radius:24px;
+
+background:rgba(255,255,255,.65);
+
+backdrop-filter:blur(16px);
+
+border:1px solid rgba(255,255,255,.45);
+
+overflow:hidden;
+
+transition:.4s;
+
+}
+
+.icon-container::before{
+
+content:"";
+
+position:absolute;
+
+top:-40%;
+left:-40%;
+
+width:180%;
+height:180%;
+
+background:
+radial-gradient(
+circle,
+rgba(37,99,235,.10),
+transparent 70%);
+
+opacity:0;
+
+transition:.45s;
+
+}
+
+.icon-container:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 30px 60px rgba(37,99,235,.15);
+
+}
+
+.icon-container:hover::before{
+
+opacity:1;
+
+animation:iconPulse 2.5s infinite;
+
+}
+
+/*==========================================================
+FLOATING ICON
+==========================================================*/
+
+.icon-float{
+
+animation:iconFloat 5s ease-in-out infinite;
+
+}
+
+@keyframes iconFloat{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-8px);}
+100%{transform:translateY(0);}
+
+}
+
+@keyframes iconPulse{
+
+0%{transform:scale(.9);}
+50%{transform:scale(1);}
+100%{transform:scale(.9);}
+
+}
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .social-icon{
+
+background:#0F172A;
+
+border-color:#334155;
+
+color:#E2E8F0;
+
+}
+
+body.dark-mode .social-icon:hover{
+
+background:#2563EB;
+
+color:#fff;
+
+}
+
+body.dark-mode .icon-container{
+
+background:rgba(15,23,42,.75);
+
+border-color:#334155;
+
+}
+
+body.dark-mode .feature-icon{
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.35);
+
+}
+
+body.dark-mode .cta-icon{
+
+box-shadow:
+0 18px 40px rgba(0,0,0,.30);
+
+}
+
+/*==========================================================
+RESPONSIVE
+==========================================================*/
+
+@media(max-width:768px){
+
+.social-icons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.feature-icon{
+
+width:72px;
+height:72px;
+
+font-size:1.8rem;
+
+}
+
+.cta-icon{
+
+width:66px;
+height:66px;
+
+font-size:1.6rem;
+
+}
+
+.social-icon{
+
+width:52px;
+height:52px;
+
+font-size:1.1rem;
+
+}
+
+.icon-container{
+
+padding:14px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.feature-icon{
+
+width:64px;
+height:64px;
+
+font-size:1.6rem;
+
+}
+
+.cta-icon{
+
+width:60px;
+height:60px;
+
+font-size:1.4rem;
+
+}
+
+.social-icon{
+
+width:48px;
+height:48px;
+
+font-size:1rem;
+
+}
+
+}
+
+/*==========================================================
+ACCESSIBILITY
+==========================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+.feature-icon,
+.cta-icon,
+.social-icon,
+.icon-container,
+.icon-float{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+}
+
+}
+4A-1 – Services Grid + Service Layout (~120–140 lines)
+/*==========================================================
+PART 4A-2A
+ENTERPRISE SERVICE CARD
+Header + Icons
+SaXham Technologies Design System
+==========================================================*/
+
+/*==========================================================
+SERVICE CARD
+==========================================================*/
+
+.enterprise-service-card{
+
+position:relative;
+
+display:flex;
+flex-direction:column;
+
+height:100%;
+
+padding:38px;
+
+background:#FFFFFF;
+
+border:1px solid var(--border);
+
+border-radius:24px;
+
+overflow:hidden;
+
+transition:all .45s cubic-bezier(.22,.61,.36,1);
+
+box-shadow:
+0 15px 40px rgba(15,23,42,.06);
+
+}
+
+/*==========================================================
+TOP ACCENT BAR
+==========================================================*/
+
+.enterprise-service-card::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+top:0;
+
+width:100%;
+height:5px;
+
+background:linear-gradient(
+90deg,
+#2563EB,
+#3B82F6,
+#60A5FA);
+
+transform:scaleX(0);
+
+transform-origin:left;
+
+transition:.4s;
+
+}
+
+.enterprise-service-card:hover::before{
+
+transform:scaleX(1);
+
+}
+
+/*==========================================================
+SERVICE HEADER
+==========================================================*/
+
+.service-header{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:22px;
+
+margin-bottom:28px;
+
+}
+
+/*==========================================================
+SERVICE ICON
+==========================================================*/
+
+.service-header-icon{
+
+width:78px;
+height:78px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+flex-shrink:0;
+
+border-radius:22px;
+
+background:linear-gradient(
+135deg,
+#EFF6FF,
+#DBEAFE);
+
+color:#2563EB;
+
+font-size:2rem;
+
+transition:.4s;
+
+box-shadow:
+0 12px 30px rgba(37,99,235,.12);
+
+}
+
+.enterprise-service-card:hover .service-header-icon{
+
+background:linear-gradient(
+135deg,
+#2563EB,
+#3B82F6);
+
+color:#FFFFFF;
+
+transform:
+rotate(8deg)
+scale(1.08);
+
+box-shadow:
+0 20px 45px rgba(37,99,235,.25);
+
+}
+
+/*==========================================================
+HEADER CONTENT
+==========================================================*/
+
+.service-header-content{
+
+display:flex;
+
+flex-direction:column;
+
+flex:1;
+
+gap:8px;
+
+}
+
+/*==========================================================
+CATEGORY
+==========================================================*/
+
+.service-category{
+
+display:inline-flex;
+
+align-items:center;
+
+width:max-content;
+
+padding:7px 14px;
+
+border-radius:999px;
+
+background:#EFF6FF;
+
+color:#2563EB;
+
+font-size:.75rem;
+
+font-weight:700;
+
+letter-spacing:.05em;
+
+text-transform:uppercase;
+
+}
+
+/*==========================================================
+TITLE
+==========================================================*/
+
+.service-title{
+
+font-family:"Poppins",sans-serif;
+
+font-size:1.5rem;
+
+font-weight:700;
+
+line-height:1.3;
+
+color:var(--primary);
+
+margin:0;
+
+}
+
+/*==========================================================
+SUBTITLE
+==========================================================*/
+
+.service-subtitle{
+
+font-size:.92rem;
+
+line-height:1.7;
+
+color:var(--text-gray);
+
+margin-top:6px;
+
+}
+
+/*==========================================================
+SERVICE DESCRIPTION
+==========================================================*/
+
+.service-description{
+
+margin:24px 0;
+
+font-size:.95rem;
+
+line-height:1.9;
+
+color:var(--text-gray);
+
+flex:1;
+
+}
+
+/*==========================================================
+TECHNOLOGY STACK
+==========================================================*/
+
+.service-stack{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin-top:8px;
+
+}
+
+.service-stack span{
+
+display:inline-flex;
+
+align-items:center;
+
+padding:8px 14px;
+
+border-radius:999px;
+
+background:#F8FAFC;
+
+border:1px solid var(--border);
+
+font-size:.78rem;
+
+font-weight:600;
+
+color:var(--primary);
+
+transition:.3s;
+
+}
+
+.service-stack span:hover{
+
+background:#2563EB;
+
+border-color:#2563EB;
+
+color:#FFFFFF;
+
+}
+
+/*==========================================================
+SERVICE META
+==========================================================*/
+
+.service-meta{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+margin-top:22px;
+
+padding-top:20px;
+
+border-top:1px solid var(--border);
+
+}
+
+.service-meta-item{
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+font-size:.85rem;
+
+font-weight:600;
+
+color:var(--text-gray);
+
+}
+
+.service-meta-item i{
+
+color:#2563EB;
+
+}
+
+/*==========================================================
+CARD HOVER
+==========================================================*/
+
+.enterprise-service-card:hover{
+
+transform:translateY(-12px);
+
+border-color:#BFDBFE;
+
+box-shadow:
+0 35px 70px rgba(37,99,235,.14);
+
+}
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .enterprise-service-card{
+
+background:#0F172A;
+
+border-color:#334155;
+
+}
+
+body.dark-mode .service-title{
+
+color:#FFFFFF;
+
+}
+
+body.dark-mode .service-subtitle,
+body.dark-mode .service-description,
+body.dark-mode .service-meta-item{
+
+color:#CBD5E1;
+
+}
+
+body.dark-mode .service-category{
+
+background:#1E3A8A;
+
+color:#BFDBFE;
+
+}
+
+body.dark-mode .service-stack span{
+
+background:#1E293B;
+
+border-color:#334155;
+
+color:#E2E8F0;
+
+}
+
+body.dark-mode .service-stack span:hover{
+
+background:#2563EB;
+
+border-color:#2563EB;
+
+color:#FFFFFF;
+
+}
+
+body.dark-mode .service-meta{
+
+border-color:#334155;
+
+}
+
+/*==========================================================
+RESPONSIVE
+==========================================================*/
+
+@media(max-width:768px){
+
+.enterprise-service-card{
+
+padding:30px;
+
+}
+
+.service-header{
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.service-title{
+
+font-size:1.3rem;
+
+}
+
+.service-header-icon{
+
+width:70px;
+height:70px;
+
+font-size:1.7rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.enterprise-service-card{
+
+padding:24px;
+
+border-radius:20px;
+
+}
+
+.service-header-icon{
+
+width:64px;
+height:64px;
+
+font-size:1.5rem;
+
+}
+
+.service-title{
+
+font-size:1.2rem;
+
+}
+
+.service-stack{
+
+gap:8px;
+
+}
+
+.service-stack span{
+
+font-size:.72rem;
+
+padding:7px 12px;
+
+}
+
+}
+/*==========================================================
+PART 4A-2B
+ENTERPRISE SERVICE CARD
+CTA • Hover • Dark Mode • Responsive
+SaXham Technologies Design System
+==========================================================*/
+
+
+/*==========================================================
+CARD FOOTER
+==========================================================*/
+
+.service-footer{
+
+margin-top:auto;
+
+padding-top:28px;
+
+border-top:1px solid var(--border);
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:16px;
+
+}
+
+
+/*==========================================================
+CTA GROUP
+==========================================================*/
+
+.service-cta{
+
+display:flex;
+
+align-items:center;
+
+gap:14px;
+
+flex-wrap:wrap;
+
+}
+
+
+/*==========================================================
+PRIMARY CTA
+==========================================================*/
+
+.service-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+padding:14px 26px;
+
+border-radius:12px;
+
+background:linear-gradient(
+135deg,
+#2563EB,
+#3B82F6);
+
+color:#ffffff;
+
+font-weight:600;
+
+font-size:.92rem;
+
+transition:all .35s ease;
+
+box-shadow:
+0 12px 28px rgba(37,99,235,.22);
+
+}
+
+.service-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 22px 42px rgba(37,99,235,.32);
+
+}
+
+.service-btn i{
+
+transition:.35s;
+
+}
+
+.service-btn:hover i{
+
+transform:translateX(5px);
+
+}
+
+
+/*==========================================================
+SECONDARY CTA
+==========================================================*/
+
+.service-btn-outline{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+padding:13px 24px;
+
+border-radius:12px;
+
+border:2px solid var(--accent);
+
+background:transparent;
+
+color:var(--accent);
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.service-btn-outline:hover{
+
+background:var(--accent);
+
+color:#ffffff;
+
+transform:translateY(-4px);
+
+}
+
+
+/*==========================================================
+SERVICE LINK
+==========================================================*/
+
+.service-link{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:8px;
+
+font-size:.9rem;
+
+font-weight:700;
+
+color:var(--accent);
+
+transition:.35s;
+
+}
+
+.service-link:hover{
+
+gap:14px;
+
+color:#1D4ED8;
+
+}
+
+
+/*==========================================================
+PREMIUM HOVER EFFECT
+==========================================================*/
+
+.enterprise-service-card{
+
+overflow:hidden;
+
+}
+
+.enterprise-service-card::after{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-130%;
+
+width:55%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.28),
+transparent);
+
+transform:skewX(-22deg);
+
+transition:.9s;
+
+pointer-events:none;
+
+}
+
+.enterprise-service-card:hover::after{
+
+left:150%;
+
+}
+
+
+/*==========================================================
+IMAGE ZOOM
+==========================================================*/
+
+.service-image{
+
+overflow:hidden;
+
+border-radius:18px;
+
+margin-bottom:24px;
+
+}
+
+.service-image img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+transition:transform .6s ease;
+
+}
+
+.enterprise-service-card:hover .service-image img{
+
+transform:scale(1.08);
+
+}
+
+
+/*==========================================================
+FLOATING ICON
+==========================================================*/
+
+.enterprise-service-card:hover .service-header-icon{
+
+animation:serviceFloat .8s ease;
+
+}
+
+@keyframes serviceFloat{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-8px) rotate(8deg);}
+100%{transform:translateY(0);}
+
+}
+
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .service-footer{
+
+border-color:#334155;
+
+}
+
+body.dark-mode .service-btn{
+
+box-shadow:
+0 18px 36px rgba(0,0,0,.35);
+
+}
+
+body.dark-mode .service-btn-outline{
+
+border-color:#60A5FA;
+
+color:#60A5FA;
+
+}
+
+body.dark-mode .service-btn-outline:hover{
+
+background:#2563EB;
+
+border-color:#2563EB;
+
+color:#ffffff;
+
+}
+
+body.dark-mode .service-link{
+
+color:#93C5FD;
+
+}
+
+body.dark-mode .service-link:hover{
+
+color:#BFDBFE;
+
+}
+
+
+/*==========================================================
+TABLET
+==========================================================*/
+
+@media(max-width:992px){
+
+.service-footer{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.service-cta{
+
+width:100%;
+
+}
+
+}
+
+
+/*==========================================================
+MOBILE
+==========================================================*/
+
+@media(max-width:768px){
+
+.service-footer{
+
+gap:20px;
+
+}
+
+.service-cta{
+
+flex-direction:column;
+
+align-items:stretch;
+
+width:100%;
+
+}
+
+.service-btn,
+.service-btn-outline{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+.service-image img{
+
+height:190px;
+
+}
+
+}
+
+
+/*==========================================================
+SMALL MOBILE
+==========================================================*/
+
+@media(max-width:480px){
+
+.service-btn,
+.service-btn-outline{
+
+padding:13px 18px;
+
+font-size:.88rem;
+
+}
+
+.service-image img{
+
+height:170px;
+
+}
+
+}
+
+
+/*==========================================================
+ACCESSIBILITY
+==========================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+.enterprise-service-card,
+.enterprise-service-card::after,
+.service-btn,
+.service-btn-outline,
+.service-link,
+.service-image img,
+.service-header-icon{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+}
+
+}
+/*==========================================================
+PART 4C-1
+ENTERPRISE SOLUTIONS GRID
+Solution Cards + Enterprise Layout
+SaXham Technologies UI Framework
+==========================================================*/
+
+
+/*==========================================================
+SOLUTIONS SECTION
+==========================================================*/
+
+.solutions-section{
+    position:relative;
+    padding:110px 0;
+    background:var(--bg-light);
+    overflow:hidden;
+}
+
+.solutions-section::before{
+    content:"";
+    position:absolute;
+    top:-180px;
+    right:-180px;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:radial-gradient(circle,
+    rgba(37,99,235,.08),
+    transparent 70%);
+}
+
+.solutions-section::after{
+    content:"";
+    position:absolute;
+    bottom:-220px;
+    left:-220px;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:radial-gradient(circle,
+    rgba(16,185,129,.08),
+    transparent 70%);
+}
+
+
+/*==========================================================
+SECTION HEADER
+==========================================================*/
+
+.solutions-header{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.solutions-header h2{
+    font-size:2.8rem;
+    font-family:"Poppins",sans-serif;
+    font-weight:800;
+    color:var(--primary);
+    margin-bottom:18px;
+}
+
+.solutions-header p{
+    font-size:1.05rem;
+    line-height:1.9;
+    color:var(--text-gray);
+}
+
+
+/*==========================================================
+SOLUTIONS GRID
+==========================================================*/
+
+.solutions-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(340px,1fr));
+    gap:32px;
+}
+
+
+/*==========================================================
+SOLUTION CARD
+==========================================================*/
+
+.solution-card{
+
+    position:relative;
+
+    display:flex;
+    flex-direction:column;
+
+    height:100%;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:36px;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+    box-shadow:
+    0 15px 35px rgba(15,23,42,.06);
+
+}
+
+
+/*==========================================================
+TOP BORDER
+==========================================================*/
+
+.solution-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:5px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #2563EB,
+    #3B82F6,
+    #60A5FA);
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s;
+
+}
+
+.solution-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==========================================================
+HEADER
+==========================================================*/
+
+.solution-header{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    margin-bottom:24px;
+
+}
+
+
+/*==========================================================
+ICON
+==========================================================*/
+
+.solution-icon{
+
+    width:76px;
+    height:76px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:20px;
+
+    flex-shrink:0;
+
+    background:
+    linear-gradient(
+    135deg,
+    #EFF6FF,
+    #DBEAFE);
+
+    color:#2563EB;
+
+    font-size:2rem;
+
+    transition:.4s;
+
+}
+
+
+/*==========================================================
+HEADER CONTENT
+==========================================================*/
+
+.solution-content{
+
+    flex:1;
+
+}
+
+.solution-content h3{
+
+    font-size:1.45rem;
+
+    font-family:"Poppins",sans-serif;
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+}
+
+.solution-content p{
+
+    color:var(--text-gray);
+
+    line-height:1.8;
+
+    font-size:.95rem;
+
+}
+
+
+/*==========================================================
+DESCRIPTION
+==========================================================*/
+
+.solution-description{
+
+    margin:26px 0;
+
+    color:var(--text-gray);
+
+    line-height:1.9;
+
+    flex:1;
+
+}
+
+
+/*==========================================================
+FEATURE LIST
+==========================================================*/
+
+.solution-features{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-top:auto;
+
+}
+
+.solution-features li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    font-size:.92rem;
+
+    line-height:1.7;
+
+    color:var(--text-gray);
+
+}
+
+.solution-features li i{
+
+    color:#16A34A;
+
+    margin-top:3px;
+
+}
+
+
+/*==========================================================
+CARD FOOTER
+==========================================================*/
+
+.solution-footer{
+
+    margin-top:28px;
+
+    padding-top:22px;
+
+    border-top:1px solid var(--border);
+
+}
+
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .solutions-section{
+
+    background:#020617;
+
+}
+
+body.dark-mode .solution-card{
+
+    background:#0F172A;
+
+    border-color:#334155;
+
+}
+
+body.dark-mode .solution-content h3{
+
+    color:#fff;
+
+}
+
+body.dark-mode .solution-content p,
+body.dark-mode .solution-description,
+body.dark-mode .solution-features li{
+
+    color:#CBD5E1;
+
+}
+
+body.dark-mode .solution-footer{
+
+    border-color:#334155;
+
+}
+
+
+/*==========================================================
+RESPONSIVE
+==========================================================*/
+
+@media(max-width:992px){
+
+.solutions-header h2{
+
+font-size:2.3rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.solutions-grid{
+
+grid-template-columns:1fr;
+
+gap:24px;
+
+}
+
+.solution-card{
+
+padding:28px;
+
+}
+
+.solution-header{
+
+flex-direction:column;
+
+}
+
+.solution-icon{
+
+width:68px;
+height:68px;
+
+font-size:1.7rem;
+
+}
+
+.solution-content h3{
+
+font-size:1.3rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.solution-card{
+
+padding:22px;
+
+border-radius:20px;
+
+}
+
+.solution-icon{
+
+width:60px;
+height:60px;
+
+font-size:1.5rem;
+
+}
+
+.solution-content h3{
+
+font-size:1.15rem;
+
+}
+
+}
+/*==========================================================
+PART 4C-2
+ENTERPRISE SOLUTION CARD
+CTA • Hover • Dark Mode • Responsive
+SaXham Technologies UI Framework
+==========================================================*/
+
+
+/*==========================================================
+CTA FOOTER
+==========================================================*/
+
+.solution-footer{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:18px;
+
+margin-top:auto;
+
+padding-top:28px;
+
+border-top:1px solid var(--border);
+
+}
+
+
+/*==========================================================
+CTA BUTTON GROUP
+==========================================================*/
+
+.solution-actions{
+
+display:flex;
+
+align-items:center;
+
+gap:14px;
+
+flex-wrap:wrap;
+
+}
+
+
+/*==========================================================
+PRIMARY CTA
+==========================================================*/
+
+.solution-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+padding:14px 26px;
+
+border-radius:14px;
+
+background:linear-gradient(
+135deg,
+#2563EB,
+#3B82F6);
+
+color:#fff;
+
+font-weight:600;
+
+font-size:.92rem;
+
+box-shadow:
+0 15px 35px rgba(37,99,235,.22);
+
+transition:all .35s ease;
+
+}
+
+.solution-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+0 25px 45px rgba(37,99,235,.30);
+
+}
+
+.solution-btn i{
+
+transition:.35s;
+
+}
+
+.solution-btn:hover i{
+
+transform:translateX(5px);
+
+}
+
+
+/*==========================================================
+OUTLINE BUTTON
+==========================================================*/
+
+.solution-btn-outline{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+padding:13px 24px;
+
+border-radius:14px;
+
+background:transparent;
+
+border:2px solid var(--accent);
+
+color:var(--accent);
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.solution-btn-outline:hover{
+
+background:var(--accent);
+
+color:#fff;
+
+transform:translateY(-4px);
+
+}
+
+
+/*==========================================================
+SHINE EFFECT
+==========================================================*/
+
+.solution-card{
+
+overflow:hidden;
+
+}
+
+.solution-card::after{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-130%;
+
+width:55%;
+
+height:100%;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.28),
+transparent);
+
+transform:skewX(-22deg);
+
+transition:.9s;
+
+pointer-events:none;
+
+}
+
+.solution-card:hover::after{
+
+left:150%;
+
+}
+
+
+/*==========================================================
+PREMIUM HOVER
+==========================================================*/
+
+.solution-card:hover{
+
+transform:translateY(-12px);
+
+border-color:#BFDBFE;
+
+box-shadow:
+0 35px 70px rgba(37,99,235,.15);
+
+}
+
+.solution-card:hover .solution-icon{
+
+transform:
+rotate(8deg)
+scale(1.08);
+
+background:
+linear-gradient(
+135deg,
+#2563EB,
+#3B82F6);
+
+color:#fff;
+
+}
+
+
+/*==========================================================
+IMAGE HOVER
+==========================================================*/
+
+.solution-image{
+
+overflow:hidden;
+
+border-radius:18px;
+
+margin-bottom:24px;
+
+}
+
+.solution-image img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+transition:transform .6s ease;
+
+}
+
+.solution-card:hover .solution-image img{
+
+transform:scale(1.08);
+
+}
+
+
+/*==========================================================
+FLOATING ICON
+==========================================================*/
+
+.solution-card:hover .solution-icon{
+
+animation:solutionFloat .8s ease;
+
+}
+
+@keyframes solutionFloat{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-8px) rotate(8deg);}
+100%{transform:translateY(0);}
+
+}
+
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .solution-footer{
+
+border-color:#334155;
+
+}
+
+body.dark-mode .solution-btn{
+
+box-shadow:
+0 18px 40px rgba(0,0,0,.35);
+
+}
+
+body.dark-mode .solution-btn-outline{
+
+border-color:#60A5FA;
+
+color:#60A5FA;
+
+}
+
+body.dark-mode .solution-btn-outline:hover{
+
+background:#2563EB;
+
+border-color:#2563EB;
+
+color:#fff;
+
+}
+
+
+/*==========================================================
+TABLET
+==========================================================*/
+
+@media(max-width:992px){
+
+.solution-footer{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.solution-actions{
+
+width:100%;
+
+}
+
+}
+
+
+/*==========================================================
+MOBILE
+==========================================================*/
+
+@media(max-width:768px){
+
+.solution-actions{
+
+flex-direction:column;
+
+align-items:stretch;
+
+width:100%;
+
+}
+
+.solution-btn,
+.solution-btn-outline{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+.solution-image img{
+
+height:190px;
+
+}
+
+}
+
+
+/*==========================================================
+SMALL MOBILE
+==========================================================*/
+
+@media(max-width:480px){
+
+.solution-btn,
+.solution-btn-outline{
+
+padding:13px 18px;
+
+font-size:.88rem;
+
+}
+
+.solution-image img{
+
+height:170px;
+
+}
+
+}
+
+
+/*==========================================================
+ACCESSIBILITY
+==========================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+.solution-card,
+.solution-card::after,
+.solution-btn,
+.solution-btn-outline,
+.solution-icon,
+.solution-image img{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+}
+
+}
+
+
+
+
+
+
+
+

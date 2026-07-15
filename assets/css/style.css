@@ -15261,7 +15261,2363 @@ background:#2563EB;
 color:#FFFFFF;
 
 }
+/*==========================================================
+PART 5B
+STATISTICS & KPI DASHBOARD
+SaXham Technologies Enterprise UI Framework
+Statistics • KPI Cards • Counter • Dashboard Layout
+==========================================================*/
 
+
+/*==========================================================
+STATISTICS SECTION
+==========================================================*/
+
+.statistics-section{
+
+    position:relative;
+
+    padding:120px 0;
+
+    background:
+    linear-gradient(
+    135deg,
+    #F8FAFC,
+    #EEF4FF);
+
+    overflow:hidden;
+
+}
+
+.statistics-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-220px;
+    right:-220px;
+
+    width:520px;
+    height:520px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(37,99,235,.08),
+    transparent 72%);
+
+}
+
+.statistics-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-250px;
+    left:-250px;
+
+    width:580px;
+    height:580px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(16,185,129,.08),
+    transparent 72%);
+
+}
+
+
+/*==========================================================
+SECTION HEADER
+==========================================================*/
+
+.statistics-header{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.statistics-header h2{
+
+    font-size:2.8rem;
+
+    font-family:"Poppins",sans-serif;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.statistics-header p{
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    color:var(--text-gray);
+
+}
+
+
+/*==========================================================
+KPI GRID
+==========================================================*/
+
+.kpi-dashboard{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+
+/*==========================================================
+KPI CARD
+==========================================================*/
+
+.kpi-card{
+
+    position:relative;
+
+    background:#ffffff;
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:38px 32px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    transition:all .4s cubic-bezier(.22,.61,.36,1);
+
+    box-shadow:
+    0 18px 40px rgba(15,23,42,.06);
+
+}
+
+.kpi-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#BFDBFE;
+
+    box-shadow:
+    0 35px 70px rgba(37,99,235,.15);
+
+}
+
+.kpi-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:5px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #2563EB,
+    #3B82F6,
+    #60A5FA);
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.35s;
+
+}
+
+.kpi-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==========================================================
+KPI ICON
+==========================================================*/
+
+.kpi-icon{
+
+    width:82px;
+    height:82px;
+
+    margin:0 auto 24px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #EFF6FF,
+    #DBEAFE);
+
+    color:#2563EB;
+
+    font-size:2rem;
+
+    transition:.35s;
+
+}
+
+.kpi-card:hover .kpi-icon{
+
+    background:
+    linear-gradient(
+    135deg,
+    #2563EB,
+    #3B82F6);
+
+    color:#ffffff;
+
+    transform:
+    rotate(8deg)
+    scale(1.08);
+
+}
+
+
+/*==========================================================
+GRADIENT COUNTER
+==========================================================*/
+
+.kpi-number{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    font-size:3.2rem;
+
+    font-family:"Poppins",sans-serif;
+
+    font-weight:800;
+
+    line-height:1;
+
+    background:
+    linear-gradient(
+    135deg,
+    #2563EB,
+    #60A5FA);
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.kpi-suffix{
+
+    font-size:1.3rem;
+
+    vertical-align:top;
+
+}
+
+
+/*==========================================================
+TEXT
+==========================================================*/
+
+.kpi-title{
+
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.kpi-description{
+
+    font-size:.92rem;
+
+    line-height:1.8;
+
+    color:var(--text-gray);
+
+}
+
+
+/*==========================================================
+DASHBOARD UTILITIES
+==========================================================*/
+
+.dashboard-row{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:30px;
+
+align-items:stretch;
+
+}
+
+.dashboard-full{
+
+grid-column:1/-1;
+
+}
+
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .statistics-section{
+
+background:#020617;
+
+}
+
+body.dark-mode .kpi-card{
+
+background:#0F172A;
+
+border-color:#334155;
+
+}
+
+body.dark-mode .kpi-title{
+
+color:#ffffff;
+
+}
+
+body.dark-mode .kpi-description{
+
+color:#CBD5E1;
+
+}
+
+
+/*==========================================================
+RESPONSIVE
+==========================================================*/
+
+@media(max-width:992px){
+
+.dashboard-row{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.kpi-dashboard{
+
+grid-template-columns:1fr;
+
+}
+
+.kpi-card{
+
+padding:30px;
+
+}
+
+.kpi-icon{
+
+width:72px;
+height:72px;
+
+font-size:1.8rem;
+
+}
+
+.kpi-number{
+
+font-size:2.7rem;
+
+}
+
+.statistics-header h2{
+
+font-size:2.2rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.statistics-section{
+
+padding:80px 0;
+
+}
+
+.kpi-card{
+
+padding:24px;
+
+border-radius:20px;
+
+}
+
+.kpi-icon{
+
+width:64px;
+height:64px;
+
+font-size:1.6rem;
+
+}
+
+.kpi-number{
+
+font-size:2.3rem;
+
+}
+
+.kpi-title{
+
+font-size:1rem;
+
+}
+
+}
+/*==========================================================
+PART 5C-1
+ENTERPRISE PROCESS FLOW
+Process Flow + Process Cards
+SaXham Technologies UI Framework
+==========================================================*/
+
+/*==========================================================
+PROCESS FLOW SECTION
+==========================================================*/
+
+.process-flow-section{
+    position:relative;
+    padding:110px 0;
+    background:var(--bg-light);
+    overflow:hidden;
+}
+
+.process-flow-section::before{
+    content:"";
+    position:absolute;
+    top:-180px;
+    right:-180px;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:
+    radial-gradient(circle,
+    rgba(37,99,235,.08),
+    transparent 70%);
+}
+
+.process-flow-section::after{
+    content:"";
+    position:absolute;
+    bottom:-220px;
+    left:-220px;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:
+    radial-gradient(circle,
+    rgba(16,185,129,.08),
+    transparent 70%);
+}
+
+/*==========================================================
+PROCESS FLOW CONTAINER
+==========================================================*/
+
+.process-flow{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:28px;
+
+    margin-top:70px;
+
+    position:relative;
+
+}
+
+/*==========================================================
+PROCESS CARD
+==========================================================*/
+
+.process-card{
+
+    position:relative;
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:34px 28px;
+
+    background:#ffffff;
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    transition:all .4s cubic-bezier(.22,.61,.36,1);
+
+    box-shadow:
+    0 18px 40px rgba(15,23,42,.06);
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#BFDBFE;
+
+    box-shadow:
+    0 35px 70px rgba(37,99,235,.15);
+
+}
+
+/*==========================================================
+STEP NUMBER
+==========================================================*/
+
+.process-step{
+
+    position:absolute;
+
+    top:-18px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:#ffffff;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    box-shadow:
+    0 10px 25px rgba(37,99,235,.25);
+
+}
+
+/*==========================================================
+PROCESS ICON
+==========================================================*/
+
+.process-icon{
+
+    width:82px;
+    height:82px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:16px 0 24px;
+
+    border-radius:22px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #EFF6FF,
+    #DBEAFE);
+
+    color:#2563EB;
+
+    font-size:2rem;
+
+    transition:.35s;
+
+}
+
+.process-card:hover .process-icon{
+
+    background:
+    linear-gradient(
+    135deg,
+    #2563EB,
+    #3B82F6);
+
+    color:#ffffff;
+
+    transform:
+    rotate(8deg)
+    scale(1.08);
+
+}
+
+/*==========================================================
+TITLE
+==========================================================*/
+
+.process-card h3{
+
+    font-size:1.3rem;
+
+    font-family:"Poppins",sans-serif;
+
+    color:var(--primary);
+
+    margin-bottom:14px;
+
+}
+
+/*==========================================================
+DESCRIPTION
+==========================================================*/
+
+.process-card p{
+
+    color:var(--text-gray);
+
+    font-size:.94rem;
+
+    line-height:1.8;
+
+    flex:1;
+
+}
+
+/*==========================================================
+PROCESS BADGE
+==========================================================*/
+
+.process-badge{
+
+    margin-top:22px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+}
+
+/*==========================================================
+TOP BORDER
+==========================================================*/
+
+.process-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:5px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #2563EB,
+    #3B82F6,
+    #60A5FA);
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.35s;
+
+}
+
+.process-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+/*==========================================================
+PROCESS UTILITIES
+==========================================================*/
+
+.process-center{
+
+justify-content:center;
+
+}
+
+.process-start{
+
+justify-content:flex-start;
+
+}
+
+.process-end{
+
+justify-content:flex-end;
+
+}
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .process-flow-section{
+
+background:#020617;
+
+}
+
+body.dark-mode .process-card{
+
+background:#0F172A;
+
+border-color:#334155;
+
+}
+
+body.dark-mode .process-card h3{
+
+color:#ffffff;
+
+}
+
+body.dark-mode .process-card p{
+
+color:#CBD5E1;
+
+}
+
+body.dark-mode .process-badge{
+
+background:#1E3A8A;
+
+color:#BFDBFE;
+
+}
+
+/*==========================================================
+RESPONSIVE
+==========================================================*/
+
+@media(max-width:992px){
+
+.process-flow{
+
+flex-direction:column;
+
+}
+
+.process-card{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.process-card{
+
+padding:28px;
+
+}
+
+.process-icon{
+
+width:70px;
+height:70px;
+
+font-size:1.7rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.process-card{
+
+padding:22px;
+
+border-radius:20px;
+
+}
+
+.process-icon{
+
+width:62px;
+height:62px;
+
+font-size:1.5rem;
+
+}
+
+.process-card h3{
+
+font-size:1.15rem;
+
+}
+
+}
+/*==========================================================
+PART 5C-2
+FLOW ARROWS • ARCHITECTURE FLOW
+RESPONSIVE • DARK MODE • ACCESSIBILITY
+SaXham Technologies Enterprise UI Framework
+==========================================================*/
+
+
+/*==========================================================
+FLOW CONNECTOR
+==========================================================*/
+
+.flow-arrow{
+
+position:relative;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:70px;
+
+min-width:70px;
+
+height:100%;
+
+}
+
+.flow-arrow::before{
+
+content:"";
+
+width:100%;
+
+height:4px;
+
+border-radius:50px;
+
+background:
+linear-gradient(
+90deg,
+#2563EB,
+#60A5FA);
+
+}
+
+.flow-arrow::after{
+
+content:"➜";
+
+position:absolute;
+
+right:-6px;
+
+font-size:1.35rem;
+
+font-weight:700;
+
+color:#2563EB;
+
+}
+
+
+/*==========================================================
+ARCHITECTURE FLOW
+==========================================================*/
+
+.architecture-flow{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:22px;
+
+flex-wrap:nowrap;
+
+margin-top:60px;
+
+position:relative;
+
+}
+
+.architecture-step{
+
+position:relative;
+
+flex:1;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+gap:18px;
+
+}
+
+.architecture-node{
+
+width:90px;
+height:90px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:24px;
+
+background:
+linear-gradient(
+135deg,
+#2563EB,
+#3B82F6);
+
+color:#fff;
+
+font-size:2rem;
+
+box-shadow:
+0 18px 40px rgba(37,99,235,.25);
+
+transition:all .35s ease;
+
+}
+
+.architecture-step:hover .architecture-node{
+
+transform:
+translateY(-8px)
+rotate(8deg)
+scale(1.05);
+
+box-shadow:
+0 28px 55px rgba(37,99,235,.35);
+
+}
+
+.architecture-step h4{
+
+font-size:1rem;
+
+font-weight:700;
+
+color:var(--primary);
+
+}
+
+.architecture-step p{
+
+font-size:.85rem;
+
+line-height:1.7;
+
+color:var(--text-gray);
+
+}
+
+
+/*==========================================================
+VERTICAL FLOW
+==========================================================*/
+
+.flow-vertical{
+
+display:flex;
+
+flex-direction:column;
+
+gap:28px;
+
+}
+
+.flow-vertical .flow-arrow{
+
+width:4px;
+
+height:55px;
+
+margin:auto;
+
+}
+
+.flow-vertical .flow-arrow::before{
+
+width:4px;
+
+height:100%;
+
+}
+
+.flow-vertical .flow-arrow::after{
+
+content:"▼";
+
+right:auto;
+
+top:auto;
+
+bottom:-12px;
+
+}
+
+
+/*==========================================================
+HOVER EFFECTS
+==========================================================*/
+
+.architecture-step{
+
+transition:.35s;
+
+}
+
+.architecture-step:hover{
+
+transform:translateY(-6px);
+
+}
+
+.architecture-node i{
+
+transition:.35s;
+
+}
+
+.architecture-step:hover .architecture-node i{
+
+transform:scale(1.15);
+
+}
+
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .architecture-step h4{
+
+color:#ffffff;
+
+}
+
+body.dark-mode .architecture-step p{
+
+color:#CBD5E1;
+
+}
+
+body.dark-mode .flow-arrow::before{
+
+background:
+linear-gradient(
+90deg,
+#60A5FA,
+#3B82F6);
+
+}
+
+body.dark-mode .flow-arrow::after{
+
+color:#60A5FA;
+
+}
+
+
+/*==========================================================
+TABLET
+==========================================================*/
+
+@media(max-width:992px){
+
+.architecture-flow{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:30px;
+
+}
+
+.architecture-step{
+
+min-width:220px;
+
+}
+
+}
+
+
+/*==========================================================
+MOBILE
+==========================================================*/
+
+@media(max-width:768px){
+
+.architecture-flow{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.flow-arrow{
+
+width:4px;
+
+height:60px;
+
+}
+
+.flow-arrow::before{
+
+width:4px;
+
+height:100%;
+
+}
+
+.flow-arrow::after{
+
+content:"▼";
+
+right:auto;
+
+top:auto;
+
+bottom:-12px;
+
+}
+
+.architecture-node{
+
+width:72px;
+height:72px;
+
+font-size:1.7rem;
+
+}
+
+.architecture-step{
+
+width:100%;
+
+max-width:340px;
+
+}
+
+}
+
+
+/*==========================================================
+SMALL MOBILE
+==========================================================*/
+
+@media(max-width:480px){
+
+.architecture-node{
+
+width:62px;
+height:62px;
+
+font-size:1.5rem;
+
+border-radius:18px;
+
+}
+
+.architecture-step h4{
+
+font-size:.95rem;
+
+}
+
+.architecture-step p{
+
+font-size:.82rem;
+
+}
+
+}
+
+
+/*==========================================================
+ACCESSIBILITY
+==========================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+.architecture-step,
+.architecture-node,
+.flow-arrow,
+.flow-arrow::before,
+.flow-arrow::after{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+}
+
+}
+
+.architecture-step:focus-within{
+
+outline:3px solid #2563EB;
+
+outline-offset:6px;
+
+border-radius:20px;
+
+}
+/*==========================================================
+PART 5D-1
+ENTERPRISE FAQ ACCORDION
+FAQ Container • Accordion • Expand/Collapse • Icons
+SaXham Technologies UI Framework
+==========================================================*/
+
+/*==========================================================
+FAQ SECTION
+==========================================================*/
+
+.faq-section{
+    position:relative;
+    padding:110px 0;
+    background:var(--bg-light);
+    overflow:hidden;
+}
+
+.faq-section::before{
+    content:"";
+    position:absolute;
+    top:-180px;
+    right:-180px;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:radial-gradient(circle,
+    rgba(37,99,235,.08),
+    transparent 70%);
+}
+
+.faq-section::after{
+    content:"";
+    position:absolute;
+    bottom:-220px;
+    left:-220px;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:radial-gradient(circle,
+    rgba(16,185,129,.08),
+    transparent 70%);
+}
+
+/*==========================================================
+FAQ CONTAINER
+==========================================================*/
+
+.faq-container{
+    max-width:900px;
+    margin:70px auto 0;
+}
+
+/*==========================================================
+FAQ ITEM
+==========================================================*/
+
+.faq-item{
+
+    background:#ffffff;
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+    box-shadow:
+    0 12px 30px rgba(15,23,42,.05);
+
+}
+
+.faq-item:hover{
+
+    border-color:#BFDBFE;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 22px 45px rgba(37,99,235,.10);
+
+}
+
+/*==========================================================
+ACTIVE ITEM
+==========================================================*/
+
+.faq-item.active{
+
+    border-color:#2563EB;
+
+    box-shadow:
+    0 25px 55px rgba(37,99,235,.14);
+
+}
+
+/*==========================================================
+FAQ BUTTON
+==========================================================*/
+
+.faq-question{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:24px 30px;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    text-align:left;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:1.08rem;
+
+    font-weight:600;
+
+    color:var(--primary);
+
+    transition:.3s;
+
+}
+
+.faq-question:hover{
+
+    color:#2563EB;
+
+}
+
+/*==========================================================
+ICON
+==========================================================*/
+
+.faq-icon{
+
+    width:42px;
+    height:42px;
+
+    min-width:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:1rem;
+
+    transition:.35s;
+
+}
+
+/*==========================================================
+PLUS / MINUS
+==========================================================*/
+
+.faq-item.active .faq-icon{
+
+    background:#2563EB;
+
+    color:#ffffff;
+
+    transform:rotate(180deg);
+
+}
+
+.faq-icon i{
+
+    transition:.35s;
+
+}
+
+.faq-item.active .faq-icon i{
+
+    transform:rotate(45deg);
+
+}
+
+/*==========================================================
+FAQ CONTENT
+==========================================================*/
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    transition:
+    max-height .45s ease,
+    opacity .35s ease,
+    padding .35s ease;
+
+    padding:0 30px;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:500px;
+
+    opacity:1;
+
+    padding:0 30px 28px;
+
+}
+
+/*==========================================================
+ANSWER TEXT
+==========================================================*/
+
+.faq-answer p{
+
+    color:var(--text-gray);
+
+    font-size:.95rem;
+
+    line-height:1.9;
+
+}
+
+.faq-answer ul{
+
+    margin-top:16px;
+
+    padding-left:22px;
+
+}
+
+.faq-answer li{
+
+    margin-bottom:10px;
+
+    color:var(--text-gray);
+
+    line-height:1.8;
+
+}
+
+/*==========================================================
+LEFT ACCENT
+==========================================================*/
+
+.faq-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:5px;
+    height:100%;
+
+    background:
+    linear-gradient(
+    180deg,
+    #2563EB,
+    #60A5FA);
+
+    transform:scaleY(0);
+
+    transform-origin:top;
+
+    transition:.35s;
+
+}
+
+.faq-item{
+
+    position:relative;
+
+}
+
+.faq-item.active::before{
+
+    transform:scaleY(1);
+
+}
+/*==========================================================
+PART 5D-2
+FAQ ACCORDION
+Hover Effects • Dark Mode • Responsive • Accessibility
+SaXham Technologies Enterprise UI Framework
+==========================================================*/
+
+
+/*==========================================================
+HOVER EFFECTS
+==========================================================*/
+
+.faq-item{
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease,
+        background .35s ease;
+}
+
+.faq-item:hover{
+    transform:translateY(-6px);
+    border-color:#93C5FD;
+    box-shadow:
+        0 25px 55px rgba(37,99,235,.12);
+}
+
+.faq-question{
+    transition:
+        color .3s ease,
+        background .3s ease,
+        padding-left .3s ease;
+}
+
+.faq-question:hover{
+    color:#2563EB;
+    padding-left:34px;
+}
+
+.faq-question:hover .faq-icon{
+    transform:rotate(90deg) scale(1.08);
+}
+
+.faq-icon{
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        color .35s ease,
+        box-shadow .35s ease;
+}
+
+
+/*==========================================================
+ACTIVE STATE
+==========================================================*/
+
+.faq-item.active{
+    border-color:#2563EB;
+    box-shadow:
+        0 30px 65px rgba(37,99,235,.16);
+}
+
+.faq-item.active .faq-question{
+    color:#2563EB;
+}
+
+.faq-item.active .faq-icon{
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #3B82F6);
+    color:#ffffff;
+    box-shadow:
+        0 12px 28px rgba(37,99,235,.28);
+}
+
+.faq-item.active .faq-icon i{
+    transform:rotate(45deg);
+}
+
+
+/*==========================================================
+CONTENT ANIMATION
+==========================================================*/
+
+.faq-answer{
+    transform:translateY(-8px);
+    transition:
+        max-height .45s ease,
+        opacity .35s ease,
+        padding .35s ease,
+        transform .35s ease;
+}
+
+.faq-item.active .faq-answer{
+    transform:translateY(0);
+}
+
+
+/*==========================================================
+SHINE EFFECT
+==========================================================*/
+
+.faq-item{
+    position:relative;
+    overflow:hidden;
+}
+
+.faq-item::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-130%;
+
+    width:50%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.22),
+            transparent);
+
+    transform:skewX(-22deg);
+
+    transition:.9s;
+
+    pointer-events:none;
+
+}
+
+.faq-item:hover::after{
+    left:150%;
+}
+
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .faq-section{
+    background:#020617;
+}
+
+body.dark-mode .faq-item{
+    background:#0F172A;
+    border-color:#334155;
+}
+
+body.dark-mode .faq-question{
+    color:#F8FAFC;
+}
+
+body.dark-mode .faq-question:hover,
+body.dark-mode .faq-item.active .faq-question{
+    color:#60A5FA;
+}
+
+body.dark-mode .faq-answer p,
+body.dark-mode .faq-answer li{
+    color:#CBD5E1;
+}
+
+body.dark-mode .faq-icon{
+    background:#1E293B;
+    color:#60A5FA;
+}
+
+body.dark-mode .faq-item.active .faq-icon{
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #3B82F6);
+    color:#ffffff;
+}
+
+
+/*==========================================================
+TABLET
+==========================================================*/
+
+@media (max-width:992px){
+
+    .faq-container{
+        max-width:100%;
+    }
+
+    .faq-question{
+        padding:22px 24px;
+        font-size:1rem;
+    }
+
+}
+
+
+/*==========================================================
+MOBILE
+==========================================================*/
+
+@media (max-width:768px){
+
+    .faq-question{
+        padding:20px;
+        font-size:.96rem;
+        gap:16px;
+    }
+
+    .faq-question:hover{
+        padding-left:24px;
+    }
+
+    .faq-answer{
+        padding:0 20px;
+    }
+
+    .faq-item.active .faq-answer{
+        padding:0 20px 22px;
+    }
+
+    .faq-icon{
+        width:38px;
+        height:38px;
+        min-width:38px;
+        font-size:.9rem;
+    }
+
+}
+
+
+/*==========================================================
+SMALL MOBILE
+==========================================================*/
+
+@media (max-width:480px){
+
+    .faq-question{
+        padding:18px;
+        font-size:.92rem;
+    }
+
+    .faq-answer p,
+    .faq-answer li{
+        font-size:.88rem;
+        line-height:1.8;
+    }
+
+}
+
+
+/*==========================================================
+KEYBOARD ACCESSIBILITY
+==========================================================*/
+
+.faq-question:focus-visible{
+
+    outline:3px solid #2563EB;
+
+    outline-offset:4px;
+
+    border-radius:12px;
+
+}
+
+.faq-item:focus-within{
+
+    box-shadow:
+        0 0 0 3px rgba(37,99,235,.18),
+        0 20px 45px rgba(37,99,235,.12);
+
+}
+
+
+/*==========================================================
+REDUCED MOTION
+==========================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+    .faq-item,
+    .faq-question,
+    .faq-answer,
+    .faq-icon,
+    .faq-item::after{
+
+        animation:none !important;
+        transition:none !important;
+        transform:none !important;
+
+    }
+
+}
+/*==========================================================
+PART 5E
+TIMELINE + FAQ
+RESPONSIVE UTILITIES • DARK MODE • ACCESSIBILITY
+SaXham Technologies Enterprise UI Framework
+==========================================================*/
+
+
+/*==========================================================
+TIMELINE RESPONSIVE
+==========================================================*/
+
+@media (max-width:1200px){
+
+.timeline-wrapper,
+.process-timeline,
+.architecture-flow{
+
+gap:24px;
+
+}
+
+}
+
+@media (max-width:992px){
+
+.timeline-wrapper,
+.process-timeline{
+
+flex-direction:column;
+
+align-items:stretch;
+
+}
+
+.timeline-wrapper::before,
+.process-timeline::before{
+
+display:none;
+
+}
+
+.timeline-item{
+
+width:100%;
+
+}
+
+.timeline-card{
+
+margin-top:20px;
+
+}
+
+}
+
+
+/*==========================================================
+MOBILE TIMELINE
+==========================================================*/
+
+@media (max-width:768px){
+
+.timeline-item{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.timeline-icon{
+
+width:68px;
+height:68px;
+
+font-size:1.6rem;
+
+}
+
+.timeline-card{
+
+padding:22px;
+
+border-radius:18px;
+
+width:100%;
+
+}
+
+.timeline-step{
+
+width:34px;
+height:34px;
+
+font-size:.75rem;
+
+}
+
+.process-card{
+
+padding:24px;
+
+}
+
+.architecture-flow{
+
+flex-direction:column;
+
+gap:28px;
+
+}
+
+.flow-arrow{
+
+width:4px;
+
+height:55px;
+
+}
+
+.flow-arrow::before{
+
+width:4px;
+
+height:100%;
+
+}
+
+.flow-arrow::after{
+
+content:"▼";
+
+right:auto;
+
+bottom:-14px;
+
+top:auto;
+
+}
+
+}
+
+
+/*==========================================================
+SMALL MOBILE
+==========================================================*/
+
+@media (max-width:480px){
+
+.timeline-card,
+.process-card,
+.faq-item{
+
+border-radius:16px;
+
+}
+
+.timeline-icon,
+.process-icon{
+
+width:58px;
+height:58px;
+
+font-size:1.4rem;
+
+}
+
+.timeline-card h3,
+.process-card h3{
+
+font-size:1.05rem;
+
+}
+
+.timeline-card p,
+.process-card p,
+.faq-answer p{
+
+font-size:.88rem;
+
+line-height:1.75;
+
+}
+
+}
+
+
+/*==========================================================
+FAQ RESPONSIVE
+==========================================================*/
+
+.faq-container{
+
+width:100%;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+@media (max-width:768px){
+
+.faq-question{
+
+padding:18px 20px;
+
+font-size:.95rem;
+
+}
+
+.faq-answer{
+
+padding:0 20px;
+
+}
+
+.faq-item.active .faq-answer{
+
+padding:0 20px 22px;
+
+}
+
+}
+
+
+/*==========================================================
+UTILITY CLASSES
+==========================================================*/
+
+.hidden{
+
+display:none !important;
+
+}
+
+.visible{
+
+display:block !important;
+
+}
+
+.flex-center{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.flex-between{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
+.text-center{
+
+text-align:center;
+
+}
+
+.w-full{
+
+width:100%;
+
+}
+
+.mt-auto{
+
+margin-top:auto;
+
+}
+
+.mb-0{
+
+margin-bottom:0 !important;
+
+}
+
+.rounded-xl{
+
+border-radius:24px;
+
+}
+
+.shadow-lg{
+
+box-shadow:
+0 20px 45px rgba(15,23,42,.10);
+
+}
+
+
+/*==========================================================
+COMMON HOVER EFFECTS
+==========================================================*/
+
+.hover-lift{
+
+transition:.35s ease;
+
+}
+
+.hover-lift:hover{
+
+transform:translateY(-8px);
+
+}
+
+.hover-scale{
+
+transition:.35s ease;
+
+}
+
+.hover-scale:hover{
+
+transform:scale(1.03);
+
+}
+
+.hover-shadow:hover{
+
+box-shadow:
+0 30px 60px rgba(37,99,235,.16);
+
+}
+
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .timeline-card,
+body.dark-mode .process-card,
+body.dark-mode .faq-item{
+
+background:#0F172A;
+
+border-color:#334155;
+
+}
+
+body.dark-mode .timeline-card h3,
+body.dark-mode .process-card h3,
+body.dark-mode .faq-question{
+
+color:#FFFFFF;
+
+}
+
+body.dark-mode .timeline-card p,
+body.dark-mode .process-card p,
+body.dark-mode .faq-answer p,
+body.dark-mode .faq-answer li{
+
+color:#CBD5E1;
+
+}
+
+body.dark-mode .shadow-lg{
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.35);
+
+}
+
+
+/*==========================================================
+KEYBOARD ACCESSIBILITY
+==========================================================*/
+
+.timeline-card:focus-within,
+.process-card:focus-within,
+.faq-item:focus-within{
+
+outline:3px solid #2563EB;
+
+outline-offset:4px;
+
+}
+
+:focus-visible{
+
+outline:3px solid #2563EB;
+
+outline-offset:3px;
+
+}
+
+
+/*==========================================================
+REDUCED MOTION
+==========================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+.timeline-card,
+.process-card,
+.faq-item,
+.timeline-icon,
+.process-icon,
+.flow-arrow,
+.hover-lift,
+.hover-scale{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+}
+
+}
+
+
+/*==========================================================
+PRINT OPTIMIZATION
+==========================================================*/
+
+@media print{
+
+.timeline-wrapper,
+.process-timeline,
+.architecture-flow,
+.faq-container{
+
+break-inside:avoid;
+
+}
+
+.float-wa,
+.back-to-top,
+.mobile-toggle{
+
+display:none !important;
+
+}
+
+body{
+
+background:#ffffff !important;
+
+color:#000000 !important;
+
+}
+
+}
 
 
 

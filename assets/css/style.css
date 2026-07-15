@@ -18463,7 +18463,1127 @@ transform:none !important;
 }
 
 }
+/*==========================================================
+PART 6B-1
+ENTERPRISE CTA SECTION
+Gradient CTA • Glass Panel • Background Shapes
+SaXham Technologies UI Framework
+==========================================================*/
 
+
+/*==========================================================
+CTA SECTION
+==========================================================*/
+
+.cta-section{
+    position:relative;
+    padding:120px 0;
+    overflow:hidden;
+    background:
+        linear-gradient(
+        135deg,
+        #0A1931 0%,
+        #123A73 50%,
+        #2563EB 100%);
+}
+
+
+/*==========================================================
+BACKGROUND SHAPES
+==========================================================*/
+
+.cta-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+    height:520px;
+
+    top:-220px;
+    left:-180px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(255,255,255,.12),
+    transparent 72%);
+
+}
+
+.cta-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:460px;
+    height:460px;
+
+    bottom:-200px;
+    right:-150px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(96,165,250,.20),
+    transparent 72%);
+
+}
+
+
+/*==========================================================
+GLASS PANEL
+==========================================================*/
+
+.cta-container{
+
+    position:relative;
+
+    max-width:1180px;
+
+    margin:auto;
+
+    padding:70px;
+
+    text-align:center;
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 30px 70px rgba(0,0,0,.18);
+
+}
+
+
+/*==========================================================
+INNER GLOW
+==========================================================*/
+
+.cta-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(255,255,255,.12),
+    transparent 55%);
+
+    pointer-events:none;
+
+}
+
+
+/*==========================================================
+BADGE
+==========================================================*/
+
+.cta-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 22px;
+
+    margin-bottom:24px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.15);
+
+    color:#ffffff;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+/*==========================================================
+HEADING
+==========================================================*/
+
+.cta-title{
+
+    max-width:820px;
+
+    margin:0 auto 22px;
+
+    font-size:3rem;
+
+    line-height:1.2;
+
+    font-family:"Poppins",sans-serif;
+
+    font-weight:800;
+
+    color:#ffffff;
+
+}
+
+
+/*==========================================================
+DESCRIPTION
+==========================================================*/
+
+.cta-description{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.88);
+
+}
+
+
+/*==========================================================
+DECORATIVE BLOBS
+==========================================================*/
+
+.cta-blob{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(55px);
+
+    opacity:.35;
+
+    pointer-events:none;
+
+}
+
+.cta-blob-1{
+
+    width:220px;
+    height:220px;
+
+    top:12%;
+
+    left:8%;
+
+    background:#3B82F6;
+
+}
+
+.cta-blob-2{
+
+    width:180px;
+    height:180px;
+
+    bottom:10%;
+
+    right:10%;
+
+    background:#60A5FA;
+
+}
+
+
+/*==========================================================
+SECTION SPACING
+==========================================================*/
+
+.cta-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/*==========================================================
+RESPONSIVE
+==========================================================*/
+
+@media(max-width:992px){
+
+.cta-container{
+
+padding:55px 40px;
+
+}
+
+.cta-title{
+
+font-size:2.5rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.cta-section{
+
+padding:90px 0;
+
+}
+
+.cta-container{
+
+padding:40px 28px;
+
+border-radius:24px;
+
+}
+
+.cta-title{
+
+font-size:2rem;
+
+}
+
+.cta-description{
+
+font-size:1rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.cta-container{
+
+padding:30px 22px;
+
+}
+
+.cta-title{
+
+font-size:1.65rem;
+
+line-height:1.35;
+
+}
+
+.cta-description{
+
+font-size:.92rem;
+
+}
+
+.cta-badge{
+
+font-size:.75rem;
+
+padding:8px 16px;
+
+}
+
+}
+/*==========================================================
+PART 6B-2
+ENTERPRISE CTA CARDS
+CTA Buttons • Hover • Shine • Dark Mode • Responsive
+SaXham Technologies UI Framework
+==========================================================*/
+
+
+/*==========================================================
+CTA GRID
+==========================================================*/
+
+.cta-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+
+/*==========================================================
+CTA CARD
+==========================================================*/
+
+.cta-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:36px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    transition:all .4s ease;
+
+    text-align:center;
+
+}
+
+.cta-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 35px 70px rgba(0,0,0,.18);
+
+}
+
+
+/*==========================================================
+CTA ICON
+==========================================================*/
+
+.cta-card-icon{
+
+    width:78px;
+    height:78px;
+
+    margin:0 auto 24px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.16);
+
+    color:#fff;
+
+    font-size:2rem;
+
+    transition:.35s;
+
+}
+
+.cta-card:hover .cta-card-icon{
+
+    transform:
+    rotate(8deg)
+    scale(1.08);
+
+}
+
+
+/*==========================================================
+TEXT
+==========================================================*/
+
+.cta-card h3{
+
+    color:#fff;
+
+    font-size:1.45rem;
+
+    margin-bottom:14px;
+
+}
+
+.cta-card p{
+
+    color:rgba(255,255,255,.85);
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+}
+
+
+/*==========================================================
+CTA BUTTONS
+==========================================================*/
+
+.cta-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 26px;
+
+    border-radius:14px;
+
+    background:#ffffff;
+
+    color:#2563EB;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.cta-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 20px 40px rgba(255,255,255,.20);
+
+}
+
+.cta-btn-outline{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 26px;
+
+    border-radius:14px;
+
+    border:2px solid rgba(255,255,255,.40);
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.cta-btn-outline:hover{
+
+    background:#fff;
+
+    color:#2563EB;
+
+}
+
+
+/*==========================================================
+SHINE EFFECT
+==========================================================*/
+
+.cta-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-140%;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+    linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.25),
+    transparent);
+
+    transform:skewX(-25deg);
+
+    transition:.9s;
+
+}
+
+.cta-card:hover::after{
+
+    left:160%;
+
+}
+
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .cta-section{
+
+background:
+linear-gradient(
+135deg,
+#020617,
+#0F172A,
+#1E3A8A);
+
+}
+
+body.dark-mode .cta-card{
+
+background:rgba(15,23,42,.65);
+
+border-color:#334155;
+
+}
+
+body.dark-mode .cta-btn{
+
+background:#2563EB;
+
+color:#ffffff;
+
+}
+
+body.dark-mode .cta-btn:hover{
+
+background:#3B82F6;
+
+}
+
+body.dark-mode .cta-btn-outline{
+
+border-color:#60A5FA;
+
+}
+
+
+/*==========================================================
+TABLET
+==========================================================*/
+
+@media(max-width:992px){
+
+.cta-grid{
+
+gap:24px;
+
+}
+
+}
+
+
+/*==========================================================
+MOBILE
+==========================================================*/
+
+@media(max-width:768px){
+
+.cta-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.cta-card{
+
+padding:28px;
+
+}
+
+.cta-actions{
+
+flex-direction:column;
+
+}
+
+.cta-btn,
+.cta-btn-outline{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}
+
+
+/*==========================================================
+SMALL MOBILE
+==========================================================*/
+
+@media(max-width:480px){
+
+.cta-card{
+
+padding:22px;
+
+border-radius:18px;
+
+}
+
+.cta-card-icon{
+
+width:64px;
+height:64px;
+
+font-size:1.6rem;
+
+}
+
+.cta-card h3{
+
+font-size:1.2rem;
+
+}
+
+}
+
+
+/*==========================================================
+ACCESSIBILITY
+==========================================================*/
+
+.cta-btn:focus-visible,
+.cta-btn-outline:focus-visible{
+
+outline:3px solid #ffffff;
+
+outline-offset:4px;
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+.cta-card,
+.cta-card::after,
+.cta-btn,
+.cta-btn-outline,
+.cta-card-icon{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+}
+
+}
+/*==========================================================
+PART 6C-1
+ENTERPRISE FOOTER
+Footer Layout • Logo • Widgets
+SaXham Technologies UI Framework
+==========================================================*/
+
+
+/*==========================================================
+FOOTER
+==========================================================*/
+
+.footer{
+
+    position:relative;
+
+    background:linear-gradient(
+    135deg,
+    #07162F,
+    #0A1931,
+    #123A73);
+
+    color:#ffffff;
+
+    padding:90px 0 0;
+
+    overflow:hidden;
+
+}
+
+.footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-220px;
+    right:-220px;
+
+    width:520px;
+    height:520px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(255,255,255,.06),
+    transparent 72%);
+
+}
+
+.footer::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+    left:-220px;
+
+    width:460px;
+    height:460px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(96,165,250,.10),
+    transparent 72%);
+
+}
+
+
+/*==========================================================
+FOOTER CONTAINER
+==========================================================*/
+
+.footer-container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/*==========================================================
+FOOTER GRID
+==========================================================*/
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    2fr
+    1fr
+    1fr
+    1.3fr;
+
+    gap:50px;
+
+    padding-bottom:70px;
+
+}
+
+
+/*==========================================================
+FOOTER COLUMN
+==========================================================*/
+
+.footer-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/*==========================================================
+COMPANY BRAND
+==========================================================*/
+
+.footer-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:22px;
+
+}
+
+.footer-logo{
+
+    width:62px;
+    height:62px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:#ffffff;
+
+    overflow:hidden;
+
+    flex-shrink:0;
+
+}
+
+.footer-logo img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+
+}
+
+.footer-brand-text h3{
+
+    color:#ffffff;
+
+    font-size:1.5rem;
+
+    margin-bottom:4px;
+
+}
+
+.footer-brand-text span{
+
+    font-size:.88rem;
+
+    color:rgba(255,255,255,.70);
+
+}
+
+
+/*==========================================================
+ABOUT
+==========================================================*/
+
+.footer-about{
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.9;
+
+    font-size:.95rem;
+
+    margin-bottom:28px;
+
+}
+
+
+/*==========================================================
+FOOTER WIDGET
+==========================================================*/
+
+.footer-widget{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+/*==========================================================
+WIDGET TITLE
+==========================================================*/
+
+.footer-widget-title{
+
+    position:relative;
+
+    color:#ffffff;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+    padding-bottom:14px;
+
+}
+
+.footer-widget-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:55px;
+
+    height:3px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+    90deg,
+    #3B82F6,
+    #60A5FA);
+
+}
+
+
+/*==========================================================
+WIDGET CONTENT
+==========================================================*/
+
+.footer-widget p{
+
+    color:rgba(255,255,255,.75);
+
+    line-height:1.8;
+
+    font-size:.92rem;
+
+}
+
+
+/*==========================================================
+SPACING UTILITIES
+==========================================================*/
+
+.footer-gap-sm{
+
+    gap:12px;
+
+}
+
+.footer-gap-md{
+
+    gap:18px;
+
+}
+
+.footer-gap-lg{
+
+    gap:26px;
+
+}
+
+
+/*==========================================================
+RESPONSIVE
+==========================================================*/
+
+@media(max-width:992px){
+
+.footer-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer{
+
+padding:70px 0 0;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+gap:35px;
+
+padding-bottom:50px;
+
+}
+
+.footer-brand{
+
+justify-content:center;
+
+text-align:center;
+
+flex-direction:column;
+
+}
+
+.footer-column{
+
+text-align:center;
+
+}
+
+.footer-widget-title::after{
+
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+}
+
+@media(max-width:480px){
+
+.footer-logo{
+
+width:54px;
+height:54px;
+
+}
+
+.footer-brand-text h3{
+
+font-size:1.3rem;
+
+}
+
+.footer-about{
+
+font-size:.90rem;
+
+}
+
+}
 
 
 

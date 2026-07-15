@@ -17618,6 +17618,853 @@ color:#000000 !important;
 }
 
 }
+/*==========================================================
+PART 6A-1
+ENTERPRISE FORM SYSTEM
+Form Layout • Input Groups • Floating Labels
+SaXham Technologies UI Framework
+==========================================================*/
+
+
+/*==========================================================
+FORM SECTION
+==========================================================*/
+
+.form-section{
+
+    position:relative;
+
+    padding:110px 0;
+
+    background:var(--bg-light);
+
+    overflow:hidden;
+
+}
+
+.form-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+    right:-180px;
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(37,99,235,.08),
+    transparent 70%);
+
+}
+
+.form-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+    left:-220px;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(16,185,129,.08),
+    transparent 70%);
+
+}
+
+
+/*==========================================================
+FORM CONTAINER
+==========================================================*/
+
+.form-container{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:45px;
+
+    background:#ffffff;
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    box-shadow:
+    0 25px 60px rgba(15,23,42,.08);
+
+}
+
+
+/*==========================================================
+FORM GRID
+==========================================================*/
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:26px;
+
+}
+
+.form-full{
+
+    grid-column:1 / -1;
+
+}
+
+
+/*==========================================================
+FORM GROUP
+==========================================================*/
+
+.form-group{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/*==========================================================
+INPUT GROUP
+==========================================================*/
+
+.input-group{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+/*==========================================================
+INPUT ICON
+==========================================================*/
+
+.input-icon{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:1rem;
+
+    color:#64748B;
+
+    pointer-events:none;
+
+    transition:.3s;
+
+}
+
+
+/*==========================================================
+INPUT FIELD
+==========================================================*/
+
+.form-control{
+
+    width:100%;
+
+    height:58px;
+
+    padding:18px 18px 18px 52px;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    background:#ffffff;
+
+    color:var(--text-main);
+
+    font-size:.95rem;
+
+    transition:.35s;
+
+}
+
+.form-control:focus{
+
+    outline:none;
+
+    border-color:#2563EB;
+
+    box-shadow:
+    0 0 0 4px rgba(37,99,235,.10);
+
+}
+
+.form-control:focus + label,
+
+.form-control:not(:placeholder-shown)+label{
+
+    top:10px;
+
+    font-size:.74rem;
+
+    color:#2563EB;
+
+}
+
+
+/*==========================================================
+FLOATING LABEL
+==========================================================*/
+
+.input-group label{
+
+    position:absolute;
+
+    left:52px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    background:#ffffff;
+
+    padding:0 6px;
+
+    color:#64748B;
+
+    font-size:.92rem;
+
+    pointer-events:none;
+
+    transition:.25s;
+
+}
+
+
+/*==========================================================
+FOCUS ICON
+==========================================================*/
+
+.form-control:focus ~ .input-icon{
+
+    color:#2563EB;
+
+}
+
+
+/*==========================================================
+TEXTAREA
+==========================================================*/
+
+textarea.form-control{
+
+    min-height:160px;
+
+    resize:vertical;
+
+    padding-top:20px;
+
+    line-height:1.8;
+
+}
+
+textarea.form-control + label{
+
+    top:24px;
+
+    transform:none;
+
+}
+
+
+/*==========================================================
+SELECT BOX
+==========================================================*/
+
+select.form-control{
+
+    appearance:none;
+
+    cursor:pointer;
+
+    padding-right:50px;
+
+}
+
+.select-group::after{
+
+    content:"▼";
+
+    position:absolute;
+
+    right:20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:.75rem;
+
+    color:#64748B;
+
+    pointer-events:none;
+
+}
+
+
+/*==========================================================
+REQUIRED LABEL
+==========================================================*/
+
+.required{
+
+    color:#EF4444;
+
+    margin-left:3px;
+
+}
+
+
+/*==========================================================
+FORM HELP TEXT
+==========================================================*/
+
+.form-help{
+
+    margin-top:8px;
+
+    font-size:.82rem;
+
+    color:#64748B;
+
+}
+
+
+/*==========================================================
+FIELD SPACING
+==========================================================*/
+
+.form-group + .form-group{
+
+    margin-top:2px;
+
+}
+
+
+/*==========================================================
+RESPONSIVE
+==========================================================*/
+
+@media(max-width:768px){
+
+.form-container{
+
+padding:30px;
+
+}
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.form-control{
+
+height:56px;
+
+font-size:.92rem;
+
+}
+
+textarea.form-control{
+
+min-height:140px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.form-container{
+
+padding:22px;
+
+border-radius:20px;
+
+}
+
+.form-control{
+
+padding-left:48px;
+
+}
+
+.input-icon{
+
+left:16px;
+
+}
+
+.input-group label{
+
+left:48px;
+
+font-size:.88rem;
+
+}
+
+}
+/*==========================================================
+PART 6A-2
+ENTERPRISE FORM VALIDATION
+Success • Error • Validation • Dark Mode • Responsive
+SaXham Technologies UI Framework
+==========================================================*/
+
+
+/*==========================================================
+VALIDATION STATES
+==========================================================*/
+
+.form-group.success .form-control{
+
+    border-color:#16A34A;
+
+    background:#F0FDF4;
+
+    box-shadow:
+    0 0 0 4px rgba(22,163,74,.08);
+
+}
+
+.form-group.error .form-control{
+
+    border-color:#DC2626;
+
+    background:#FEF2F2;
+
+    box-shadow:
+    0 0 0 4px rgba(220,38,38,.08);
+
+}
+
+.form-group.success .input-icon{
+
+    color:#16A34A;
+
+}
+
+.form-group.error .input-icon{
+
+    color:#DC2626;
+
+}
+
+
+/*==========================================================
+FLOATING LABEL COLORS
+==========================================================*/
+
+.form-group.success label{
+
+    color:#16A34A;
+
+}
+
+.form-group.error label{
+
+    color:#DC2626;
+
+}
+
+
+/*==========================================================
+VALIDATION MESSAGES
+==========================================================*/
+
+.validation-message{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:8px;
+
+    font-size:.84rem;
+
+    line-height:1.6;
+
+}
+
+.validation-message i{
+
+    font-size:.9rem;
+
+}
+
+.validation-message.success{
+
+    color:#16A34A;
+
+}
+
+.validation-message.error{
+
+    color:#DC2626;
+
+}
+
+.validation-message.warning{
+
+    color:#F59E0B;
+
+}
+
+
+/*==========================================================
+SUCCESS ALERT
+==========================================================*/
+
+.form-success{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    padding:18px 22px;
+
+    margin-bottom:24px;
+
+    border-radius:14px;
+
+    background:#ECFDF5;
+
+    border:1px solid #BBF7D0;
+
+    color:#166534;
+
+}
+
+.form-success i{
+
+    font-size:1.3rem;
+
+}
+
+
+/*==========================================================
+ERROR ALERT
+==========================================================*/
+
+.form-error{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    padding:18px 22px;
+
+    margin-bottom:24px;
+
+    border-radius:14px;
+
+    background:#FEF2F2;
+
+    border:1px solid #FECACA;
+
+    color:#991B1B;
+
+}
+
+.form-error i{
+
+    font-size:1.3rem;
+
+}
+
+
+/*==========================================================
+REQUIRED INDICATOR
+==========================================================*/
+
+.required{
+
+    color:#DC2626;
+
+    font-weight:700;
+
+    margin-left:4px;
+
+}
+
+.form-note{
+
+    margin-top:20px;
+
+    font-size:.85rem;
+
+    color:var(--text-gray);
+
+}
+
+
+/*==========================================================
+FOCUS STYLES
+==========================================================*/
+
+.form-control:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:
+    0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+.form-control:focus-visible{
+
+    outline:none;
+
+}
+
+.form-group:focus-within{
+
+    transform:translateY(-2px);
+
+    transition:.25s ease;
+
+}
+
+
+/*==========================================================
+DISABLED STATE
+==========================================================*/
+
+.form-control:disabled{
+
+    cursor:not-allowed;
+
+    opacity:.65;
+
+    background:#F1F5F9;
+
+}
+
+.form-group.disabled{
+
+    pointer-events:none;
+
+}
+
+
+/*==========================================================
+DARK MODE
+==========================================================*/
+
+body.dark-mode .form-container{
+
+    background:#0F172A;
+
+    border-color:#334155;
+
+}
+
+body.dark-mode .form-control{
+
+    background:#1E293B;
+
+    border-color:#334155;
+
+    color:#F8FAFC;
+
+}
+
+body.dark-mode .input-group label{
+
+    background:#0F172A;
+
+    color:#CBD5E1;
+
+}
+
+body.dark-mode .form-help,
+body.dark-mode .form-note{
+
+    color:#94A3B8;
+
+}
+
+body.dark-mode .form-group.success .form-control{
+
+    background:rgba(22,163,74,.08);
+
+}
+
+body.dark-mode .form-group.error .form-control{
+
+    background:rgba(220,38,38,.08);
+
+}
+
+body.dark-mode .form-success{
+
+    background:rgba(22,163,74,.10);
+
+    border-color:#166534;
+
+    color:#BBF7D0;
+
+}
+
+body.dark-mode .form-error{
+
+    background:rgba(220,38,38,.10);
+
+    border-color:#7F1D1D;
+
+    color:#FCA5A5;
+
+}
+
+
+/*==========================================================
+TABLET
+==========================================================*/
+
+@media(max-width:992px){
+
+.form-container{
+
+padding:34px;
+
+}
+
+}
+
+
+/*==========================================================
+MOBILE
+==========================================================*/
+
+@media(max-width:768px){
+
+.validation-message{
+
+font-size:.82rem;
+
+}
+
+.form-success,
+.form-error{
+
+padding:16px 18px;
+
+font-size:.9rem;
+
+}
+
+.form-group:focus-within{
+
+transform:none;
+
+}
+
+}
+
+
+/*==========================================================
+SMALL MOBILE
+==========================================================*/
+
+@media(max-width:480px){
+
+.form-success,
+.form-error{
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+.validation-message{
+
+font-size:.8rem;
+
+}
+
+}
+
+
+/*==========================================================
+ACCESSIBILITY
+==========================================================*/
+
+:focus-visible{
+
+outline:3px solid #2563EB;
+
+outline-offset:3px;
+
+border-radius:8px;
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+.form-group,
+.form-control,
+.validation-message,
+.form-success,
+.form-error{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+}
+
+}
+
+
 
 
 

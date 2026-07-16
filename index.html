@@ -36,7 +36,8 @@
 <meta name="twitter:description" content="Capital Markets Technology Consulting & Business Digital Solutions">
 <meta name="twitter:image" content="https://saxhamai.com/assets/images/og-image.jpg">
 
-<!-- Organization Schema -->
+<!-- Organization Schema
+     Note: add LinkedIn / Instagram / Facebook URLs to "sameAs" below once those profiles are live. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,6 +102,22 @@
   ]
 }
 </script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://saxhamai.com/"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -114,9 +131,15 @@
 <!-- ===================== TOP BAR ===================== -->
 <div class="top-bar">
   <div class="container top-bar-content">
-    <div>
-      <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-      Ghansoli, Navi Mumbai
+    <div class="top-bar-left">
+      <span>
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        Ghansoli, Navi Mumbai
+      </span>
+      <span class="top-bar-hours">
+        <i class="fa-solid fa-clock" aria-hidden="true"></i>
+        Mon–Sat, 9:00 AM – 7:00 PM
+      </span>
     </div>
     <div class="top-contact">
       <a href="tel:+919702855005">
@@ -146,11 +169,11 @@
     <nav class="nav-menu" id="primary-nav" aria-label="Primary navigation">
       <ul class="nav-list">
         <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
         <li><a href="solutions.html" class="nav-link">Solutions</a></li>
         <li><a href="industries.html" class="nav-link">Industries</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="blog/" class="nav-link">Insights</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="blog/" class="nav-link">Blog</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
       <a href="contact.html" class="btn btn-primary nav-btn">Book Consultation</a>
@@ -181,21 +204,27 @@
         </p>
 
         <h1 id="hero-heading">
-          Technology Consulting for
-          <span>Capital Markets</span>
-          &amp; Growing Businesses
+          Capital Markets Technology Consulting for Brokerage Firms &amp; Growing Businesses
         </h1>
+
+        <p class="hero-subhead">
+          Enterprise Linux Infrastructure <span aria-hidden="true">·</span> Production Support <span aria-hidden="true">·</span> AI Automation
+        </p>
 
         <p>
           Helping Brokerage Firms, Financial Institutions, MSMEs and Growing Businesses build reliable technology, automate operations and accelerate digital growth.
         </p>
 
         <div class="hero-btns">
-          <a href="https://wa.me/919702855005" class="btn btn-whatsapp">
+          <a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies,%20I%27d%20like%20to%20book%20a%20free%20consultation" class="btn btn-whatsapp">
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
-            Talk to Consultant
+            Book Free Consultation
           </a>
           <a href="services.html" class="btn btn-outline">Explore Services</a>
+          <a href="tel:+919702855005" class="btn btn-call">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            Call Now
+          </a>
         </div>
 
         <dl class="hero-stats">
@@ -211,6 +240,10 @@
             <dt>24×7</dt>
             <dd>Business Support</dd>
           </div>
+          <div>
+            <dt>PAN India</dt>
+            <dd>Remote Consulting</dd>
+          </div>
         </dl>
       </div>
 
@@ -221,6 +254,13 @@
           width="640" height="560"
           loading="eager"
           fetchpriority="high">
+
+        <ul class="hero-floating-cards" aria-hidden="true">
+          <li><i class="fa-solid fa-chart-line"></i> Capital Markets</li>
+          <li><i class="fa-solid fa-server"></i> Linux Infrastructure</li>
+          <li><i class="fa-solid fa-headset"></i> Production Support</li>
+          <li><i class="fa-solid fa-robot"></i> AI Automation</li>
+        </ul>
       </div>
 
     </div>
@@ -261,7 +301,7 @@
             <li>Production Support</li>
             <li>Performance Optimization</li>
           </ul>
-          <a href="capital-market-consulting.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+          <a href="capital-market-consulting.html" class="service-link">Explore Consulting <span aria-hidden="true">→</span></a>
         </article>
 
         <article class="glass-card">
@@ -275,7 +315,7 @@
             <li>Backup Strategy</li>
             <li>Server Migration</li>
           </ul>
-          <a href="services.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+          <a href="services.html" class="service-link">View Infrastructure Solutions <span aria-hidden="true">→</span></a>
         </article>
 
         <article class="glass-card">
@@ -289,7 +329,7 @@
             <li>Branding</li>
             <li>SEO Foundation</li>
           </ul>
-          <a href="services.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+          <a href="services.html" class="service-link">Explore Digital Solutions <span aria-hidden="true">→</span></a>
         </article>
 
         <article class="glass-card">
@@ -303,7 +343,7 @@
             <li>AI Consulting</li>
             <li>Productivity Solutions</li>
           </ul>
-          <a href="services.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+          <a href="services.html" class="service-link">Explore Automation <span aria-hidden="true">→</span></a>
         </article>
 
       </div>
@@ -460,6 +500,28 @@
     </div>
   </section>
 
+  <!-- ===================== FOUNDER TRUST ===================== -->
+  <section class="section founder-section" aria-labelledby="founder-heading">
+    <div class="container founder-container">
+      <div class="founder-avatar" aria-hidden="true">
+        <i class="fa-solid fa-user-tie"></i>
+      </div>
+      <div>
+        <span class="section-tag">Founder-Led, Not Outsourced</span>
+        <h2 id="founder-heading">8+ Years of Real Capital Markets &amp; Infrastructure Experience</h2>
+        <p>
+          SaXham Technologies is led directly by its founder, with hands-on production experience across Capital Markets support, Linux administration and trading infrastructure operations — not a reseller or a team of subcontractors.
+        </p>
+        <ul class="founder-highlights">
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Capital Markets Production Support</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Linux Systems Administration</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Trading Infrastructure Operations</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Exchange Connectivity &amp; OMS/RMS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== WHY CHOOSE US ===================== -->
   <section class="section" aria-labelledby="why-us-heading">
     <div class="container">
@@ -553,26 +615,13 @@
         <h2 id="testimonials-heading">What Clients Appreciate</h2>
       </div>
 
-      <div class="cards-grid">
-        <blockquote class="glass-card">
-          <p>"Professional guidance with practical solutions. Easy to understand and highly reliable."</p>
-          <footer><cite>— Business Owner</cite></footer>
-        </blockquote>
-
-        <blockquote class="glass-card">
-          <p>"Strong technical knowledge with real operational experience."</p>
-          <footer><cite>— IT Professional</cite></footer>
-        </blockquote>
-
-        <blockquote class="glass-card">
-          <p>"Clear communication, structured approach and dependable support."</p>
-          <footer><cite>— Startup Founder</cite></footer>
-        </blockquote>
+      <div class="testimonials-placeholder">
+        <i class="fa-regular fa-comments" aria-hidden="true"></i>
+        <h3>Client Success Stories Coming Soon</h3>
+        <p>
+          We're in the process of documenting real, verified case studies from our engagements. Check back soon, or get in touch directly for references from current clients.
+        </p>
       </div>
-
-      <p style="text-align:center;margin-top:30px;color:#64748b;">
-        Client case studies and success stories will be published soon.
-      </p>
     </div>
   </section>
 
@@ -668,6 +717,15 @@
       <img src="assets/images/saxham-logo-white.png" alt="SaXham Technologies logo" style="height:55px;margin-bottom:20px;" width="180" height="55" loading="lazy">
       <p>Capital Market Technology Consulting, IT Infrastructure, Digital Transformation and Business Automation.</p>
     </div>
+
+    <nav aria-label="Quick links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="industries.html">Industries</a></li>
+      </ul>
+    </nav>
 
     <nav aria-label="Services">
       <h4>Services</h4>

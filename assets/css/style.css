@@ -5257,3 +5257,161 @@ display:none;
 .mobile-overlay.active{
 display:block;
 }
+
+
+
+
+
+/* ==========================================================================
+   style-additions.css
+   Additive rules only — append this AFTER assets/css/style.css.
+   Nothing here overrides existing selectors; it only supports the new
+   semantic elements introduced in the refactored index.html
+   (skip link, mobile overlay/close button, <dl>/<ol>/<blockquote> resets).
+   ========================================================================== */
+
+/* Visually-hidden utility (screen-reader only labels for form fields) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link — hidden until focused via keyboard */
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 12px;
+  z-index: 10000;
+  background: #0b1220;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Brand text: was <h2>/<p>, now <span> based — reuse the same visual style */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+.brand-title {
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+.brand-subtitle {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 400;
+}
+
+/* Nav list reset (was implicit; now an explicit <ul>) */
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-list li {
+  display: flex;
+}
+
+/* Mobile menu close button — hidden on desktop, shown in slide-in menu */
+.nav-close {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: inherit;
+  padding: 8px;
+}
+
+/* Overlay behind the open mobile menu */
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 18, 32, 0.55);
+  z-index: 998;
+}
+.nav-overlay[hidden] {
+  display: none;
+}
+
+/* Prevent background scroll while the mobile menu is open */
+body.nav-open {
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .nav-close {
+    display: inline-flex;
+    align-self: flex-end;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+}
+
+/* Hero stats: converted from <div> grid to <dl>/<dt>/<dd> for semantics */
+.hero-stats dt {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0;
+}
+.hero-stats dd {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Process steps: converted from <div> grid to <ol> for sequence semantics */
+.process-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Feature list: converted from <div> rows to <ul>/<li> */
+.feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Testimonials: converted from <div> to <blockquote>/<cite> */
+blockquote.glass-card {
+  margin: 0;
+}
+blockquote.glass-card footer {
+  margin-top: 12px;
+}
+blockquote.glass-card cite {
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Footer contact block: converted from <div> to <address> */
+.footer-grid address {
+  font-style: normal;
+}

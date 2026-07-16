@@ -995,3 +995,28 @@ HERO SECTION
     </div>
 
 </section>
+
+const mobileToggle=document.getElementById("mobileToggle");
+const mobileMenu=document.getElementById("mobileMenu");
+const mobileOverlay=document.getElementById("mobileOverlay");
+const mobileClose=document.getElementById("mobileClose");
+
+function closeMenu(){
+    mobileMenu.classList.remove("active");
+    mobileOverlay.classList.remove("active");
+    mobileToggle.setAttribute("aria-expanded","false");
+}
+
+function openMenu(){
+    mobileMenu.classList.add("active");
+    mobileOverlay.classList.add("active");
+    mobileToggle.setAttribute("aria-expanded","true");
+}
+
+mobileToggle.addEventListener("click",openMenu);
+
+mobileClose.addEventListener("click",closeMenu);
+
+mobileOverlay.addEventListener("click",closeMenu);
+
+

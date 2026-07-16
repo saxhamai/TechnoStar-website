@@ -93,14 +93,19 @@
                 <a href="solutions.html" class="nav-link">Solutions</a>
                 <a href="industries.html" class="nav-link">Industries</a>
                 <a href="services.html" class="nav-link">Services</a>
-                <a href="blog/">Insights</a>
+                <a href="blog/" class="nav-link">Insights</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
-                <a href="contact.html" class="btn btn-primary nav-btn">Book Consultation</a>
             </nav>
 
-            <div class="mobile-toggle" aria-label="Menu Toggle">
-                <i class="fas fa-bars"></i>
+            <div class="header-actions">
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary nav-btn">Book Consultation</a>
+                <div class="mobile-toggle" aria-label="Menu Toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
@@ -675,12 +680,17 @@
     JAVASCRIPT
     =========================================================== -->
     <script>
-        /* Mobile Menu */
+        /* Mobile Menu toggle logic matching new structure */
         const menuBtn = document.querySelector(".mobile-toggle");
         const nav = document.querySelector(".nav-menu");
         if (menuBtn && nav) {
             menuBtn.onclick = () => {
                 nav.classList.toggle("active");
+                const icon = menuBtn.querySelector("i");
+                if (icon) {
+                    icon.classList.toggle("fa-bars");
+                    icon.classList.toggle("fa-xmark");
+                }
             };
         }
 
@@ -748,6 +758,19 @@
                 link.classList.add("active");
             }
         });
+
+        /* Theme Switcher Toggle */
+        const themeToggle = document.getElementById("themeToggle");
+        if (themeToggle) {
+            themeToggle.addEventListener("click", () => {
+                document.body.classList.toggle("dark-theme");
+                const icon = themeToggle.querySelector("i");
+                if (icon) {
+                    icon.classList.toggle("fa-moon");
+                    icon.classList.toggle("fa-sun");
+                }
+            });
+        }
     </script>
 
 </body>

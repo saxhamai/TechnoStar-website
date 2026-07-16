@@ -1,0 +1,147 @@
+/**
+ * SaXham Technologies — site interactions
+ * Modular, no global pollution: everything lives inside an IIFE.
+ */
+(function () {
+  "use strict";
+
+  /* ---------------------------------------------------------------
+   * Mobile navigation (hamburger + slide-in menu + overlay)
+   * ------------------------------------------------------------- */
+  function initMobileNav() {
+    const toggleBtn = document.querySelector(".mobile-toggle");
+    const closeBtn = document.querySelector(".nav-close");
+    const nav = document.getElementById("primary-nav");
+    const overlay = document.querySelector(".nav-overlay");
+
+    if (!toggleBtn || !nav || !overlay) return;
+
+    let lastFocusedElement = null;
+
+    function openMenu() {
+      lastFocusedElement = document.activeElement;
+      nav.classList.add("active");
+      overlay.hidden = false;
+      toggleBtn.setAttribute("aria-expanded", "true");
+      toggleBtn.setAttribute("aria-label", "Close menu");
+      document.body.classList.add("nav-open");
+      if (closeBtn) closeBtn.focus();
+    }
+
+    function closeMenu() {
+      nav.classList.remove("active");
+      overlay.hidden = true;
+      toggleBtn.setAttribute("aria-expanded", "false");
+      toggleBtn.setAttribute("aria-label", "Open menu");
+      document.body.classList.remove("nav-open");
+      if (lastFocusedElement) lastFocusedElement.focus();
+    }
+
+    function isOpen() {
+      return nav.classList.contains("active");
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      isOpen() ? closeMenu() : openMenu();
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", closeMenu);
+    }
+
+    overlay.addEventListener("click", closeMenu);
+
+    // Close on Escape, close after choosing a link (mobile UX)
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && isOpen()) closeMenu();
+    });
+
+    nav.querySelectorAll(".nav-link, .nav-btn").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (isOpen()) closeMenu();
+      });
+    });
+
+    // Keep menu state in sync if the viewport is resized back to desktop
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 992 && isOpen()) closeMenu();
+    });
+  }
+
+  /* ---------------------------------------------------------------
+   * Reading progress bar
+   * ------------------------------------------------------------- */
+  function initProgressBar() {
+    const bar = document.getElementById("progress-bar");
+    if (!bar) return;
+
+    function update() {
+      const scrollTop = document.documentElement.scrollTop;
+      const height =
+        document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = height > 0 ? (scrollTop / height) * 100 : 0;
+
+      bar.style.width = scrolled + "%";
+      bar.setAttribute("aria-valuenow", String(Math.round(scrolled)));
+    }
+
+    window.addEventListener("scroll", update, { passive: true });
+    update();
+  }
+
+  /* ---------------------------------------------------------------
+   * Back-to-top button
+   * ------------------------------------------------------------- */
+  function initBackToTop() {
+    const button = document.getElementById("backToTop");
+    if (!button) return;
+
+    function toggleVisibility() {
+      button.classList.toggle("show", window.scrollY > 500);
+    }
+
+    button.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    window.addEventListener("scroll", toggleVisibility, { passive: true });
+    toggleVisibility();
+  }
+
+  /* ---------------------------------------------------------------
+   * Active navigation link (aria-current)
+   * ------------------------------------------------------------- */
+  function initActiveNavLink() {
+    const current = location.pathname.split("/").pop() || "index.html";
+
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      const isCurrent = link.getAttribute("href") === current;
+      link.classList.toggle("active", isCurrent);
+
+      if (isCurrent) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+
+  /* ---------------------------------------------------------------
+   * Footer year
+   * ------------------------------------------------------------- */
+  function initFooterYear() {
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+  }
+
+  /* ---------------------------------------------------------------
+   * Boot
+   * ------------------------------------------------------------- */
+  document.addEventListener("DOMContentLoaded", () => {
+    initMobileNav();
+    initProgressBar();
+    initBackToTop();
+    initActiveNavLink();
+    initFooterYear();
+  });
+})();

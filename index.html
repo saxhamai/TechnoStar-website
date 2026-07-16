@@ -1,953 +1,719 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ==========================================================
-    Character Encoding & Viewport
-    =========================================================== -->
+<title>SaXham Technologies | Capital Markets Technology Consulting & Business Digital Solutions</title>
+<meta name="description" content="SaXham Technologies provides Capital Markets Technology Consulting, Trading Infrastructure, Linux Administration, Production Support, Business Digital Solutions and AI Automation for Brokerage Firms, MSMEs and Growing Businesses.">
+<meta name="keywords" content="Capital Market Consulting, Trading Infrastructure, Production Support, Linux Consulting, OMS, RMS, Exchange Connectivity, Business Website, Google Business Profile, WhatsApp Business, AI Automation, IT Consulting">
+<meta name="author" content="Nitin Pawar">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b1220">
+<link rel="canonical" href="https://saxhamai.com/">
+<link rel="icon" href="assets/images/favicon.png">
 
-    <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
 
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SaXham Technologies">
+<meta property="og:title" content="SaXham Technologies | Capital Markets Technology Consulting & Business Digital Solutions">
+<meta property="og:description" content="Technology Consulting for Capital Markets, MSMEs & Growing Businesses.">
+<meta property="og:image" content="https://saxhamai.com/assets/images/og-image.jpg">
+<meta property="og:url" content="https://saxhamai.com/">
+<meta property="og:locale" content="en_IN">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SaXham Technologies">
+<meta name="twitter:description" content="Capital Markets Technology Consulting & Business Digital Solutions">
+<meta name="twitter:image" content="https://saxhamai.com/assets/images/og-image.jpg">
 
-    <meta name="format-detection"
-          content="telephone=no">
-
-    <meta name="theme-color"
-          content="#0f172a">
-
-    <!-- ==========================================================
-    Primary SEO
-    =========================================================== -->
-
-    <title>
-        SaXham Technologies | Capital Markets Technology Consulting & Business Digital Solutions
-    </title>
-
-    <meta name="title"
-          content="SaXham Technologies | Capital Markets Technology Consulting & Business Digital Solutions">
-
-    <meta name="description"
-          content="SaXham Technologies provides Capital Markets Technology Consulting, Trading Infrastructure, Linux Administration, Production Support, Business Websites, AI Automation, Digital Transformation and IT Consulting for Brokerage Firms, Financial Institutions, MSMEs and Growing Businesses.">
-
-    <meta name="keywords"
-          content="Capital Market Consulting, Trading Infrastructure, Linux Administration, Production Support, OMS RMS, Exchange Connectivity, IT Consulting, Business Website Development, Digital Transformation, AI Automation, Google Business Profile, WhatsApp Business, SEO Services, Cloud Infrastructure">
-
-    <meta name="author"
-          content="Nitin Pawar">
-
-    <meta name="robots"
-          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-
-    <meta name="googlebot"
-          content="index,follow">
-
-    <link rel="canonical"
-          href="https://saxhamai.com/">
-
-    <!-- ==========================================================
-    Favicon
-    =========================================================== -->
-
-    <link rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="assets/images/favicon.png">
-
-    <link rel="apple-touch-icon"
-          href="assets/images/favicon.png">
-
-    <!-- ==========================================================
-    Performance
-    =========================================================== -->
-
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <!-- ==========================================================
-    Google Fonts
-    =========================================================== -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <!-- ==========================================================
-    Font Awesome
-    =========================================================== -->
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-          referrerpolicy="no-referrer">
-
-    <!-- ==========================================================
-    Main Stylesheet
-    =========================================================== -->
-
-    <link rel="stylesheet"
-          href="assets/css/style.css">
-
-    <!-- ==========================================================
-    Open Graph (Facebook / LinkedIn / WhatsApp)
-    =========================================================== -->
-
-    <meta property="og:type"
-          content="website">
-
-    <meta property="og:site_name"
-          content="SaXham Technologies">
-
-    <meta property="og:title"
-          content="Capital Markets Technology Consulting & Business Digital Solutions">
-
-    <meta property="og:description"
-          content="Technology Consulting, Production Support, Linux Infrastructure, Digital Transformation, AI Automation and Business Growth Solutions.">
-
-    <meta property="og:url"
-          content="https://saxhamai.com/">
-
-    <meta property="og:image"
-          content="https://saxhamai.com/assets/images/og-image.jpg">
-
-    <meta property="og:image:alt"
-          content="SaXham Technologies">
-
-    <meta property="og:locale"
-          content="en_IN">
-
-    <!-- ==========================================================
-    Twitter Card
-    =========================================================== -->
-
-    <meta name="twitter:card"
-          content="summary_large_image">
-
-    <meta name="twitter:title"
-          content="SaXham Technologies">
-
-    <meta name="twitter:description"
-          content="Capital Markets Technology Consulting & Business Digital Solutions">
-
-    <meta name="twitter:image"
-          content="https://saxhamai.com/assets/images/og-image.jpg">
-
-    <!-- ==========================================================
-    Schema.org
-    =========================================================== -->
-
-    <script type="application/ld+json">
+<!-- Organization Schema -->
+<script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"ProfessionalService",
-  "name":"SaXham Technologies",
-  "url":"https://saxhamai.com/",
-  "logo":"https://saxhamai.com/assets/images/saxham-logo.png",
-  "image":"https://saxhamai.com/assets/images/og-image.jpg",
-  "description":"Capital Markets Technology Consulting, Linux Infrastructure, Production Support, AI Automation and Digital Business Solutions.",
-  "telephone":"+91-9702855005",
-  "email":"founder@saxhamai.com",
-
-  "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"Ghansoli",
-      "addressRegion":"Maharashtra",
-      "addressCountry":"IN"
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SaXham Technologies",
+  "url": "https://saxhamai.com",
+  "logo": "https://saxhamai.com/assets/images/saxham-logo.png",
+  "image": "https://saxhamai.com/assets/images/og-image.jpg",
+  "description": "Capital Markets Technology Consulting and Business Digital Solutions.",
+  "telephone": "+91-9702855005",
+  "email": "founder@saxhamai.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ghansoli",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
   },
+  "areaServed": "IN",
+  "sameAs": []
+}
+</script>
 
-  "areaServed":"India",
-
-  "founder":{
-      "@type":"Person",
-      "name":"Nitin Pawar"
-  },
-
-  "sameAs":[
-      "https://www.linkedin.com/",
-      "https://www.facebook.com/",
-      "https://www.instagram.com/"
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you only work with Brokerage Firms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. While Capital Markets is our specialization, we also help MSMEs, Startups and Professional Businesses with technology consulting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide remote consulting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We provide consulting and support across India through online meetings and remote collaboration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help modernize our existing IT infrastructure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We assess your current systems and recommend practical improvements for stability, security and scalability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we get started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simply contact us through WhatsApp or the contact form. We'll schedule a discovery discussion to understand your requirements."
+      }
+    }
   ]
 }
-    </script>
-
+</script>
 </head>
-<!-- ==========================================================
-TOP BAR
-=========================================================== -->
 
+<body>
+
+<!-- Skip link for keyboard/screen-reader users -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Reading Progress Bar -->
+<div id="progress-bar" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+<!-- ===================== TOP BAR ===================== -->
 <div class="top-bar">
-
-    <div class="container top-bar-container">
-
-        <!-- ==========================================
-        Left Information
-        =========================================== -->
-
-        <div class="top-bar-left">
-
-            <div class="top-item">
-
-                <i class="fa-solid fa-location-dot"
-                   aria-hidden="true"></i>
-
-                <span>
-                    Ghansoli, Navi Mumbai, Maharashtra
-                </span>
-
-            </div>
-
-            <div class="top-item">
-
-                <i class="fa-regular fa-clock"
-                   aria-hidden="true"></i>
-
-                <span>
-                    Mon – Sat | 9:00 AM – 7:00 PM
-                </span>
-
-            </div>
-
-        </div>
-
-        <!-- ==========================================
-        Right Information
-        =========================================== -->
-
-        <div class="top-bar-right">
-
-            <a href="tel:+919702855005"
-               class="top-link"
-               aria-label="Call SaXham Technologies">
-
-                <i class="fa-solid fa-phone"
-                   aria-hidden="true"></i>
-
-                <span>
-                    +91 97028 55005
-                </span>
-
-            </a>
-
-            <a href="mailto:founder@saxhamai.com"
-               class="top-link"
-               aria-label="Send Email">
-
-                <i class="fa-solid fa-envelope"
-                   aria-hidden="true"></i>
-
-                <span>
-                    founder@saxhamai.com
-                </span>
-
-            </a>
-
-            <!-- Social Links -->
-
-            <div class="top-social">
-
-                <a href="https://wa.me/919702855005"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Chat on WhatsApp">
-
-                    <i class="fab fa-whatsapp"
-                       aria-hidden="true"></i>
-
-                </a>
-
-                <a href="https://www.linkedin.com/company/saxham-technologies/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Visit LinkedIn">
-
-                    <i class="fab fa-linkedin-in"
-                       aria-hidden="true"></i>
-
-                </a>
-
-            </div>
-
-        </div>
-
+  <div class="container top-bar-content">
+    <div>
+      <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+      Ghansoli, Navi Mumbai
     </div>
-
+    <div class="top-contact">
+      <a href="tel:+919702855005">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        <span>+91 97028 55005</span>
+      </a>
+      <a href="mailto:founder@saxhamai.com">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        <span>founder@saxhamai.com</span>
+      </a>
+    </div>
+  </div>
 </div>
-<!-- ==========================================================
-HEADER
-=========================================================== -->
 
+<!-- ===================== HEADER ===================== -->
 <header class="main-header" id="site-header">
+  <div class="container navbar">
 
-    <div class="container">
-
-        <div class="navbar">
-
-            <!-- ==========================================
-            Brand / Logo
-            =========================================== -->
-
-            <a href="index.html"
-               class="brand"
-               aria-label="SaXham Technologies Home">
-
-                <img src="assets/images/saxham-logo.png"
-                     alt="SaXham Technologies Logo"
-                     class="brand-logo-img"
-                     width="60"
-                     height="60"
-                     loading="eager">
-
-                <div class="brand-text">
-
-                    <h1 class="brand-title">
-                        SaXham Technologies
-                    </h1>
-
-                    <p class="brand-tagline">
-                        Capital Markets • Digital Solutions
-                    </p>
-
-                </div>
-
-            </a>
-
-            <!-- ==========================================
-            Primary Navigation
-            =========================================== -->
-
-            <nav class="main-navigation"
-                 aria-label="Primary Navigation">
-
-                <ul class="nav-menu">
-
-                    <li>
-                        <a href="index.html"
-                           class="nav-link active"
-                           aria-current="page">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="about.html"
-                           class="nav-link">
-                            About
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="services.html"
-                           class="nav-link">
-                            Services
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="solutions.html"
-                           class="nav-link">
-                            Solutions
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="industries.html"
-                           class="nav-link">
-                            Industries
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="blog.html"
-                           class="nav-link">
-                            Insights
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html"
-                           class="nav-link">
-                            Contact
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-            <!-- ==========================================
-            Header Actions
-            =========================================== -->
-
-            <div class="header-actions">
-
-                <a href="contact.html"
-                   class="btn btn-outline">
-
-                    <i class="fa-solid fa-phone"
-                       aria-hidden="true"></i>
-
-                    <span>
-                        Contact
-                    </span>
-
-                </a>
-
-                <a href="contact.html"
-                   class="btn btn-primary">
-
-                    <i class="fa-solid fa-calendar-check"
-                       aria-hidden="true"></i>
-
-                    <span>
-                        Book Consultation
-                    </span>
-
-                </a>
-
-            </div>
-
-            <!-- ==========================================
-            Mobile Menu Button
-            =========================================== -->
-
-            <button class="mobile-toggle"
-                    id="mobileToggle"
-                    type="button"
-                    aria-label="Open Main Menu"
-                    aria-controls="mobileMenu"
-                    aria-expanded="false">
-
-                <i class="fas fa-bars"
-                   aria-hidden="true"></i>
-
-            </button>
-
-        </div>
-
-    </div>
-
-</header>
-
-<!-- Sticky Header Spacer -->
-
-<div class="header-space"
-     aria-hidden="true"></div>
-     <!-- ==========================================================
-DESKTOP NAVIGATION
-=========================================================== -->
-
-<nav class="desktop-nav"
-     aria-label="Primary Navigation">
-
-    <ul class="nav-menu">
-
-        <li class="nav-item">
-            <a href="index.html"
-               class="nav-link active"
-               aria-current="page">
-                Home
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a href="about.html"
-               class="nav-link">
-                About
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a href="services.html"
-               class="nav-link">
-                Services
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a href="solutions.html"
-               class="nav-link">
-                Solutions
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a href="industries.html"
-               class="nav-link">
-                Industries
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a href="blog.html"
-               class="nav-link">
-                Blog
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a href="contact.html"
-               class="nav-link">
-                Contact
-            </a>
-        </li>
-
-    </ul>
-
-</nav>
-
-<!-- ==========================================
-HEADER ACTION BUTTON
-========================================== -->
-
-<div class="header-actions">
-
-    <a href="contact.html"
-       class="btn btn-primary consultation-btn">
-
-        <i class="fa-solid fa-calendar-check"
-           aria-hidden="true"></i>
-
-        <span>
-            Book Consultation
-        </span>
-
+    <a href="index.html" class="brand" aria-label="SaXham Technologies — Home">
+      <img src="assets/images/saxham-logo.png" alt="SaXham Technologies logo" class="brand-logo-img" width="48" height="48">
+      <span class="brand-text">
+        <span class="brand-title">SaXham Technologies</span>
+        <span class="brand-subtitle">Capital Markets • Digital Solutions</span>
+      </span>
     </a>
 
-</div>
-<!-- ==========================================================
-MOBILE OVERLAY
-=========================================================== -->
-
-<div class="mobile-overlay"
-     id="mobileOverlay"
-     hidden></div>
-
-
-<!-- ==========================================================
-MOBILE MENU
-=========================================================== -->
-
-<aside id="mobileMenu"
-       class="mobile-menu"
-       aria-hidden="true"
-       aria-label="Mobile Navigation">
-
-    <!-- Header -->
-
-    <div class="mobile-menu-header">
-
-        <div class="mobile-brand">
-
-            <img src="assets/images/saxham-logo.png"
-                 alt="SaXham Technologies Logo"
-                 class="mobile-logo"
-                 width="48"
-                 height="48">
-
-            <div>
-
-                <h3>SaXham Technologies</h3>
-
-                <p>Technology Consulting</p>
-
-            </div>
-
-        </div>
-
-        <button id="mobileClose"
-                class="mobile-close"
-                type="button"
-                aria-label="Close Menu">
-
-            <i class="fas fa-times"></i>
-
-        </button>
-
-    </div>
-
-
-    <!-- Navigation -->
-
-    <nav aria-label="Mobile Navigation">
-
-        <ul class="mobile-nav">
-
-            <li>
-                <a href="index.html"
-                   class="mobile-link active">
-                    <i class="fas fa-house"></i>
-                    Home
-                </a>
-            </li>
-
-            <li>
-                <a href="about.html"
-                   class="mobile-link">
-                    <i class="fas fa-user"></i>
-                    About
-                </a>
-            </li>
-
-            <li>
-                <a href="services.html"
-                   class="mobile-link">
-                    <i class="fas fa-briefcase"></i>
-                    Services
-                </a>
-            </li>
-
-            <li>
-                <a href="solutions.html"
-                   class="mobile-link">
-                    <i class="fas fa-layer-group"></i>
-                    Solutions
-                </a>
-            </li>
-
-            <li>
-                <a href="industries.html"
-                   class="mobile-link">
-                    <i class="fas fa-building"></i>
-                    Industries
-                </a>
-            </li>
-
-            <li>
-                <a href="blog.html"
-                   class="mobile-link">
-                    <i class="fas fa-newspaper"></i>
-                    Blog
-                </a>
-            </li>
-
-            <li>
-                <a href="contact.html"
-                   class="mobile-link">
-                    <i class="fas fa-envelope"></i>
-                    Contact
-                </a>
-            </li>
-
-        </ul>
-
+    <nav class="nav-menu" id="primary-nav" aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+        <li><a href="industries.html" class="nav-link">Industries</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="blog/" class="nav-link">Insights</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-btn">Book Consultation</a>
+      <button type="button" class="nav-close" aria-label="Close menu">
+        <i class="fas fa-xmark" aria-hidden="true"></i>
+      </button>
     </nav>
 
+    <button type="button" class="mobile-toggle" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+  </div>
+</header>
 
-    <!-- CTA Buttons -->
+<!-- Overlay used behind the mobile slide-in menu -->
+<div class="nav-overlay" hidden></div>
 
-    <div class="mobile-actions">
+<main id="main-content">
 
-        <a href="https://wa.me/919702855005"
-           target="_blank"
-           class="btn btn-whatsapp btn-block">
-
-            <i class="fab fa-whatsapp"></i>
-
-            WhatsApp
-
-        </a>
-
-        <a href="contact.html"
-           class="btn btn-primary btn-block">
-
-            <i class="fas fa-calendar-check"></i>
-
-            Free Consultation
-
-        </a>
-
-        <a href="tel:+919702855005"
-           class="btn btn-outline btn-block">
-
-            <i class="fas fa-phone"></i>
-
-            Call Now
-
-        </a>
-
-    </div>
-
-</aside>
-<!-- ==========================================================
-HERO SECTION
-=========================================================== -->
-
-<section class="hero-section" id="hero">
-
-    <!-- Background Elements -->
-
-    <div class="hero-grid" aria-hidden="true"></div>
-    <div class="hero-gradient" aria-hidden="true"></div>
-
+  <!-- ===================== HERO ===================== -->
+  <section class="hero-section" aria-labelledby="hero-heading">
     <div class="container hero-container">
 
-        <!-- ======================================================
-        LEFT CONTENT
-        ======================================================= -->
-
-        <div class="hero-content">
-
-            <!-- Hero Badge -->
-
-            <div class="hero-badge">
-
-                <i class="fa-solid fa-award"></i>
-
-                Enterprise Technology Consulting
-
-            </div>
-
-            <!-- Heading -->
-
-            <h1 class="hero-title">
-
-                Capital Markets Technology Consulting
-                <span>& Digital Solutions</span>
-
-                For Modern Businesses
-
-            </h1>
-
-            <!-- Description -->
-
-            <p class="hero-description">
-
-                SaXham Technologies helps Brokerage Firms,
-                Financial Institutions, MSMEs and Growing Businesses
-                modernize technology, streamline operations,
-                strengthen IT infrastructure and accelerate digital growth.
-
-            </p>
-
-            <p class="hero-description-secondary">
-
-                From Production Support and Linux Administration
-                to AI Automation, Business Websites,
-                Cloud Solutions and Digital Transformation,
-                we deliver practical technology solutions
-                that create measurable business value.
-
-            </p>
-
-            <!-- CTA -->
-
-            <div class="hero-actions">
-
-                <a href="contact.html"
-                   class="btn btn-primary">
-
-                    <i class="fa-solid fa-calendar-check"></i>
-
-                    Book Consultation
-
-                </a>
-
-                <a href="https://wa.me/919702855005"
-                   target="_blank"
-                   rel="noopener"
-                   class="btn btn-whatsapp">
-
-                    <i class="fab fa-whatsapp"></i>
-
-                    WhatsApp Now
-
-                </a>
-
-                <a href="services.html"
-                   class="btn btn-outline">
-
-                    Explore Services
-
-                </a>
-
-            </div>
-
-            <!-- Technology Stack -->
-
-            <div class="tech-stack">
-
-                <span class="tech-badge">
-
-                    <i class="fa-solid fa-chart-line"></i>
-
-                    Capital Markets
-
-                </span>
-
-                <span class="tech-badge">
-
-                    <i class="fab fa-linux"></i>
-
-                    Linux
-
-                </span>
-
-                <span class="tech-badge">
-
-                    <i class="fa-solid fa-cloud"></i>
-
-                    Cloud
-
-                </span>
-
-                <span class="tech-badge">
-
-                    <i class="fa-solid fa-server"></i>
-
-                    Infrastructure
-
-                </span>
-
-                <span class="tech-badge">
-
-                    <i class="fa-solid fa-robot"></i>
-
-                    AI Automation
-
-                </span>
-
-            </div>
-
-            <!-- Statistics -->
-
-            <div class="hero-stats">
-
-                <div class="stat-card">
-
-                    <h3>8+</h3>
-
-                    <p>Years Experience</p>
-
-                </div>
-
-                <div class="stat-card">
-
-                    <h3>100+</h3>
-
-                    <p>Projects Supported</p>
-
-                </div>
-
-                <div class="stat-card">
-
-                    <h3>24×7</h3>
-
-                    <p>Technology Support</p>
-
-                </div>
-
-                <div class="stat-card">
-
-                    <h3>PAN India</h3>
-
-                    <p>Remote Consulting</p>
-
-                </div>
-
-            </div>
-
+      <div class="hero-text">
+        <p class="hero-badge">
+          <i class="fa-solid fa-award" aria-hidden="true"></i>
+          Trusted Technology Partner
+        </p>
+
+        <h1 id="hero-heading">
+          Technology Consulting for
+          <span>Capital Markets</span>
+          &amp; Growing Businesses
+        </h1>
+
+        <p>
+          Helping Brokerage Firms, Financial Institutions, MSMEs and Growing Businesses build reliable technology, automate operations and accelerate digital growth.
+        </p>
+
+        <div class="hero-btns">
+          <a href="https://wa.me/919702855005" class="btn btn-whatsapp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            Talk to Consultant
+          </a>
+          <a href="services.html" class="btn btn-outline">Explore Services</a>
         </div>
 
-        <!-- ======================================================
-        RIGHT CONTENT
-        ======================================================= -->
+        <dl class="hero-stats">
+          <div>
+            <dt>8+</dt>
+            <dd>Years Experience</dd>
+          </div>
+          <div>
+            <dt>100+</dt>
+            <dd>Projects Supported</dd>
+          </div>
+          <div>
+            <dt>24×7</dt>
+            <dd>Business Support</dd>
+          </div>
+        </dl>
+      </div>
 
-        <div class="hero-visual">
-
-            <!-- Decorative Elements -->
-
-            <div class="hero-circle hero-circle-1"></div>
-
-            <div class="hero-circle hero-circle-2"></div>
-
-            <div class="hero-circle hero-circle-3"></div>
-
-            <!-- Main Illustration -->
-
-            <div class="hero-image-wrapper">
-
-                <img src="assets/images/hero-consulting.png"
-                     alt="Capital Markets Technology Consulting"
-                     class="hero-image"
-                     width="700"
-                     height="700"
-                     loading="eager">
-
-            </div>
-
-            <!-- Floating Card -->
-
-            <div class="hero-floating-card card-one">
-
-                <i class="fa-solid fa-chart-line"></i>
-
-                <div>
-
-                    <span>Expertise</span>
-
-                    <strong>Capital Markets</strong>
-
-                </div>
-
-            </div>
-
-            <!-- Floating Card -->
-
-            <div class="hero-floating-card card-two">
-
-                <i class="fab fa-linux"></i>
-
-                <div>
-
-                    <span>Enterprise</span>
-
-                    <strong>Linux Infrastructure</strong>
-
-                </div>
-
-            </div>
-
-            <!-- Floating Card -->
-
-            <div class="hero-floating-card card-three">
-
-                <i class="fa-solid fa-robot"></i>
-
-                <div>
-
-                    <span>AI Powered</span>
-
-                    <strong>Automation</strong>
-
-                </div>
-
-            </div>
-
-            <!-- Floating Card -->
-
-            <div class="hero-floating-card card-four">
-
-                <i class="fa-solid fa-headset"></i>
-
-                <div>
-
-                    <span>Support</span>
-
-                    <strong>24×7 Operations</strong>
-
-                </div>
-
-            </div>
-
-        </div>
+      <div class="hero-image">
+        <img
+          src="assets/images/hero-consulting.png"
+          alt="Illustration representing capital markets technology consulting"
+          width="640" height="560"
+          loading="eager"
+          fetchpriority="high">
+      </div>
 
     </div>
+  </section>
 
-</section>
+  <!-- ===================== TRUST BAR ===================== -->
+  <section class="trust-bar" aria-label="Areas of expertise">
+    <div class="container trust-grid">
+      <div><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Capital Markets</div>
+      <div><i class="fa-solid fa-server" aria-hidden="true"></i> Linux Infrastructure</div>
+      <div><i class="fa-solid fa-cloud" aria-hidden="true"></i> Cloud &amp; Automation</div>
+      <div><i class="fa-solid fa-building" aria-hidden="true"></i> Business Digital Solutions</div>
+      <div><i class="fa-solid fa-headset" aria-hidden="true"></i> Managed IT Support</div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES / SOLUTIONS ===================== -->
+  <section class="section bg-light" id="solutions" aria-labelledby="solutions-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Expertise</span>
+        <h2 id="solutions-heading">Technology Solutions That Help Businesses Scale</h2>
+        <p>
+          From Capital Market Technology Consulting to complete Digital Business Transformation, we help organizations modernize operations, improve efficiency and accelerate growth.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="glass-card">
+          <div class="icon-box blue-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></div>
+          <h3>Capital Markets Consulting</h3>
+          <p>Specialized consulting for Brokerage Firms, Trading Members, Wealth Managers and Financial Institutions.</p>
+          <ul>
+            <li>Trading Infrastructure</li>
+            <li>OMS / RMS Consulting</li>
+            <li>Exchange Connectivity</li>
+            <li>Production Support</li>
+            <li>Performance Optimization</li>
+          </ul>
+          <a href="capital-market-consulting.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="glass-card">
+          <div class="icon-box green-icon" aria-hidden="true"><i class="fas fa-server"></i></div>
+          <h3>Linux &amp; Infrastructure</h3>
+          <p>Enterprise Linux administration and server management for secure, stable and scalable environments.</p>
+          <ul>
+            <li>Linux Administration</li>
+            <li>Monitoring</li>
+            <li>Disaster Recovery</li>
+            <li>Backup Strategy</li>
+            <li>Server Migration</li>
+          </ul>
+          <a href="services.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="glass-card">
+          <div class="icon-box purple-icon" aria-hidden="true"><i class="fas fa-laptop-code"></i></div>
+          <h3>Business Digital Solutions</h3>
+          <p>Everything required to establish a professional digital presence.</p>
+          <ul>
+            <li>Business Website</li>
+            <li>Google Business Profile</li>
+            <li>WhatsApp Business</li>
+            <li>Branding</li>
+            <li>SEO Foundation</li>
+          </ul>
+          <a href="services.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="glass-card">
+          <div class="icon-box blue-icon" aria-hidden="true"><i class="fas fa-robot"></i></div>
+          <h3>AI &amp; Business Automation</h3>
+          <p>Automate repetitive business processes using AI-powered workflows.</p>
+          <ul>
+            <li>AI Integration</li>
+            <li>Workflow Automation</li>
+            <li>Documentation</li>
+            <li>AI Consulting</li>
+            <li>Productivity Solutions</li>
+          </ul>
+          <a href="services.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAPITAL MARKETS ===================== -->
+  <section class="section" aria-labelledby="capital-markets-heading">
+    <div class="container hero-container">
+      <div>
+        <span class="section-tag">Capital Markets Technology</span>
+        <h2 id="capital-markets-heading">Technology Consulting for Modern Brokerage Firms</h2>
+        <p>
+          With real-world experience in Capital Market Operations, we help Brokerage Firms improve their infrastructure, operations and production support capabilities.
+        </p>
+
+        <ul class="feature-list">
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Trading Infrastructure Consulting</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> OMS / RMS Support</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Exchange Connectivity Guidance</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Production Support</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Linux Administration</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Monitoring &amp; Automation</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Disaster Recovery Planning</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Performance Optimization</li>
+        </ul>
+
+        <div style="margin-top:35px;">
+          <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="assets/images/capital-market-consulting.png"
+          alt="Diagram illustrating capital market consulting services"
+          class="floating-img"
+          width="560" height="480"
+          loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIGITAL SOLUTIONS ===================== -->
+  <section class="section bg-light" aria-labelledby="digital-solutions-heading">
+    <div class="container hero-container">
+      <div>
+        <img
+          src="assets/images/business-digital-solutions.png"
+          alt="Illustration of business digital solutions including website, branding and automation"
+          class="floating-img"
+          width="560" height="480"
+          loading="lazy">
+      </div>
+
+      <div>
+        <span class="section-tag">Business Growth</span>
+        <h2 id="digital-solutions-heading">Complete Digital Solutions For Growing Businesses</h2>
+        <p>
+          Whether you're launching a startup or scaling an established business, we build your complete digital foundation.
+        </p>
+
+        <ul class="feature-list">
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Logo &amp; Branding</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Business Website</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Business Email</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Google Business Profile</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> WhatsApp Business Setup</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> SEO Optimization</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Hosting &amp; Domain</li>
+          <li><i class="fas fa-circle-check" aria-hidden="true"></i> Ongoing Technical Support</li>
+        </ul>
+
+        <div style="margin-top:35px;">
+          <a href="services.html" class="btn btn-primary">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INDUSTRIES ===================== -->
+  <section class="section" aria-labelledby="industries-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Industries We Serve</span>
+        <h2 id="industries-heading">Helping Businesses Across Multiple Industries</h2>
+        <p>Our consulting and technology services are tailored to industry-specific needs.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="glass-card text-center">
+          <div class="icon-box blue-icon" aria-hidden="true"><i class="fas fa-building-columns"></i></div>
+          <h3>Brokerage Firms</h3>
+          <p>Technology consulting, production support, trading infrastructure.</p>
+        </article>
+
+        <article class="glass-card text-center">
+          <div class="icon-box green-icon" aria-hidden="true"><i class="fas fa-chart-pie"></i></div>
+          <h3>Financial Services</h3>
+          <p>Investment advisors, wealth managers, financial institutions.</p>
+        </article>
+
+        <article class="glass-card text-center">
+          <div class="icon-box purple-icon" aria-hidden="true"><i class="fas fa-industry"></i></div>
+          <h3>MSMEs</h3>
+          <p>Digital transformation, automation and technology adoption.</p>
+        </article>
+
+        <article class="glass-card text-center">
+          <div class="icon-box blue-icon" aria-hidden="true"><i class="fas fa-store"></i></div>
+          <h3>Growing Businesses</h3>
+          <p>Professional websites, branding, Google visibility and automation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW WE WORK ===================== -->
+  <section class="section bg-light" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Process</span>
+        <h2 id="process-heading">Simple. Transparent. Result Driven.</h2>
+        <p>Every project follows a structured process to ensure quality, speed and measurable outcomes.</p>
+      </div>
+
+      <ol class="process-grid">
+        <li class="process-card">
+          <span class="process-number" aria-hidden="true">01</span>
+          <h3>Discovery Call</h3>
+          <p>Understand your business, challenges and goals.</p>
+        </li>
+        <li class="process-card">
+          <span class="process-number" aria-hidden="true">02</span>
+          <h3>Technology Assessment</h3>
+          <p>Review infrastructure, operations and digital presence.</p>
+        </li>
+        <li class="process-card">
+          <span class="process-number" aria-hidden="true">03</span>
+          <h3>Solution Design</h3>
+          <p>Create a practical roadmap tailored to your business.</p>
+        </li>
+        <li class="process-card">
+          <span class="process-number" aria-hidden="true">04</span>
+          <h3>Implementation</h3>
+          <p>Deploy improvements with minimal business disruption.</p>
+        </li>
+        <li class="process-card">
+          <span class="process-number" aria-hidden="true">05</span>
+          <h3>Support &amp; Growth</h3>
+          <p>Continuous optimization and long-term technology guidance.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="section" aria-labelledby="why-us-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why SaXham Technologies</span>
+        <h2 id="why-us-heading">Built on Real Industry Experience</h2>
+      </div>
+
+      <div class="cards-grid">
+        <article class="glass-card">
+          <div class="icon-box blue-icon" aria-hidden="true"><i class="fas fa-user-tie"></i></div>
+          <h3>8+ Years Experience</h3>
+          <p>Hands-on experience in Capital Markets, Linux, Infrastructure, Application Support and Production Operations.</p>
+        </article>
+
+        <article class="glass-card">
+          <div class="icon-box green-icon" aria-hidden="true"><i class="fas fa-building-columns"></i></div>
+          <h3>Capital Market Expertise</h3>
+          <p>Experience working with Brokerage Firms and Financial Services.</p>
+        </article>
+
+        <article class="glass-card">
+          <div class="icon-box purple-icon" aria-hidden="true"><i class="fas fa-lightbulb"></i></div>
+          <h3>Business First</h3>
+          <p>Solutions designed to improve business outcomes, not just technology.</p>
+        </article>
+
+        <article class="glass-card">
+          <div class="icon-box blue-icon" aria-hidden="true"><i class="fas fa-handshake"></i></div>
+          <h3>Founder-Led Consulting</h3>
+          <p>Direct consulting from the founder — no outsourcing, no middlemen.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="section bg-light" aria-label="Company statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card"><h2>8+</h2><p>Years Experience</p></div>
+        <div class="stat-card"><h2>100+</h2><p>Technology Projects</p></div>
+        <div class="stat-card"><h2>24×7</h2><p>Support Experience</p></div>
+        <div class="stat-card"><h2>India</h2><p>Remote Consulting</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LATEST INSIGHTS ===================== -->
+  <section class="section" aria-labelledby="insights-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Latest Insights</span>
+        <h2 id="insights-heading">Technology &amp; Business Articles</h2>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <img src="assets/images/it-policy-reform.png" alt="Illustration representing IT employee policy reform in India" loading="lazy" width="400" height="240">
+          <h3>India's IT Employees: Protection or Exploitation?</h3>
+          <p>Understanding the future of India's IT workforce.</p>
+          <a href="blog/it-employees-protection-exploitation-india.html">Read Article <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/images/msme.png" alt="Illustration representing MSME digital transformation" loading="lazy" width="400" height="240">
+          <h3>Digital Transformation for MSMEs</h3>
+          <p>How businesses can modernize operations using technology.</p>
+          <a href="blog/paperwork-to-python-msme-transformation.html">Read Article <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/images/trust.png" alt="Illustration representing digital trust for businesses" loading="lazy" width="400" height="240">
+          <h3>Why Digital Trust Matters</h3>
+          <p>Building trust that converts visitors into customers.</p>
+          <a href="blog/why-trust-matters.html">Read Article <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:40px;">
+        <a href="blog/" class="btn btn-outline">View All Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section bg-light" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 id="testimonials-heading">What Clients Appreciate</h2>
+      </div>
+
+      <div class="cards-grid">
+        <blockquote class="glass-card">
+          <p>"Professional guidance with practical solutions. Easy to understand and highly reliable."</p>
+          <footer><cite>— Business Owner</cite></footer>
+        </blockquote>
+
+        <blockquote class="glass-card">
+          <p>"Strong technical knowledge with real operational experience."</p>
+          <footer><cite>— IT Professional</cite></footer>
+        </blockquote>
+
+        <blockquote class="glass-card">
+          <p>"Clear communication, structured approach and dependable support."</p>
+          <footer><cite>— Startup Founder</cite></footer>
+        </blockquote>
+      </div>
+
+      <p style="text-align:center;margin-top:30px;color:#64748b;">
+        Client case studies and success stories will be published soon.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section" aria-labelledby="faq-heading">
+    <div class="container narrow">
+      <div class="section-header">
+        <span class="section-tag">FAQs</span>
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
+      </div>
+
+      <details>
+        <summary>Do you only work with Brokerage Firms?</summary>
+        <p>No. While Capital Markets is our specialization, we also help MSMEs, Startups and Professional Businesses with technology consulting.</p>
+      </details>
+
+      <details>
+        <summary>Do you provide remote consulting?</summary>
+        <p>Yes. We provide consulting and support across India through online meetings and remote collaboration.</p>
+      </details>
+
+      <details>
+        <summary>Can you help modernize our existing IT infrastructure?</summary>
+        <p>Yes. We assess your current systems and recommend practical improvements for stability, security and scalability.</p>
+      </details>
+
+      <details>
+        <summary>How do we get started?</summary>
+        <p>Simply contact us through WhatsApp or the contact form. We'll schedule a discovery discussion to understand your requirements.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CALL TO ACTION ===================== -->
+  <section class="section bg-light" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-box">
+        <span class="section-tag">Let's Build Something Better</span>
+        <h2 id="cta-heading">Ready to Modernize Your Business?</h2>
+        <p>
+          Whether you're a Brokerage Firm, MSME, Startup or Enterprise, we'll help you build stable technology that supports business growth.
+        </p>
+
+        <div class="hero-btns">
+          <a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies,%20I%20need%20Technology%20Consulting" class="btn btn-whatsapp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            Chat on WhatsApp
+          </a>
+          <a href="contact.html" class="btn btn-primary">Free Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT FORM ===================== -->
+  <section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 id="contact-heading">Start Your Project</h2>
+        <p>Tell us about your business. We'll contact you shortly.</p>
+      </div>
+
+      <div class="glass-card" style="max-width:700px;margin:auto;">
+        <form action="https://formsubmit.co/founder@saxhamai.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New Website Enquiry">
+
+          <label class="sr-only" for="contact-name">Full Name</label>
+          <input type="text" id="contact-name" name="Name" placeholder="Full Name" autocomplete="name" required>
+
+          <label class="sr-only" for="contact-email">Email Address</label>
+          <input type="email" id="contact-email" name="Email" placeholder="Email Address" autocomplete="email" required>
+
+          <label class="sr-only" for="contact-phone">Mobile Number</label>
+          <input type="tel" id="contact-phone" name="Phone" placeholder="Mobile Number" autocomplete="tel" required>
+
+          <label class="sr-only" for="contact-requirement">Tell us about your business</label>
+          <textarea id="contact-requirement" name="Requirement" rows="6" placeholder="Tell us about your business..." required></textarea>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <img src="assets/images/saxham-logo-white.png" alt="SaXham Technologies logo" style="height:55px;margin-bottom:20px;" width="180" height="55" loading="lazy">
+      <p>Capital Market Technology Consulting, IT Infrastructure, Digital Transformation and Business Automation.</p>
+    </div>
+
+    <nav aria-label="Services">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Capital Market Consulting</a></li>
+        <li><a href="services.html">Application Support</a></li>
+        <li><a href="services.html">Linux Administration</a></li>
+        <li><a href="services.html">Digital Transformation</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Company">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </nav>
+
+    <address>
+      <h4>Contact</h4>
+      <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+919702855005">+91 97028 55005</a></p>
+      <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:founder@saxhamai.com">founder@saxhamai.com</a></p>
+      <p><i class="fas fa-location-dot" aria-hidden="true"></i> Ghansoli, Navi Mumbai</p>
+    </address>
+
+  </div>
+
+  <div class="copyright">
+    &copy; <span id="year"></span> SaXham Technologies. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- ===================== WHATSAPP FLOATING BUTTON ===================== -->
+<a href="https://wa.me/919702855005" class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat with SaXham Technologies on WhatsApp">
+  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+
+<!-- ===================== BACK TO TOP ===================== -->
+<button id="backToTop" class="back-top" type="button" aria-label="Back to top">
+  <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- ===================== JAVASCRIPT ===================== -->
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>

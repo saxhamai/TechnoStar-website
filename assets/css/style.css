@@ -1686,3 +1686,51 @@ PRINT STYLES OPTIMIZATION
   body { background: #fff; color: #000; font-size: 12pt; }
   .container { width: 100%; max-width: 100%; }
 }
+.mobile-toggle{
+    display:none;
+}
+
+.mobile-menu{
+    display:none;
+}
+
+@media(max-width:992px){
+
+.nav-menu{
+display:none;
+}
+
+.mobile-toggle{
+display:flex;
+align-items:center;
+justify-content:center;
+width:48px;
+height:48px;
+font-size:22px;
+background:none;
+border:none;
+cursor:pointer;
+}
+
+.mobile-menu{
+display:none;
+position:absolute;
+top:82px;
+left:0;
+width:100%;
+background:#fff;
+padding:20px;
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+flex-direction:column;
+gap:18px;
+}
+
+.mobile-menu.active{
+display:flex;
+}
+
+.nav-actions .btn{
+display:none;
+}
+
+}

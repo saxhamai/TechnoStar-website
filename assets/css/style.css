@@ -5241,3 +5241,19 @@ color:#000000;
 }
 
 }
+.mobile-menu{
+right:-100%;
+transition:.4s;
+}
+
+.mobile-menu.active{
+right:0;
+}
+
+.mobile-overlay{
+display:none;
+}
+
+.mobile-overlay.active{
+display:block;
+}

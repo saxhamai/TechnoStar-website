@@ -6,6 +6,17 @@
   "use strict";
 
   /* ---------------------------------------------------------------
+   * Small utility: debounce
+   * ------------------------------------------------------------- */
+  function debounce(fn, delay) {
+    let timer = null;
+    return function debounced(...args) {
+      clearTimeout(timer);
+      timer = setTimeout(() => fn.apply(this, args), delay);
+    };
+  }
+
+  /* ---------------------------------------------------------------
    * Mobile navigation (hamburger + slide-in menu + overlay)
    * ------------------------------------------------------------- */
   function initMobileNav() {
@@ -41,6 +52,26 @@
       return nav.classList.contains("active");
     }
 
+    function trapFocus(event) {
+      if (event.key !== "Tab" || !isOpen()) return;
+
+      const focusable = nav.querySelectorAll(
+        'a[href], button:not([disabled])'
+      );
+      if (!focusable.length) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+
     toggleBtn.addEventListener("click", () => {
       isOpen() ? closeMenu() : openMenu();
     });
@@ -51,9 +82,10 @@
 
     overlay.addEventListener("click", closeMenu);
 
-    // Close on Escape, close after choosing a link (mobile UX)
+    // Close on Escape, trap Tab focus while open, close after choosing a link
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape" && isOpen()) closeMenu();
+      trapFocus(event);
     });
 
     nav.querySelectorAll(".nav-link, .nav-btn").forEach((link) => {
@@ -63,9 +95,12 @@
     });
 
     // Keep menu state in sync if the viewport is resized back to desktop
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 992 && isOpen()) closeMenu();
-    });
+    window.addEventListener(
+      "resize",
+      debounce(() => {
+        if (window.innerWidth > 992 && isOpen()) closeMenu();
+      }, 150)
+    );
   }
 
   /* ---------------------------------------------------------------

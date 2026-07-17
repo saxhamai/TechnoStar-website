@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 480" width="520" height="480" role="img" aria-label="Capital markets technology dashboard illustration">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#0A2540"/>
+    </linearGradient>
+  </defs>
+  <rect x="40" y="60" width="440" height="300" rx="24" fill="#F1F5F9"/>
+  <rect x="40" y="60" width="440" height="52" rx="24" fill="url(#g1)"/>
+  <circle cx="66" cy="86" r="6" fill="#fff" opacity=".8"/>
+  <circle cx="86" cy="86" r="6" fill="#fff" opacity=".6"/>
+  <circle cx="106" cy="86" r="6" fill="#fff" opacity=".4"/>
+
+  <g stroke="#0066FF" stroke-width="3" fill="none" stroke-linecap="round">
+    <polyline points="80,300 140,250 190,280 250,190 310,220 370,150 430,180"/>
+  </g>
+  <g fill="#0066FF">
+    <circle cx="80" cy="300" r="5"/>
+    <circle cx="140" cy="250" r="5"/>
+    <circle cx="190" cy="280" r="5"/>
+    <circle cx="250" cy="190" r="5"/>
+    <circle cx="310" cy="220" r="5"/>
+    <circle cx="370" cy="150" r="5"/>
+    <circle cx="430" cy="180" r="5"/>
+  </g>
+
+  <rect x="70" y="330" width="26" height="14" rx="3" fill="#16A34A"/>
+  <rect x="106" y="320" width="26" height="24" rx="3" fill="#16A34A"/>
+  <rect x="142" y="310" width="26" height="34" rx="3" fill="#DC2626"/>
+  <rect x="178" y="325" width="26" height="19" rx="3" fill="#16A34A"/>
+  <rect x="214" y="300" width="26" height="44" rx="3" fill="#16A34A"/>
+  <rect x="250" y="315" width="26" height="29" rx="3" fill="#DC2626"/>
+
+  <rect x="330" y="140" width="120" height="90" rx="14" fill="#fff" stroke="#E2E8F0"/>
+  <circle cx="358" cy="168" r="12" fill="#EEF5FF"/>
+  <path d="M352 168l4 4 8-8" stroke="#0066FF" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="382" y="160" width="52" height="8" rx="4" fill="#CBD5E1"/>
+  <rect x="382" y="176" width="36" height="8" rx="4" fill="#E2E8F0"/>
+
+  <rect x="0" y="400" width="200" height="16" rx="8" fill="#E2E8F0"/>
+  <rect x="0" y="426" width="140" height="16" rx="8" fill="#F1F5F9"/>
+
+  <circle cx="470" cy="410" r="34" fill="#EEF5FF"/>
+  <path d="M458 410l8 8 16-16" stroke="#0066FF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

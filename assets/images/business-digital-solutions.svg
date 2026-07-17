@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 480" width="560" height="480" role="img" aria-label="Illustration of business digital solutions including website, branding and automation">
+  <rect x="0" y="0" width="560" height="480" rx="28" fill="#F8FAFC"/>
+
+  <rect x="60" y="70" width="440" height="300" rx="18" fill="#fff" stroke="#E2E8F0"/>
+  <rect x="60" y="70" width="440" height="44" rx="18" fill="#0A2540"/>
+  <circle cx="86" cy="92" r="6" fill="#fff" opacity=".8"/>
+  <circle cx="104" cy="92" r="6" fill="#fff" opacity=".6"/>
+  <circle cx="122" cy="92" r="6" fill="#fff" opacity=".4"/>
+
+  <rect x="86" y="140" width="180" height="18" rx="6" fill="#0A2540"/>
+  <rect x="86" y="168" width="260" height="10" rx="5" fill="#CBD5E1"/>
+  <rect x="86" y="186" width="220" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="86" y="216" width="120" height="36" rx="10" fill="#0066FF"/>
+  <text x="146" y="239" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#fff">Get Started</text>
+
+  <rect x="330" y="140" width="140" height="100" rx="14" fill="#EEF5FF"/>
+  <circle cx="400" cy="180" r="18" fill="#0066FF" opacity=".2"/>
+  <circle cx="400" cy="180" r="9" fill="#0066FF"/>
+
+  <g>
+    <circle cx="120" cy="330" r="26" fill="#ECFDF3"/>
+    <path d="M110 330l7 7 14-14" stroke="#16A34A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="120" y="372" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#475569">Website</text>
+  </g>
+  <g>
+    <circle cx="230" cy="330" r="26" fill="#F3E8FF"/>
+    <path d="M220 336l0 -12 M214 330l16 0" stroke="#9333EA" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="230" y="372" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#475569">Branding</text>
+  </g>
+  <g>
+    <circle cx="340" cy="330" r="26" fill="#FFF7ED"/>
+    <path d="M328 330a12 12 0 1 1 24 0a12 12 0 1 1 -24 0" stroke="#EA580C" stroke-width="3" fill="none"/>
+    <text x="340" y="372" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#475569">SEO</text>
+  </g>
+  <g>
+    <circle cx="450" cy="330" r="26" fill="#EEF5FF"/>
+    <path d="M440 336l10 -14 10 14" stroke="#0066FF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="450" y="372" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#475569">Growth</text>
+  </g>
+</svg>

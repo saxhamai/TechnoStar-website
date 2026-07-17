@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-label="Illustration representing digital trust for businesses">
+  <rect width="400" height="240" fill="#0A2540"/>
+  <path d="M200 50l60 24v46c0 45 -26 74 -60 90 -34 -16 -60 -45 -60 -90v-46z" fill="#EEF5FF" opacity=".95"/>
+  <path d="M178 132l16 16 30 -34" stroke="#0066FF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

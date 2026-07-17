@@ -1,13 +1,10 @@
 /**
  * SaXham Technologies — site interactions
- * Modular, no global pollution: everything lives inside an IIFE.
+ * IIFE, no globals leaked.
  */
 (function () {
   "use strict";
 
-  /* ---------------------------------------------------------------
-   * Small utility: debounce
-   * ------------------------------------------------------------- */
   function debounce(fn, delay) {
     let timer = null;
     return function debounced(...args) {
@@ -17,88 +14,78 @@
   }
 
   /* ---------------------------------------------------------------
-   * Mobile navigation (hamburger + slide-in menu + overlay)
+   * Mobile menu (hamburger -> slide-in panel + overlay)
    * ------------------------------------------------------------- */
-  function initMobileNav() {
+  function initMobileMenu() {
     const toggleBtn = document.querySelector(".mobile-toggle");
-    const closeBtn = document.querySelector(".nav-close");
-    const nav = document.getElementById("primary-nav");
-    const overlay = document.querySelector(".nav-overlay");
+    const closeBtn = document.querySelector(".mobile-close");
+    const menu = document.querySelector(".mobile-menu");
+    const overlay = document.querySelector(".mobile-overlay");
 
-    if (!toggleBtn || !nav || !overlay) return;
+    if (!toggleBtn || !menu || !overlay) return;
 
-    let lastFocusedElement = null;
+    let lastFocused = null;
+
+    function isOpen() {
+      return menu.classList.contains("active");
+    }
 
     function openMenu() {
-      lastFocusedElement = document.activeElement;
-      nav.classList.add("active");
-      overlay.hidden = false;
+      lastFocused = document.activeElement;
+      menu.classList.add("active");
+      overlay.classList.add("active");
+      menu.setAttribute("aria-hidden", "false");
       toggleBtn.setAttribute("aria-expanded", "true");
       toggleBtn.setAttribute("aria-label", "Close menu");
-      document.body.classList.add("nav-open");
+      document.body.style.overflow = "hidden";
       if (closeBtn) closeBtn.focus();
     }
 
     function closeMenu() {
-      nav.classList.remove("active");
-      overlay.hidden = true;
+      menu.classList.remove("active");
+      overlay.classList.remove("active");
+      menu.setAttribute("aria-hidden", "true");
       toggleBtn.setAttribute("aria-expanded", "false");
       toggleBtn.setAttribute("aria-label", "Open menu");
-      document.body.classList.remove("nav-open");
-      if (lastFocusedElement) lastFocusedElement.focus();
-    }
-
-    function isOpen() {
-      return nav.classList.contains("active");
-    }
-
-    function trapFocus(event) {
-      if (event.key !== "Tab" || !isOpen()) return;
-
-      const focusable = nav.querySelectorAll(
-        'a[href], button:not([disabled])'
-      );
-      if (!focusable.length) return;
-
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
+      document.body.style.overflow = "";
+      if (lastFocused) lastFocused.focus();
     }
 
     toggleBtn.addEventListener("click", () => {
       isOpen() ? closeMenu() : openMenu();
     });
 
-    if (closeBtn) {
-      closeBtn.addEventListener("click", closeMenu);
-    }
-
+    if (closeBtn) closeBtn.addEventListener("click", closeMenu);
     overlay.addEventListener("click", closeMenu);
 
-    // Close on Escape, trap Tab focus while open, close after choosing a link
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape" && isOpen()) closeMenu();
-      trapFocus(event);
+
+      if (event.key === "Tab" && isOpen()) {
+        const focusable = menu.querySelectorAll("a[href], button:not([disabled])");
+        if (!focusable.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
     });
 
-    nav.querySelectorAll(".nav-link, .nav-btn").forEach((link) => {
+    menu.querySelectorAll(".mobile-link, .mobile-actions a").forEach((link) => {
       link.addEventListener("click", () => {
         if (isOpen()) closeMenu();
       });
     });
 
-    // Keep menu state in sync if the viewport is resized back to desktop
     window.addEventListener(
       "resize",
       debounce(() => {
-        if (window.innerWidth > 992 && isOpen()) closeMenu();
+        if (window.innerWidth > 991 && isOpen()) closeMenu();
       }, 150)
     );
   }
@@ -112,10 +99,8 @@
 
     function update() {
       const scrollTop = document.documentElement.scrollTop;
-      const height =
-        document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const scrolled = height > 0 ? (scrollTop / height) * 100 : 0;
-
       bar.style.width = scrolled + "%";
       bar.setAttribute("aria-valuenow", String(Math.round(scrolled)));
     }
@@ -125,13 +110,13 @@
   }
 
   /* ---------------------------------------------------------------
-   * Back-to-top button
+   * Back-to-top
    * ------------------------------------------------------------- */
   function initBackToTop() {
     const button = document.getElementById("backToTop");
     if (!button) return;
 
-    function toggleVisibility() {
+    function toggle() {
       button.classList.toggle("show", window.scrollY > 500);
     }
 
@@ -139,25 +124,67 @@
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    window.addEventListener("scroll", toggleVisibility, { passive: true });
-    toggleVisibility();
+    window.addEventListener("scroll", toggle, { passive: true });
+    toggle();
   }
 
   /* ---------------------------------------------------------------
-   * Active navigation link (aria-current)
+   * Active nav link (desktop + mobile) by current page
    * ------------------------------------------------------------- */
-  function initActiveNavLink() {
+  function initActiveNav() {
     const current = location.pathname.split("/").pop() || "index.html";
 
-    document.querySelectorAll(".nav-link").forEach((link) => {
+    document.querySelectorAll(".nav-link, .mobile-link").forEach((link) => {
       const isCurrent = link.getAttribute("href") === current;
       link.classList.toggle("active", isCurrent);
-
       if (isCurrent) {
         link.setAttribute("aria-current", "page");
       } else {
         link.removeAttribute("aria-current");
       }
+    });
+  }
+
+  /* ---------------------------------------------------------------
+   * Sticky header shadow on scroll
+   * ------------------------------------------------------------- */
+  function initHeaderScrollState() {
+    const header = document.querySelector(".main-header");
+    if (!header) return;
+
+    function update() {
+      header.classList.toggle("scrolled", window.scrollY > 10);
+    }
+
+    window.addEventListener("scroll", update, { passive: true });
+    update();
+  }
+
+  /* ---------------------------------------------------------------
+   * FAQ accordion
+   * ------------------------------------------------------------- */
+  function initAccordion() {
+    const items = document.querySelectorAll(".accordion-item");
+    if (!items.length) return;
+
+    items.forEach((item) => {
+      const header = item.querySelector(".accordion-header");
+      if (!header) return;
+
+      header.addEventListener("click", () => {
+        const isActive = item.classList.contains("active");
+
+        items.forEach((other) => {
+          other.classList.remove("active");
+          const otherHeader = other.querySelector(".accordion-header");
+          if (otherHeader) otherHeader.setAttribute("aria-expanded", "false");
+        });
+
+        if (!isActive) {
+          item.classList.add("active");
+          header.setAttribute("aria-expanded", "true");
+        }
+      });
     });
   }
 
@@ -170,13 +197,31 @@
   }
 
   /* ---------------------------------------------------------------
+   * Contact form: stop the browser from silently re-filling stale
+   * values after a refresh/back-navigation.
+   * ------------------------------------------------------------- */
+  function initContactForm() {
+    const form = document.querySelector(".contact-form");
+    if (!form) return;
+
+    window.addEventListener("pageshow", (event) => {
+      if (event.persisted) {
+        form.reset();
+      }
+    });
+  }
+
+  /* ---------------------------------------------------------------
    * Boot
    * ------------------------------------------------------------- */
   document.addEventListener("DOMContentLoaded", () => {
-    initMobileNav();
+    initMobileMenu();
     initProgressBar();
     initBackToTop();
-    initActiveNavLink();
+    initActiveNav();
+    initHeaderScrollState();
+    initAccordion();
     initFooterYear();
+    initContactForm();
   });
 })();

@@ -135,6 +135,25 @@
     ]
   }
   </script>
+
+  <style>
+    /* Homepage hero: text-only layout after removing the illustration */
+    .hero-container {
+      grid-template-columns: minmax(0, 1fr);
+      max-width: 900px;
+      margin-inline: auto;
+    }
+    .hero-content {
+      width: 100%;
+      max-width: 820px;
+      margin-inline: auto;
+    }
+    @media (min-width: 821px) {
+      .hero-section { padding-block: clamp(76px, 9vw, 112px); }
+      .hero-title { max-width: 780px; }
+      .hero-subtitle { max-width: 720px; }
+    }
+  </style>
 </head>
 
 <body>
@@ -237,18 +256,7 @@
             <span class="tech-badge"><i class="fa-solid fa-file-circle-check" aria-hidden="true"></i> Online Assistance</span>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="hero-circle hero-circle-1" aria-hidden="true"></div>
-          <div class="hero-circle hero-circle-2" aria-hidden="true"></div>
-          <div class="hero-circle hero-circle-3" aria-hidden="true"></div>
-          <div class="hero-dots" aria-hidden="true"></div>
-          <div class="hero-image-wrapper">
-            <img src="assets/images/hero-consulting.svg" alt="Computer, digital and online technology services" class="hero-main-image" width="520" height="480" fetchpriority="high">
-          </div>
-          <div class="hero-floating-card card-one"><div class="floating-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div><div class="floating-content"><span>Computer</span><strong>Repair & Upgrades</strong></div></div>
-          <div class="hero-floating-card card-two"><div class="floating-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div><div class="floating-content"><span>Business</span><strong>Website & Branding</strong></div></div>
-          <div class="hero-floating-card card-three"><div class="floating-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div><div class="floating-content"><span>Online</span><strong>Document Assistance</strong></div></div>
-        </div>
+
       </div>
     </section>
 

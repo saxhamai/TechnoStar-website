@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practical insights from SaXham Technologies on IT support, digital transformation, business technology and digital trust.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://saxhamai.com/blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog & Knowledge Hub | SaXham Technologies">
+  <meta property="og:description" content="Practical insights on technology, IT operations and digital solutions.">
+  <meta property="og:url" content="https://saxhamai.com/blog/">
+  <meta property="og:image" content="https://saxhamai.com/assets/images/og-image.jpg">
+  <title>Blog & Knowledge Hub | SaXham Technologies</title>
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style-extra.css">
+  <style>
+    .blog-hero{padding:76px 0 64px;background:linear-gradient(135deg,#071d49,#0b397b 58%,#1265a8);color:#fff}
+    .blog-hero .eyebrow{color:#ffd66b;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;margin-bottom:15px}
+    .blog-hero h1{font-family:Poppins,sans-serif;font-size:clamp(2.2rem,5vw,3.5rem);line-height:1.15;max-width:780px;margin:0 0 18px}
+    .blog-hero p{max-width:690px;color:#e1eaf7;line-height:1.8;font-size:1.05rem}
+    .breadcrumb{font-size:.88rem;margin-bottom:22px;color:#d3e0f2}.breadcrumb a{color:#fff;text-decoration:none}
+    .blog-content{padding:64px 0 78px}.blog-heading{max-width:760px;margin-bottom:28px}
+    .blog-heading h2{font-family:Poppins,sans-serif;color:#10264b;font-size:clamp(1.6rem,3vw,2.15rem);margin:0 0 10px}
+    .blog-heading p{color:#637287;line-height:1.7;margin:0}
+    .featured{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:center;background:#f3f7fc;border:1px solid #e4eaf3;border-radius:20px;overflow:hidden;margin-bottom:54px}
+    .featured-art{min-height:270px;display:grid;place-items:center;background:linear-gradient(135deg,#dceaff,#f7faff);color:#174a8c}
+    .featured-art i{font-size:6rem}.featured-copy{padding:28px 32px 28px 0}
+    .tag{display:inline-block;background:#e7efff;color:#174a8c;border-radius:30px;padding:7px 12px;font-size:.76rem;font-weight:700;margin-bottom:13px}
+    .featured h3,.article-card h3{font-family:Poppins,sans-serif;color:#10264b;line-height:1.4}
+    .featured h3{font-size:1.55rem;margin:0 0 12px}.featured p,.article-card p{color:#637287;line-height:1.7}
+    .read-link{display:inline-flex;gap:9px;align-items:center;color:#0c55a0;font-weight:700;text-decoration:none}.read-link:hover{color:#b27b00}
+    .article-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}
+    .article-card{border:1px solid #e5eaf1;border-radius:17px;padding:25px;box-shadow:0 8px 24px rgba(16,38,75,.045);display:flex;flex-direction:column;background:#fff}
+    .article-icon{width:50px;height:50px;border-radius:14px;background:#edf4ff;color:#14549b;display:grid;place-items:center;font-size:1.25rem;margin-bottom:18px}
+    .article-card h3{font-size:1.16rem;margin:0 0 10px}.article-card p{font-size:.94rem;margin:0 0 20px}.article-card .read-link{margin-top:auto}
+    .blog-note{margin-top:42px;padding:22px 25px;border-left:4px solid #d5a32b;background:#fffaf0;border-radius:0 13px 13px 0;color:#5d6570;line-height:1.7}
+    .blog-cta{padding:52px 0;background:#f3f7fc;text-align:center}.blog-cta h2{font-family:Poppins,sans-serif;color:#10264b;margin:0 0 10px}
+    .blog-cta p{max-width:650px;margin:0 auto 22px;color:#637287;line-height:1.7}.cta-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    @media(max-width:900px){.article-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.featured{grid-template-columns:1fr}.featured-art{min-height:180px}.featured-copy{padding:0 26px 28px}}
+    @media(max-width:600px){.blog-hero{padding:55px 0 45px}.blog-content{padding:45px 0 55px}.article-grid{grid-template-columns:1fr}.featured-art{min-height:150px}.featured-art i{font-size:4.5rem}.featured-copy{padding:0 21px 24px}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Blog","name":"SaXham Technologies Blog & Knowledge Hub","url":"https://saxhamai.com/blog/","description":"Practical insights on IT support, digital solutions, technology and business transformation.","publisher":{"@type":"Organization","name":"SaXham Technologies","url":"https://saxhamai.com/"}}
+  </script>
+</head>
+<body>
+  <div id="progress-bar" aria-hidden="true"></div>
+  <div class="top-bar"><div class="container top-bar-inner">
+    <div class="top-bar-left"><span><i class="fa-solid fa-location-dot"></i> Ghansoli, Navi Mumbai</span><span><i class="fa-regular fa-clock"></i> Mon–Sat, 9 AM–7 PM</span></div>
+    <div class="top-bar-right"><a href="tel:+919702855005"><i class="fa-solid fa-phone"></i> +91 97028 55005</a><a href="mailto:founder@saxhamai.com"><i class="fa-regular fa-envelope"></i> founder@saxhamai.com</a></div>
+  </div></div>
+  <header class="main-header">
+    <div class="container navbar">
+      <a class="brand" href="../index.html" aria-label="SaXham Technologies home"><img src="../assets/images/saxham-logo.png" alt="SaXham Technologies" class="logo"></a>
+      <button class="mobile-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav-menu" aria-label="Main navigation">
+        <a class="nav-link" href="../index.html">Home</a><a class="nav-link" href="../computer-services.html">Computer Services</a><a class="nav-link" href="../digital-solutions.html">Digital Solutions</a><a class="nav-link" href="../online-services.html">Online Services</a><a class="nav-link active" href="./" aria-current="page">Blog</a><a class="nav-link" href="../about.html">About</a><a class="nav-link" href="../contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="../contact.html">Get in Touch</a>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+      <button class="mobile-close" type="button" aria-label="Close navigation menu"><i class="fa-solid fa-xmark"></i></button>
+      <a class="mobile-link" href="../index.html">Home</a><a class="mobile-link" href="../computer-services.html">Computer Services</a><a class="mobile-link" href="../digital-solutions.html">Digital Solutions</a><a class="mobile-link" href="../online-services.html">Online Services</a><a class="mobile-link active" href="./" aria-current="page">Blog</a><a class="mobile-link" href="../about.html">About</a><a class="mobile-link" href="../contact.html">Contact</a>
+      <div class="mobile-actions"><a class="btn btn-primary" href="../contact.html">Get in Touch</a></div>
+    </nav>
+  </header>
 
+  <main>
+    <section class="blog-hero"><div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Blog</div>
+      <div class="eyebrow"><i class="fa-solid fa-lightbulb"></i> SaXham Knowledge Hub</div>
+      <h1>Ideas, insights &amp; practical technology guides.</h1>
+      <p>Explore useful perspectives on IT operations, digital transformation, business technology, and the role of trust in an increasingly digital world.</p>
+    </div></section>
+
+    <section class="blog-content"><div class="container">
+      <div class="blog-heading"><h2>Explore the Knowledge Hub</h2><p>Clear, practical content for individuals, small businesses, and teams looking to understand technology and make better digital decisions.</p></div>
+      <article class="featured">
+        <div class="featured-art" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="featured-copy">
+          <span class="tag">Featured · Digital transformation</span>
+          <h3>From Paperwork to Python: How MSMEs Can Start Their Digital Transformation</h3>
+          <p>A practical look at how small and medium businesses can move repetitive paperwork and manual processes towards simpler digital workflows, step by step.</p>
+          <a class="read-link" href="paperwork-to-python-msme-transformation.html">Read the article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <div class="blog-heading"><h2>Latest articles</h2><p>Thoughts and guides covering workplace technology, business processes, and digital trust.</p></div>
+      <div class="article-grid">
+        <article class="article-card">
+          <div class="article-icon"><i class="fa-solid fa-file-lines"></i></div><span class="tag">Workplace · India</span>
+          <h3>IT Employees, Workplace Protection &amp; Exploitation in India</h3>
+          <p>A discussion about workplace challenges faced by IT employees and why awareness, fair practices, and professional support matter.</p>
+          <a class="read-link" href="it-employees-protection-exploitation-india.html">Read article <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+        <article class="article-card">
+          <div class="article-icon"><i class="fa-solid fa-gears"></i></div><span class="tag">MSME · Automation</span>
+          <h3>From Paperwork to Python: MSME Digital Transformation</h3>
+          <p>Understand how practical automation and simple digital tools can help reduce repetitive work and organise everyday business operations.</p>
+          <a class="read-link" href="paperwork-to-python-msme-transformation.html">Read article <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+        <article class="article-card">
+          <div class="article-icon"><i class="fa-solid fa-shield-halved"></i></div><span class="tag">Digital trust</span>
+          <h3>Why Trust Matters in the Digital World</h3>
+          <p>Explore the importance of transparency, privacy, communication, and responsible digital services.</p>
+          <a class="read-link" href="why-trust-matters.html">Read article <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+      </div>
+      <div class="blog-note"><strong>Our approach:</strong> SaXham Technologies aims to make technology easier to understand through practical information and clear communication. Articles are for general information and should not be treated as legal, financial, or professional advice.</div>
+    </div></section>
+
+    <section class="blog-cta"><div class="container">
+      <h2>Have a technology question?</h2><p>Need help with a computer, a digital setup, or an online task? Tell us what you are trying to do and we’ll help you understand the next step.</p>
+      <div class="cta-actions"><a class="btn btn-primary" href="../contact.html">Contact SaXham Technologies</a><a class="btn btn-outline" href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a></div>
+    </div></section>
+  </main>
+
+  <footer class="main-footer"><div class="container footer-grid">
+    <div class="footer-brand"><a href="../index.html" aria-label="SaXham Technologies home"><img src="../assets/images/saxham-logo.png" alt="SaXham Technologies" class="footer-logo"></a><p>Repair. Digital. Connect. Practical technology support and digital solutions for individuals and businesses.</p><div class="footer-social"><a href="https://www.instagram.com/saxhamtechnologies/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+    <div class="footer-links"><h3>Quick Links</h3><a href="../index.html">Home</a><a href="../about.html">About Us</a><a href="../contact.html">Contact</a><a href="./">Blog &amp; Knowledge Hub</a></div>
+    <div class="footer-links"><h3>Our Services</h3><a href="../computer-services.html">Computer Services</a><a href="../digital-solutions.html">Digital Solutions</a><a href="../online-services.html">Online Services</a></div>
+    <div class="footer-contact"><h3>Get in Touch</h3><p><i class="fa-solid fa-location-dot"></i> Ghansoli, Navi Mumbai</p><p><i class="fa-solid fa-phone"></i> <a href="tel:+919702855005">+91 97028 55005</a></p><p><i class="fa-regular fa-envelope"></i> <a href="mailto:founder@saxhamai.com">founder@saxhamai.com</a></p><p><i class="fa-regular fa-clock"></i> Mon–Sat, 9 AM–7 PM</p></div>
+  </div><div class="container footer-bottom"><p>© <span id="year"></span> SaXham Technologies. All rights reserved.</p><div><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms &amp; Conditions</a></div></div></footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <a class="floating-call" href="tel:+919702855005" aria-label="Call SaXham Technologies"><i class="fa-solid fa-phone"></i></a>
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

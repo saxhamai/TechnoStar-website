@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer & Laptop Repair Services in Navi Mumbai | SaXham Technologies</title>
+  <meta name="description" content="Explore computer and laptop repair, Windows installation, SSD and RAM upgrades, troubleshooting, data backup and maintenance services from SaXham Technologies in Ghansoli, Navi Mumbai.">
+  <meta name="keywords" content="computer repair Ghansoli, laptop repair Navi Mumbai, desktop repair, SSD upgrade, RAM upgrade, Windows installation, computer troubleshooting, laptop maintenance">
+  <meta name="author" content="SaXham Technologies">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A2540">
+  <link rel="canonical" href="https://saxhamai.com/computer-services.html">
+  <link rel="icon" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-extra.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SaXham Technologies">
+  <meta property="og:title" content="Computer & Laptop Repair Services | SaXham Technologies">
+  <meta property="og:description" content="Computer troubleshooting, laptop servicing, SSD and RAM upgrades, Windows installation and maintenance in Navi Mumbai.">
+  <meta property="og:url" content="https://saxhamai.com/computer-services.html">
+  <meta property="og:image" content="https://saxhamai.com/assets/images/og-image.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Computer and Laptop Services",
+    "serviceType": [
+      "Computer and laptop troubleshooting",
+      "SSD and RAM upgrades",
+      "Operating system installation",
+      "Computer maintenance and setup"
+    ],
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "SaXham Technologies",
+      "url": "https://saxhamai.com/",
+      "telephone": "+91-9702855005",
+      "email": "founder@saxhamai.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ghansoli",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      }
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Navi Mumbai"
+    },
+    "url": "https://saxhamai.com/computer-services.html"
+  }
+  </script>
+
+  <style>
+    .cs-hero{position:relative;overflow:hidden;padding:clamp(76px,9vw,118px) 0;background:linear-gradient(125deg,#071b30 0%,#0a3154 58%,#1769aa 100%);color:#fff}
+    .cs-hero:after{content:"";position:absolute;width:460px;height:460px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-110px;top:-180px;box-shadow:0 0 0 55px rgba(255,255,255,.035),0 0 0 110px rgba(255,255,255,.025)}
+    .cs-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px}
+    .cs-eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid rgba(255,255,255,.2);border-radius:30px;background:rgba(255,255,255,.08);font-size:.82rem;font-weight:700;color:#f4d78e}
+    .cs-hero h2{margin:20px 0 16px;color:#fff;font:800 clamp(2.2rem,5vw,3.65rem)/1.12 Poppins,Inter,sans-serif;letter-spacing:-.04em}
+    .cs-hero h2 span{display:block;color:#f0ca70}
+    .cs-hero p{max-width:650px;color:rgba(255,255,255,.82);font-size:1.05rem}
+    .cs-hero .hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:27px}
+    .cs-hero-art{display:grid;place-items:center;min-height:300px;position:relative}
+    .cs-art-circle{width:min(310px,75vw);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fff 0%,#dcecf8 48%,#a9cbe3 100%);box-shadow:0 25px 70px rgba(0,0,0,.25);color:#0a3154;font-size:7rem}
+    .cs-art-tag{position:absolute;bottom:24px;right:0;background:#fff;color:#0a2540;border-radius:14px;padding:13px 17px;box-shadow:0 12px 32px rgba(0,0,0,.2);font-weight:800}
+    .cs-trust-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .cs-trust-row span{font-size:.84rem;color:rgba(255,255,255,.9)}
+    .cs-trust-row i{color:#f0ca70;margin-right:6px}
+    .cs-intro{max-width:800px;margin:0 auto 38px;text-align:center}
+    .cs-intro h2,.cs-section-title{font:700 clamp(1.8rem,3.4vw,2.5rem)/1.2 Poppins,Inter,sans-serif;color:#0a2540;letter-spacing:-.03em}
+    .cs-intro p{color:#627487}
+    .cs-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .cs-card{height:100%;padding:27px;border:1px solid #e2eaf1;border-radius:19px;background:#fff;box-shadow:0 8px 24px rgba(10,37,64,.055);transition:transform .2s ease,box-shadow .2s ease}
+    .cs-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(10,37,64,.11)}
+    .cs-icon{width:54px;height:54px;display:grid;place-items:center;border-radius:15px;background:#eaf3fb;color:#1769aa;font-size:1.35rem}
+    .cs-card h3{margin:17px 0 9px;color:#0a2540;font:700 1.12rem Poppins,Inter,sans-serif}
+    .cs-card p{margin:0;color:#627487;font-size:.94rem}
+    .cs-card ul{margin:14px 0 0;padding-left:19px;color:#53687b;font-size:.9rem}
+    .cs-card li{margin:5px 0}
+    .cs-note{margin-top:25px;padding:17px 20px;border-left:4px solid #d6ad52;border-radius:10px;background:#fbf5e8;color:#5c4a25}
+    .cs-process{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;counter-reset:step}
+    .cs-step{position:relative;padding:24px 20px;border-radius:16px;background:#fff;border:1px solid #e2eaf1}
+    .cs-step:before{counter-increment:step;content:"0" counter(step);display:block;margin-bottom:14px;color:#1769aa;font:800 1.6rem Poppins,Inter,sans-serif}
+    .cs-step h3{margin:0 0 8px;color:#0a2540;font-size:1rem}
+    .cs-step p{margin:0;color:#627487;font-size:.9rem}
+    .cs-cta{padding:clamp(32px,5vw,56px);border-radius:24px;background:linear-gradient(120deg,#0a2540,#1769aa);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .cs-cta h2{margin:0 0 8px;color:#fff;font:700 clamp(1.55rem,3vw,2.2rem) Poppins,Inter,sans-serif}
+    .cs-cta p{margin:0;color:rgba(255,255,255,.82)}
+    .cs-faq{max-width:850px;margin:0 auto}
+    .cs-faq .accordion-item{margin-bottom:12px;border:1px solid #e2eaf1;border-radius:13px;overflow:hidden;background:#fff}
+    .cs-faq .accordion-header{width:100%;display:flex;justify-content:space-between;align-items:center;gap:15px;padding:18px 20px;border:0;background:#fff;text-align:left;color:#0a2540;font-weight:700;cursor:pointer}
+    .cs-faq .accordion-body{padding:0 20px 18px;color:#627487}
+    @media(max-width:900px){.cs-hero-grid{grid-template-columns:1fr .7fr;gap:25px}.cs-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cs-process{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:680px){.cs-hero-grid{grid-template-columns:1fr}.cs-hero-art{min-height:220px;order:-1}.cs-art-circle{width:190px;font-size:4.4rem}.cs-art-tag{right:8%;bottom:5px}.cs-service-grid,.cs-process{grid-template-columns:1fr}.cs-cta{align-items:flex-start;flex-direction:column}.cs-hero .hero-actions .btn{width:100%;justify-content:center}}
+    @media(prefers-reduced-motion:reduce){.cs-card{transition:none}.cs-card:hover{transform:none}}
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="progress-bar" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-left">
+        <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Ghansoli, Navi Mumbai</span>
+        <span><i class="fa-solid fa-clock" aria-hidden="true"></i> Mon–Sat, 9:00 AM–7:00 PM</span>
+      </div>
+      <div class="top-right">
+        <a href="tel:+919702855005"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 97028 55005</a>
+        <a href="mailto:founder@saxhamai.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> founder@saxhamai.com</a>
+        <a href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp SaXham Technologies"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header" id="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand" aria-label="SaXham Technologies home">
+        <img src="assets/images/saxham-logo.png" alt="SaXham Technologies logo" class="brand-logo-img" width="56" height="56">
+        <div class="brand-text"><h1>SaXham Technologies</h1><p>Repair. Digital. Connect.</p></div>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-menu" id="primary-nav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="computer-services.html" class="nav-link active" aria-current="page">Computer Services</a></li>
+          <li><a href="digital-solutions.html" class="nav-link">Digital Solutions</a></li>
+          <li><a href="online-services.html" class="nav-link">Online Services</a></li>
+          <li><a href="blog/" class="nav-link">Blog</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions"><a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20need%20computer%20service%20assistance." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get Assistance</a></div>
+      <button type="button" class="mobile-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <div class="mobile-brand">
+        <img src="assets/images/saxham-logo.png" alt="" class="mobile-logo" width="48" height="48">
+        <div><h3>SaXham Technologies</h3><p>Repair. Digital. Connect.</p></div>
+      </div>
+      <button type="button" class="mobile-close" aria-label="Close menu"><i class="fas fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <ul class="mobile-nav">
+      <li><a href="index.html" class="mobile-link"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+      <li><a href="computer-services.html" class="mobile-link active" aria-current="page"><i class="fa-solid fa-laptop" aria-hidden="true"></i> Computer Services</a></li>
+      <li><a href="digital-solutions.html" class="mobile-link"><i class="fa-solid fa-globe" aria-hidden="true"></i> Digital Solutions</a></li>
+      <li><a href="online-services.html" class="mobile-link"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Online Services</a></li>
+      <li><a href="blog/" class="mobile-link"><i class="fa-solid fa-newspaper" aria-hidden="true"></i> Blog</a></li>
+      <li><a href="about.html" class="mobile-link"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a></li>
+      <li><a href="contact.html" class="mobile-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a></li>
+    </ul>
+    <div class="mobile-actions">
+      <a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20need%20computer%20service%20assistance." class="btn btn-whatsapp btn-block" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
+      <a href="tel:+919702855005" class="btn btn-outline btn-block"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call Now</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <section class="cs-hero">
+      <div class="container cs-hero-grid">
+        <div>
+          <span class="cs-eyebrow"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Computer & Laptop Support</span>
+          <h2>Computer Problems?<span>Let's Get Them Working.</span></h2>
+          <p>Practical computer and laptop support for home users, students and small businesses. From performance upgrades to software setup and troubleshooting, tell us what your device needs.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20need%20computer%20or%20laptop%20service." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Enquire on WhatsApp</a>
+            <a class="btn btn-outline" href="#computer-services-list">Explore Services</a>
+          </div>
+          <div class="cs-trust-row">
+            <span><i class="fa-solid fa-check-circle"></i> Clear communication</span>
+            <span><i class="fa-solid fa-check-circle"></i> Work confirmed before start</span>
+            <span><i class="fa-solid fa-check-circle"></i> Service enquiry by appointment</span>
+          </div>
+        </div>
+        <div class="cs-hero-art" aria-hidden="true">
+          <div class="cs-art-circle"><i class="fa-solid fa-laptop"></i></div>
+          <div class="cs-art-tag"><i class="fa-solid fa-microchip"></i> Repair • Upgrade • Support</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="computer-services-list">
+      <div class="container">
+        <div class="cs-intro">
+          <span class="section-tag">What We Can Help With</span>
+          <h2>Computer Services</h2>
+          <p>Choose a service below or contact us with your issue. The exact solution, availability and charges will be discussed after understanding your device and requirement.</p>
+        </div>
+
+        <div class="cs-service-grid">
+          <article class="cs-card">
+            <div class="cs-icon"><i class="fa-solid fa-laptop-medical"></i></div>
+            <h3>Laptop & Desktop Troubleshooting</h3>
+            <p>Help identify common hardware and software issues affecting your computer.</p>
+            <ul><li>Slow performance and system errors</li><li>Startup and boot-related issues</li><li>Basic hardware diagnosis</li></ul>
+          </article>
+          <article class="cs-card">
+            <div class="cs-icon"><i class="fa-solid fa-hard-drive"></i></div>
+            <h3>SSD Upgrade & Installation</h3>
+            <p>Upgrade compatible systems from a hard drive to an SSD for improved responsiveness.</p>
+            <ul><li>SATA SSD and NVMe compatibility checks</li><li>SSD installation and setup</li><li>Storage upgrade guidance</li></ul>
+          </article>
+          <article class="cs-card">
+            <div class="cs-icon"><i class="fa-solid fa-memory"></i></div>
+            <h3>RAM Upgrade</h3>
+            <p>Check memory compatibility and help upgrade supported desktops and laptops.</p>
+            <ul><li>RAM type and capacity checks</li><li>Supported memory configuration</li><li>Installation and verification</li></ul>
+          </article>
+          <article class="cs-card">
+            <div class="cs-icon"><i class="fa-brands fa-windows"></i></div>
+            <h3>Windows Installation & Setup</h3>
+            <p>Operating system installation and basic configuration for supported devices.</p>
+            <ul><li>Windows installation assistance</li><li>Driver and update setup</li><li>Basic application configuration</li></ul>
+          </article>
+          <article class="cs-card">
+            <div class="cs-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Software & Security Support</h3>
+            <p>Assistance with common software setup, updates and basic system hygiene.</p>
+            <ul><li>Application installation support</li><li>System updates and cleanup</li><li>Basic security settings guidance</li></ul>
+          </article>
+          <article class="cs-card">
+            <div class="cs-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Data Backup & Transfer</h3>
+            <p>Help plan and perform supported file backup or transfer tasks.</p>
+            <ul><li>Personal file backup assistance</li><li>Drive-to-drive data transfer</li><li>Storage health and capacity guidance</li></ul>
+          </article>
+          <article class="cs-card">
+            <div class="cs-icon"><i class="fa-solid fa-print"></i></div>
+            <h3>Printer & Peripheral Setup</h3>
+            <p>Basic setup support for commonly used computer accessories.</p>
+            <ul><li>Printer installation assistance</li><li>Wi-Fi and USB connectivity checks</li><li>Keyboard, mouse and display setup</li></ul>
+          </article>
+          <article class="cs-card">
+            <div class="cs-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>Basic Home & Office Setup</h3>
+            <p>Help connect and configure computers and supported peripherals.</p>
+            <ul><li>Basic Wi-Fi connectivity troubleshooting</li><li>Computer and accessory setup</li><li>Small-office workstation guidance</li></ul>
+          </article>
+          <article class="cs-card">
+            <div class="cs-icon"><i class="fa-solid fa-screwdriver"></i></div>
+            <h3>PC Cleaning & Maintenance</h3>
+            <p>General maintenance guidance and cleaning services where feasible.</p>
+            <ul><li>Desktop internal dust cleaning</li><li>Basic system health checks</li><li>Preventive maintenance guidance</li></ul>
+          </article>
+        </div>
+
+        <div class="cs-note"><strong>Important:</strong> Not every repair or component replacement is possible on every device. We first review the model, symptoms and service location, then confirm feasibility, estimated charges and next steps. Data recovery from physically damaged drives is not guaranteed.</div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Simple & Transparent</span>
+          <h2>How Our Service Process Works</h2>
+          <p>We discuss the issue first, confirm the scope and proceed only after you approve the work.</p>
+        </div>
+        <div class="cs-process">
+          <article class="cs-step"><h3>Share Your Issue</h3><p>Send the device model, issue details and photos or a short video if useful.</p></article>
+          <article class="cs-step"><h3>Initial Assessment</h3><p>We review the information and discuss possible checks or service options.</p></article>
+          <article class="cs-step"><h3>Confirm Scope & Cost</h3><p>Availability, estimated charges and the next steps are shared before work begins.</p></article>
+          <article class="cs-step"><h3>Service & Handover</h3><p>After approved work, we explain what was completed and any relevant follow-up.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cs-cta">
+          <div>
+            <h2>Need help with your computer?</h2>
+            <p>Tell us the device model and what is happening. We will get back to you about the next steps.</p>
+          </div>
+          <a class="btn btn-primary" href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20need%20help%20with%20my%20computer.%20Device%20model%3A%20" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2>Computer Service FAQs</h2>
+          <p>Some common questions before requesting a service.</p>
+        </div>
+        <div class="cs-faq">
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="cs-faq-1">Which areas do you serve? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="accordion-body" id="cs-faq-1" aria-hidden="true"><p>Computer service enquiries are accepted from Ghansoli and nearby Navi Mumbai areas. Availability depends on the type of work and service location.</p></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="cs-faq-2">Can you upgrade my laptop with an SSD or more RAM? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="accordion-body" id="cs-faq-2" aria-hidden="true"><p>In many cases, yes. Share your laptop or desktop model so compatibility can be checked before choosing a component.</p></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="cs-faq-3">Do you provide doorstep service? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="accordion-body" id="cs-faq-3" aria-hidden="true"><p>Doorstep availability is not guaranteed for every service. Contact us with your area and requirement so we can confirm whether it is possible.</p></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="cs-faq-4">How much does a repair or upgrade cost? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="accordion-body" id="cs-faq-4" aria-hidden="true"><p>Charges depend on the device, issue, parts and work involved. We discuss the estimated cost before starting approved work.</p></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="cs-faq-5">Can you guarantee recovery of my data? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="accordion-body" id="cs-faq-5" aria-hidden="true"><p>No. Data recovery depends on the condition of the storage device. Stop using a drive that may be failing and ask for an assessment. Recovery cannot be guaranteed.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-brand">
+            <div class="footer-logo"><img src="assets/images/saxham-logo.png" alt="SaXham Technologies" width="48" height="48"></div>
+            <div class="footer-brand-text"><h3>SaXham Technologies</h3><p>Repair. Digital. Connect.</p></div>
+          </div>
+          <p class="footer-description">Computer services, digital solutions and online assistance for individuals, professionals and growing businesses.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/saxhamtechnologies/" target="_blank" rel="noopener noreferrer" aria-label="SaXham Technologies on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer" aria-label="SaXham Technologies on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Our Services</h4>
+          <nav class="footer-links" aria-label="Footer services">
+            <a href="computer-services.html"><i class="fa-solid fa-chevron-right"></i> Computer Services</a>
+            <a href="digital-solutions.html"><i class="fa-solid fa-chevron-right"></i> Digital Solutions</a>
+            <a href="online-services.html"><i class="fa-solid fa-chevron-right"></i> Online Services</a>
+            <a href="blog/"><i class="fa-solid fa-chevron-right"></i> Knowledge Hub</a>
+          </nav>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Company</h4>
+          <nav class="footer-links" aria-label="Company links">
+            <a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a>
+            <a href="blog/"><i class="fa-solid fa-chevron-right"></i> Blog</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a>
+            <a href="privacy.html"><i class="fa-solid fa-chevron-right"></i> Privacy Policy</a>
+            <a href="terms.html"><i class="fa-solid fa-chevron-right"></i> Terms of Service</a>
+          </nav>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+919702855005">+91 97028 55005</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:founder@saxhamai.com">founder@saxhamai.com</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> Ghansoli, Navi Mumbai, Maharashtra</li>
+            <li><i class="fa-solid fa-clock"></i> Mon–Sat, 9:00 AM–7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p class="footer-copy">&copy; <span id="year"></span> SaXham Technologies. All Rights Reserved.</p>
+          <div class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-buttons">
+    <a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20need%20computer%20service%20assistance." class="float-btn float-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with SaXham Technologies on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    <a href="tel:+919702855005" class="float-btn float-call" aria-label="Call SaXham Technologies"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+  </div>
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

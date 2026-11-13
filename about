@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About SaXham Technologies | Repair. Digital. Connect.</title>
+  <meta name="description" content="Learn about SaXham Technologies, an independent technology service brand offering computer support, digital solutions and online document assistance in Ghansoli and Navi Mumbai.">
+  <meta name="keywords" content="about SaXham Technologies, computer services Navi Mumbai, digital solutions Ghansoli, laptop repair, small business technology support">
+  <meta name="author" content="SaXham Technologies">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A2540">
+  <link rel="canonical" href="https://saxhamai.com/about.html">
+  <link rel="icon" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-extra.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SaXham Technologies">
+  <meta property="og:title" content="About SaXham Technologies">
+  <meta property="og:description" content="Practical technology support for people and growing businesses. Repair. Digital. Connect.">
+  <meta property="og:url" content="https://saxhamai.com/about.html">
+  <meta property="og:image" content="https://saxhamai.com/assets/images/og-image.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About SaXham Technologies",
+    "url": "https://saxhamai.com/about.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "SaXham Technologies",
+      "url": "https://saxhamai.com/",
+      "email": "founder@saxhamai.com",
+      "telephone": "+91-9702855005",
+      "description": "An independent technology service brand offering computer services, digital solutions and online document assistance.",
+      "areaServed": {
+        "@type": "City",
+        "name": "Navi Mumbai"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    .about-hero{position:relative;overflow:hidden;padding:clamp(76px,9vw,112px) 0;background:linear-gradient(125deg,#071b30 0%,#0a3154 58%,#1769aa 100%);color:#fff}
+    .about-hero:after{content:"";position:absolute;width:460px;height:460px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-110px;top:-180px;box-shadow:0 0 0 55px rgba(255,255,255,.035),0 0 0 110px rgba(255,255,255,.025)}
+    .about-hero-inner{position:relative;z-index:1;max-width:900px}
+    .about-eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid rgba(255,255,255,.2);border-radius:30px;background:rgba(255,255,255,.08);font-size:.82rem;font-weight:700;color:#f4d78e}
+    .about-hero h2{margin:20px 0 16px;color:#fff;font:800 clamp(2.2rem,5vw,3.65rem)/1.12 Poppins,Inter,sans-serif;letter-spacing:-.04em}
+    .about-hero h2 span{color:#f0ca70}
+    .about-hero p{max-width:740px;color:rgba(255,255,255,.84);font-size:1.08rem}
+    .about-hero .hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:27px}
+    .about-intro{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}
+    .about-copy h2,.about-section-title{font:700 clamp(1.8rem,3.4vw,2.5rem)/1.2 Poppins,Inter,sans-serif;color:#0a2540;letter-spacing:-.03em}
+    .about-copy p{color:#627487}
+    .about-visual{min-height:310px;display:grid;place-items:center;border-radius:24px;background:linear-gradient(145deg,#eaf3fb,#f8fbfe);position:relative;overflow:hidden}
+    .about-visual:before,.about-visual:after{content:"";position:absolute;border:1px solid rgba(23,105,170,.15);border-radius:50%;width:250px;height:250px}
+    .about-visual:after{width:330px;height:330px}
+    .about-visual-icon{position:relative;z-index:1;width:150px;height:150px;border-radius:35px;display:grid;place-items:center;background:linear-gradient(135deg,#0a3154,#1769aa);color:#fff;font-size:4rem;box-shadow:0 20px 45px rgba(10,49,84,.2);transform:rotate(-5deg)}
+    .about-pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+    .about-pillar{padding:26px;border:1px solid #e2eaf1;border-radius:18px;background:#fff;box-shadow:0 8px 24px rgba(10,37,64,.05)}
+    .about-pillar .about-pillar-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:14px;background:#eaf3fb;color:#1769aa;font-size:1.3rem}
+    .about-pillar h3{margin:16px 0 8px;color:#0a2540;font:700 1.08rem Poppins,Inter,sans-serif}
+    .about-pillar p{margin:0;color:#627487;font-size:.94rem}
+    .about-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .about-value{display:flex;gap:15px;padding:20px;border:1px solid #e2eaf1;border-radius:15px;background:#fff}
+    .about-value i{flex:0 0 42px;width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#fbf5e8;color:#a77b25}
+    .about-value h3{margin:0 0 5px;color:#0a2540;font-size:1rem}
+    .about-value p{margin:0;color:#627487;font-size:.9rem}
+    .about-cta{padding:clamp(32px,5vw,56px);border-radius:24px;background:linear-gradient(120deg,#0a2540,#1769aa);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .about-cta h2{margin:0 0 8px;color:#fff;font:700 clamp(1.55rem,3vw,2.2rem) Poppins,Inter,sans-serif}
+    .about-cta p{margin:0;color:rgba(255,255,255,.82)}
+    @media(max-width:850px){.about-intro{grid-template-columns:1fr}.about-visual{min-height:250px}.about-pillars{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:620px){.about-pillars,.about-values{grid-template-columns:1fr}.about-cta{align-items:flex-start;flex-direction:column}.about-hero .hero-actions .btn{width:100%;justify-content:center}}
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="progress-bar" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-left">
+        <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Ghansoli, Navi Mumbai</span>
+        <span><i class="fa-solid fa-clock" aria-hidden="true"></i> Mon–Sat, 9:00 AM–7:00 PM</span>
+      </div>
+      <div class="top-right">
+        <a href="tel:+919702855005"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 97028 55005</a>
+        <a href="mailto:founder@saxhamai.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> founder@saxhamai.com</a>
+        <a href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp SaXham Technologies"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header" id="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand" aria-label="SaXham Technologies home">
+        <img src="assets/images/saxham-logo.png" alt="SaXham Technologies logo" class="brand-logo-img" width="56" height="56">
+        <div class="brand-text"><h1>SaXham Technologies</h1><p>Repair. Digital. Connect.</p></div>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-menu" id="primary-nav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="computer-services.html" class="nav-link">Computer Services</a></li>
+          <li><a href="digital-solutions.html" class="nav-link">Digital Solutions</a></li>
+          <li><a href="online-services.html" class="nav-link">Online Services</a></li>
+          <li><a href="blog/" class="nav-link">Blog</a></li>
+          <li><a href="about.html" class="nav-link active" aria-current="page">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions"><a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20would%20like%20to%20know%20more." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get in Touch</a></div>
+      <button type="button" class="mobile-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <div class="mobile-brand">
+        <img src="assets/images/saxham-logo.png" alt="" class="mobile-logo" width="48" height="48">
+        <div><h3>SaXham Technologies</h3><p>Repair. Digital. Connect.</p></div>
+      </div>
+      <button type="button" class="mobile-close" aria-label="Close menu"><i class="fas fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <ul class="mobile-nav">
+      <li><a href="index.html" class="mobile-link"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+      <li><a href="computer-services.html" class="mobile-link"><i class="fa-solid fa-laptop" aria-hidden="true"></i> Computer Services</a></li>
+      <li><a href="digital-solutions.html" class="mobile-link"><i class="fa-solid fa-globe" aria-hidden="true"></i> Digital Solutions</a></li>
+      <li><a href="online-services.html" class="mobile-link"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Online Services</a></li>
+      <li><a href="blog/" class="mobile-link"><i class="fa-solid fa-newspaper" aria-hidden="true"></i> Blog</a></li>
+      <li><a href="about.html" class="mobile-link active" aria-current="page"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a></li>
+      <li><a href="contact.html" class="mobile-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a></li>
+    </ul>
+    <div class="mobile-actions">
+      <a href="https://wa.me/919702855005" class="btn btn-whatsapp btn-block" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
+      <a href="tel:+919702855005" class="btn btn-outline btn-block"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call Now</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero-inner">
+          <span class="about-eyebrow"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About SaXham Technologies</span>
+          <h2>Technology Should Make Life<span> Easier, Not Complicated.</span></h2>
+          <p>SaXham Technologies is an independent technology service brand built around a simple idea: make useful technology support more approachable for individuals, professionals and growing businesses.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact Us</a>
+            <a class="btn btn-outline" href="#our-approach">Discover Our Approach</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-intro">
+        <div class="about-copy">
+          <span class="section-tag">Who We Are</span>
+          <h2>Practical Technology Support for Everyday Needs</h2>
+          <p>Technology is part of everyday life, from the computer used for work and study to the website that helps a small business reach customers. But choosing the right solution, fixing an issue or completing a digital task can sometimes feel confusing.</p>
+          <p>SaXham Technologies aims to make these tasks easier to understand. We bring computer services, digital solutions and online document assistance together under one service brand.</p>
+          <p>Our focus is on understanding the requirement, explaining the available options and agreeing on the work before proceeding.</p>
+        </div>
+        <div class="about-visual" aria-label="Technology and digital support illustration">
+          <div class="about-visual-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light" id="our-approach">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What We Do</span>
+          <h2>Three Service Areas. One Helpful Approach.</h2>
+          <p>Our services are organised around common technology and digital needs.</p>
+        </div>
+        <div class="about-pillars">
+          <article class="about-pillar">
+            <div class="about-pillar-icon"><i class="fa-solid fa-laptop-medical" aria-hidden="true"></i></div>
+            <h3>Computer Services</h3>
+            <p>Computer and laptop troubleshooting, SSD and RAM upgrades, operating system setup, maintenance and related support.</p>
+            <p><a href="computer-services.html">Explore computer services <i class="fa-solid fa-arrow-right"></i></a></p>
+          </article>
+          <article class="about-pillar">
+            <div class="about-pillar-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+            <h3>Digital Solutions</h3>
+            <p>Website development, domain and hosting setup guidance, business email, branding and online visibility support.</p>
+            <p><a href="digital-solutions.html">Explore digital solutions <i class="fa-solid fa-arrow-right"></i></a></p>
+          </article>
+          <article class="about-pillar">
+            <div class="about-pillar-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
+            <h3>Online Services</h3>
+            <p>Independent assistance with online forms, document formatting, PDF tasks, scanning, printing and resume preparation.</p>
+            <p><a href="online-services.html">Explore online services <i class="fa-solid fa-arrow-right"></i></a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Principles</span>
+          <h2>How We Aim to Work</h2>
+          <p>Good service starts with clear expectations and responsible handling of every request.</p>
+        </div>
+        <div class="about-values">
+          <article class="about-value"><i class="fa-solid fa-comments" aria-hidden="true"></i><div><h3>Clear Communication</h3><p>We aim to explain the work, available options and limitations in simple language.</p></div></article>
+          <article class="about-value"><i class="fa-solid fa-handshake" aria-hidden="true"></i><div><h3>Transparency</h3><p>Scope, estimated charges and third-party costs should be discussed before work begins.</p></div></article>
+          <article class="about-value"><i class="fa-solid fa-user-shield" aria-hidden="true"></i><div><h3>Respect for Privacy</h3><p>We encourage sharing only the information needed for the task. Passwords and OTPs should never be shared.</p></div></article>
+          <article class="about-value"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i><div><h3>Practical Solutions</h3><p>We focus on suitable options based on the device, requirement, budget and feasibility.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <div class="about-copy" style="max-width:850px;margin:0 auto;text-align:center">
+          <span class="section-tag">Our Service Commitment</span>
+          <h2>Understand First. Agree Clearly. Then Proceed.</h2>
+          <p>Every request is different. We first understand what you need, check whether we can assist, explain the expected work and confirm the charges. Work begins only after the scope is agreed.</p>
+          <p>We do not promise outcomes that depend on third-party providers, manufacturers, government departments or search platforms. Where a task is outside our capability, we will explain that rather than make an unrealistic commitment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="about-cta">
+          <div>
+            <h2>Let's make technology work better for you.</h2>
+            <p>Have a computer issue, digital project or document-related requirement? Tell us what you need.</p>
+          </div>
+          <a class="btn btn-primary" href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20would%20like%20to%20discuss%20a%20service." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Talk to Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-brand">
+            <div class="footer-logo"><img src="assets/images/saxham-logo.png" alt="SaXham Technologies" width="48" height="48"></div>
+            <div class="footer-brand-text"><h3>SaXham Technologies</h3><p>Repair. Digital. Connect.</p></div>
+          </div>
+          <p class="footer-description">Computer services, digital solutions and online assistance for individuals, professionals and growing businesses.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/saxhamtechnologies/" target="_blank" rel="noopener noreferrer" aria-label="SaXham Technologies on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer" aria-label="SaXham Technologies on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Our Services</h4>
+          <nav class="footer-links" aria-label="Footer services">
+            <a href="computer-services.html"><i class="fa-solid fa-chevron-right"></i> Computer Services</a>
+            <a href="digital-solutions.html"><i class="fa-solid fa-chevron-right"></i> Digital Solutions</a>
+            <a href="online-services.html"><i class="fa-solid fa-chevron-right"></i> Online Services</a>
+            <a href="blog/"><i class="fa-solid fa-chevron-right"></i> Knowledge Hub</a>
+          </nav>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Company</h4>
+          <nav class="footer-links" aria-label="Company links">
+            <a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a>
+            <a href="blog/"><i class="fa-solid fa-chevron-right"></i> Blog</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a>
+            <a href="privacy.html"><i class="fa-solid fa-chevron-right"></i> Privacy Policy</a>
+            <a href="terms.html"><i class="fa-solid fa-chevron-right"></i> Terms of Service</a>
+          </nav>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+919702855005">+91 97028 55005</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:founder@saxhamai.com">founder@saxhamai.com</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> Ghansoli, Navi Mumbai, Maharashtra</li>
+            <li><i class="fa-solid fa-clock"></i> Mon–Sat, 9:00 AM–7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p class="footer-copy">&copy; <span id="year"></span> SaXham Technologies. All Rights Reserved.</p>
+          <div class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-buttons">
+    <a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20would%20like%20to%20discuss%20a%20service." class="float-btn float-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with SaXham Technologies on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    <a href="tel:+919702855005" class="float-btn float-call" aria-label="Call SaXham Technologies"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+  </div>
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

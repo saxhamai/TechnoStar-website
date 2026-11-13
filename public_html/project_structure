@@ -1,0 +1,35 @@
+
+saxhamai.com/
+│
+├── index.html
+├── computer-services.html
+├── digital-solutions.html
+├── online-services.html
+├── about.html
+├── contact.html
+├── privacy.html
+├── terms.html
+│
+├── blog/
+│   ├── index.html
+│   ├── technology/
+│   ├── computer-hardware/
+│   ├── windows-linux/
+│   ├── ai-automation/
+│   └── digital-business/
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── style-extra.css
+│   │
+│   ├── js/
+│   │   └── main.js
+│   │
+│   └── images/
+│       ├── saxham-logo.png
+│       ├── favicon.png
+│       ├── og-image.jpg
+│       └── service images...
+│
+└── sitemap.xml

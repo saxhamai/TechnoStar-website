@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
     .privacy-hero{padding:76px 20px 68px;text-align:center;color:#fff;background:linear-gradient(125deg,#092d62,#0b5ed7 68%,#2678e8)}
-    .privacy-hero .eyebrow{margin:0 0 12px;color:#f3d58b;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+    .privacy-hero .eyebrow{display:block;width:100%;margin:0 auto 12px;text-align:center;color:#f3d58b;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
     .privacy-hero h1{margin:0 0 14px;font:800 clamp(32px,5vw,48px)/1.15 'Poppins',sans-serif}
     .privacy-hero p{max-width:680px;margin:0 auto;color:rgba(255,255,255,.86);font-size:16px;line-height:1.7}
     .privacy-layout{width:min(100% - 36px,1080px);margin:0 auto;padding:58px 0 82px;display:grid;grid-template-columns:245px minmax(0,1fr);gap:42px;align-items:start}
@@ -36,6 +36,10 @@
     .privacy-updated{display:inline-block;margin-top:8px;color:#718096;font-size:13px}
     @media(max-width:760px){.privacy-hero{padding:58px 18px 52px}.privacy-layout{width:min(100% - 30px,680px);padding:38px 0 60px;grid-template-columns:1fr;gap:25px}.privacy-sidebar{position:static}.privacy-sidebar nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 15px}.privacy-content h2{font-size:20px}}
     @media(max-width:420px){.privacy-sidebar nav{grid-template-columns:1fr}}
+  
+    .privacy-hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+    .privacy-hero .eyebrow,.privacy-hero h1,.privacy-hero p{display:block;width:100%;text-align:center;margin-left:auto;margin-right:auto}
+    .privacy-hero p{max-width:680px}
   </style>
 </head>
 <body>
@@ -185,7 +189,8 @@
           <p><strong>SaXham Technologies</strong><br>Ghansoli, Navi Mumbai, Maharashtra, India<br>Email: <a href="mailto:founder@saxhamai.com">founder@saxhamai.com</a><br>Phone: <a href="tel:+919702855005">+91 97028 55005</a></p>
           <p>You can also use our <a href="contact.html">Contact page</a>.</p>
         </section>
-              </article>
+        <div class="privacy-note"><strong>Website owner note:</strong> This is a general website privacy-policy draft, not legal advice. Before publishing, confirm that it accurately describes your actual hosting, form, analytics, cookie, messaging and data-retention practices. Remove or revise any section that does not apply.</div>
+      </article>
     </div>
   </main>
 <footer class="footer">
@@ -237,7 +242,7 @@
       <div class="footer-bottom">
         <div class="footer-bottom-container">
           <p class="footer-copy">&copy; <span id="year"></span> SaXham Technologies. All Rights Reserved.</p>
-          <div class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></div>
+          <div class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></div>
         </div>
       </div>
     </div>

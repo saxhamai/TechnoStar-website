@@ -1,331 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b5ed7">
-  <meta name="description" content="SaXham Technologies offers computer and laptop repair, hardware upgrades, digital solutions, website services and online assistance in Ghansoli, Navi Mumbai.">
-  <meta name="keywords" content="computer repair Ghansoli, laptop repair Navi Mumbai, SSD upgrade, RAM upgrade, website design, digital solutions, SaXham Technologies">
+  <title>SaXham Technologies | Computer Repair, Digital &amp; Online Services</title>
+  <meta name="description" content="SaXham Technologies offers computer and laptop repair, SSD and RAM upgrades, business website development, branding and online document assistance in Navi Mumbai and across India.">
+  <meta name="keywords" content="computer repair Ghansoli, laptop repair Navi Mumbai, desktop repair, SSD upgrade, RAM upgrade, Windows installation, website development, logo design, digital solutions, online form assistance, PDF services">
   <meta name="author" content="SaXham Technologies">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="SaXham Technologies | Repair. Digital. Connect.">
-  <meta property="og:description" content="Computer support, digital solutions and online assistance for individuals and small businesses.">
-  <meta property="og:url" content="https://saxhamai.com/">
-  <meta property="og:image" content="https://saxhamai.com/assets/images/og-image.jpg">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A2540">
   <link rel="canonical" href="https://saxhamai.com/">
-  <title>SaXham Technologies | Computer Repair &amp; Digital Solutions in Navi Mumbai</title>
-
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/style-extra.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <style>
-    :root {
-      --home-blue: #0b5ed7;
-      --home-blue-dark: #092d62;
-      --home-ink: #10233f;
-      --home-muted: #64748b;
-      --home-gold: #d6a63b;
-      --home-line: #e5eaf2;
-      --home-soft: #f5f8fd;
-    }
-    .home-hero {
-      position: relative;
-      overflow: hidden;
-      padding: clamp(70px, 9vw, 112px) 20px;
-      color: #fff;
-      background:
-        radial-gradient(circle at 82% 22%, rgba(255,255,255,.13), transparent 24%),
-        radial-gradient(circle at 12% 90%, rgba(214,166,59,.15), transparent 26%),
-        linear-gradient(125deg, #071f46 0%, #0b4fae 58%, #0b5ed7 100%);
-    }
-    .home-hero::after {
-      content: "";
-      position: absolute;
-      width: 430px;
-      height: 430px;
-      right: -150px;
-      bottom: -260px;
-      border: 1px solid rgba(255,255,255,.15);
-      border-radius: 50%;
-      box-shadow: 0 0 0 45px rgba(255,255,255,.035), 0 0 0 90px rgba(255,255,255,.025);
-      pointer-events: none;
-    }
-    .home-hero-inner {
-      position: relative;
-      z-index: 1;
-      width: min(100%, 1160px);
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(290px, .85fr);
-      gap: clamp(35px, 6vw, 80px);
-      align-items: center;
-    }
-    .home-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      margin: 0 0 20px;
-      padding: 8px 13px;
-      color: #f7dfaa;
-      border: 1px solid rgba(247,223,170,.32);
-      border-radius: 99px;
-      background: rgba(255,255,255,.07);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-    .home-kicker i { color: var(--home-gold); }
-    .home-hero h1 {
-      max-width: 720px;
-      margin: 0 0 20px;
-      font: 800 clamp(38px, 5.7vw, 66px)/1.08 'Poppins', sans-serif;
-      letter-spacing: -.035em;
-    }
-    .home-hero h1 span { color: #f0ca72; }
-    .home-hero-copy {
-      max-width: 620px;
-      margin: 0 0 30px;
-      color: rgba(255,255,255,.84);
-      font-size: clamp(16px, 1.5vw, 18px);
-      line-height: 1.8;
-    }
-    .home-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-    .home-btn {
-      min-height: 50px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 13px 21px;
-      border-radius: 9px;
-      font-weight: 800;
-      text-decoration: none;
-      transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
-    }
-    .home-btn:hover { transform: translateY(-2px); }
-    .home-btn-gold { color: #17243a; background: #f0ca72; box-shadow: 0 10px 24px rgba(0,0,0,.16); }
-    .home-btn-gold:hover { color: #17243a; background: #f7d98e; }
-    .home-btn-outline { color: #fff; border: 1px solid rgba(255,255,255,.45); background: rgba(255,255,255,.07); }
-    .home-btn-outline:hover { color: #fff; background: rgba(255,255,255,.15); }
-    .home-hero-note {
-      margin: 22px 0 0;
-      color: rgba(255,255,255,.67);
-      font-size: 13px;
-    }
-    .home-hero-note i { margin-right: 7px; color: #f0ca72; }
-    .home-visual {
-      position: relative;
-      min-height: 365px;
-      display: grid;
-      place-items: center;
-    }
-    .home-visual-card {
-      width: min(100%, 390px);
-      padding: 30px;
-      border: 1px solid rgba(255,255,255,.22);
-      border-radius: 24px;
-      background: linear-gradient(145deg, rgba(255,255,255,.17), rgba(255,255,255,.07));
-      box-shadow: 0 28px 75px rgba(0,0,0,.22);
-      backdrop-filter: blur(10px);
-    }
-    .home-visual-logo {
-      width: 76px;
-      height: 76px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 22px;
-      border-radius: 19px;
-      color: #10233f;
-      background: #f0ca72;
-      font-size: 31px;
-    }
-    .home-visual-card h2 {
-      margin: 0 0 8px;
-      color: #fff;
-      font: 700 23px 'Poppins', sans-serif;
-    }
-    .home-visual-card > p {
-      margin: 0 0 23px;
-      color: rgba(255,255,255,.72);
-      font-size: 14px;
-      line-height: 1.6;
-    }
-    .home-pill-list { display: grid; gap: 11px; }
-    .home-pill {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 12px 14px;
-      border: 1px solid rgba(255,255,255,.15);
-      border-radius: 10px;
-      color: rgba(255,255,255,.92);
-      background: rgba(4,25,58,.24);
-      font-size: 13px;
-      font-weight: 600;
-    }
-    .home-pill i { width: 18px; color: #f0ca72; text-align: center; }
-    .home-section { padding: 82px 20px; }
-    .home-container { width: min(100%, 1160px); margin: 0 auto; }
-    .home-section-head { max-width: 720px; margin: 0 auto 42px; text-align: center; }
-    .home-section-label {
-      margin: 0 0 10px;
-      color: var(--home-blue);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-    }
-    .home-section-head h2 {
-      margin: 0 0 13px;
-      color: var(--home-ink);
-      font: 800 clamp(27px, 4vw, 38px)/1.2 'Poppins', sans-serif;
-    }
-    .home-section-head p { margin: 0; color: var(--home-muted); font-size: 16px; line-height: 1.75; }
-    .home-services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-    .home-service-card {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      padding: 28px;
-      border: 1px solid var(--home-line);
-      border-radius: 17px;
-      background: #fff;
-      box-shadow: 0 10px 35px rgba(16,35,63,.045);
-      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-    }
-    .home-service-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(11,94,215,.35);
-      box-shadow: 0 18px 42px rgba(16,35,63,.09);
-    }
-    .home-service-icon {
-      width: 58px;
-      height: 58px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      color: var(--home-blue);
-      background: #eaf2ff;
-      font-size: 23px;
-    }
-    .home-service-card:nth-child(2) .home-service-icon { color: #946b13; background: #fff6df; }
-    .home-service-card:nth-child(3) .home-service-icon { color: #16834a; background: #e9f8f0; }
-    .home-service-card h3 { margin: 0 0 11px; color: var(--home-ink); font: 700 20px 'Poppins', sans-serif; }
-    .home-service-card p { margin: 0 0 18px; color: var(--home-muted); font-size: 14px; line-height: 1.75; }
-    .home-service-card ul { margin: 0 0 22px; padding-left: 19px; color: #52647c; font-size: 13px; line-height: 1.8; }
-    .home-card-link { margin-top: auto; color: var(--home-blue); font-size: 14px; font-weight: 800; text-decoration: none; }
-    .home-card-link i { margin-left: 6px; transition: transform .2s ease; }
-    .home-card-link:hover i { transform: translateX(4px); }
-    .home-about { background: var(--home-soft); }
-    .home-about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px; align-items: center; }
-    .home-about-art {
-      min-height: 330px;
-      display: grid;
-      place-items: center;
-      padding: 30px;
-      border-radius: 22px;
-      background:
-        radial-gradient(circle at 75% 20%, rgba(214,166,59,.25), transparent 26%),
-        linear-gradient(145deg, #0a2d62, #0b5ed7);
-    }
-    .home-about-art-inner { width: 100%; max-width: 340px; color: #fff; text-align: center; }
-    .home-about-art-inner i { margin-bottom: 20px; color: #f0ca72; font-size: 72px; }
-    .home-about-art-inner strong { display: block; font: 800 25px 'Poppins', sans-serif; }
-    .home-about-art-inner span { display: block; margin-top: 8px; color: rgba(255,255,255,.75); font-size: 14px; }
-    .home-about-copy .home-section-label { text-align: left; }
-    .home-about-copy h2 { margin: 0 0 17px; color: var(--home-ink); font: 800 clamp(28px, 4vw, 38px)/1.2 'Poppins', sans-serif; }
-    .home-about-copy > p { margin: 0 0 16px; color: var(--home-muted); font-size: 15px; line-height: 1.8; }
-    .home-benefits { display: grid; grid-template-columns: repeat(2, 1fr); gap: 13px 20px; margin: 24px 0 28px; }
-    .home-benefit { display: flex; align-items: flex-start; gap: 10px; color: #344761; font-size: 14px; font-weight: 600; }
-    .home-benefit i { margin-top: 4px; color: #16834a; }
-    .home-text-link { color: var(--home-blue); font-weight: 800; text-decoration: none; }
-    .home-process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-    .home-process-step { padding: 24px 20px; border: 1px solid var(--home-line); border-radius: 15px; background: #fff; }
-    .home-process-number {
-      width: 39px;
-      height: 39px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 17px;
-      border-radius: 11px;
-      color: #fff;
-      background: var(--home-blue);
-      font-weight: 800;
-    }
-    .home-process-step h3 { margin: 0 0 8px; color: var(--home-ink); font: 700 17px 'Poppins', sans-serif; }
-    .home-process-step p { margin: 0; color: var(--home-muted); font-size: 13px; line-height: 1.7; }
-    .home-cta { padding: 66px 20px; color: #fff; background: linear-gradient(120deg, #092d62, #0b5ed7); }
-    .home-cta-inner { width: min(100%, 1050px); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 30px; }
-    .home-cta h2 { margin: 0 0 10px; font: 800 clamp(26px, 4vw, 36px)/1.2 'Poppins', sans-serif; }
-    .home-cta p { max-width: 650px; margin: 0; color: rgba(255,255,255,.8); font-size: 15px; line-height: 1.7; }
-    .home-cta .home-btn { flex-shrink: 0; }
-    .home-faq { background: var(--home-soft); }
-    .home-faq-list { max-width: 850px; margin: 0 auto; display: grid; gap: 12px; }
-    .home-faq-item { overflow: hidden; border: 1px solid var(--home-line); border-radius: 12px; background: #fff; }
-    .home-faq-question {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 18px 21px;
-      border: 0;
-      color: var(--home-ink);
-      background: transparent;
-      text-align: left;
-      font: 700 15px 'Inter', sans-serif;
-      cursor: pointer;
-    }
-    .home-faq-question i { color: var(--home-blue); transition: transform .2s ease; }
-    .home-faq-question[aria-expanded="true"] i { transform: rotate(45deg); }
-    .home-faq-answer { padding: 0 21px 18px; color: var(--home-muted); font-size: 14px; line-height: 1.75; }
-    .home-faq-answer[hidden] { display: none; }
-    .home-footer-legal { display: flex; flex-wrap: wrap; gap: 16px; }
-    .home-footer-legal a { color: inherit; text-decoration: none; }
-    .home-footer-legal a:hover { color: var(--home-gold); }
-    @media (max-width: 900px) {
-      .home-hero-inner { grid-template-columns: 1fr; }
-      .home-visual { min-height: auto; }
-      .home-visual-card { max-width: 520px; }
-      .home-services-grid { grid-template-columns: repeat(2, 1fr); }
-      .home-about-grid { gap: 35px; }
-      .home-process-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 650px) {
-      .home-hero { padding: 66px 18px 72px; }
-      .home-hero h1 { font-size: clamp(36px, 10vw, 48px); }
-      .home-hero-actions { flex-direction: column; align-items: stretch; }
-      .home-btn { width: 100%; }
-      .home-visual-card { padding: 24px; }
-      .home-section { padding: 62px 17px; }
-      .home-services-grid, .home-about-grid, .home-process-grid { grid-template-columns: 1fr; }
-      .home-about-art { min-height: 250px; }
-      .home-benefits { grid-template-columns: 1fr; }
-      .home-cta-inner { align-items: stretch; flex-direction: column; }
-      .home-cta { padding: 54px 18px; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .home-btn, .home-service-card, .home-card-link i, .home-faq-question i { transition: none; }
-      .home-btn:hover, .home-service-card:hover { transform: none; }
-    }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SaXham Technologies">
+  <meta property="og:title" content="SaXham Technologies | Repair. Digital. Connect.">
+  <meta property="og:description" content="Computer services, digital solutions and online assistance for individuals and businesses.">
+  <meta property="og:image" content="https://saxhamai.com/assets/images/og-image.jpg">
+  <meta property="og:url" content="https://saxhamai.com/">
+  <meta property="og:locale" content="en_IN">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SaXham Technologies | Repair. Digital. Connect.">
+  <meta name="twitter:description" content="Computer services, digital solutions and online assistance for individuals and businesses.">
+  <meta name="twitter:image" content="https://saxhamai.com/assets/images/og-image.jpg">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "ProfessionalService",
     "name": "SaXham Technologies",
     "url": "https://saxhamai.com/",
+    "logo": "https://saxhamai.com/assets/images/saxham-logo.png",
     "image": "https://saxhamai.com/assets/images/og-image.jpg",
-    "description": "Computer and laptop support, hardware upgrades, digital solutions and online assistance.",
-    "telephone": "+91-97028-55005",
+    "description": "Computer repair and support, digital solutions, website development, branding and online document assistance.",
+    "telephone": "+91-9702855005",
     "email": "founder@saxhamai.com",
     "address": {
       "@type": "PostalAddress",
@@ -333,297 +50,564 @@
       "addressRegion": "Maharashtra",
       "addressCountry": "IN"
     },
-    "areaServed": {
-      "@type": "City",
-      "name": "Navi Mumbai"
-    }
+    "areaServed": [
+      { "@type": "City", "name": "Navi Mumbai" },
+      { "@type": "Country", "name": "India" }
+    ],
+    "knowsAbout": [
+      "Computer repair",
+      "Laptop and desktop upgrades",
+      "Website development",
+      "Business branding",
+      "Online document assistance"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where do you provide computer repair services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Computer service enquiries are accepted from Ghansoli and nearby Navi Mumbai areas. Service availability depends on the type of work and location."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide digital solutions outside Navi Mumbai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Website development, branding and other suitable digital services can be discussed and delivered remotely across India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What online assistance do you provide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Online assistance may include form-filling guidance, resume preparation, PDF and document support. The exact service and fee are confirmed before work begins."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you an official government service centre?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. SaXham Technologies is an independent service provider offering assistance with online applications and documents. We are not a government department or an official government portal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I request a service or quotation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can contact SaXham Technologies by WhatsApp, phone or the website enquiry form. Share your requirement and we will confirm availability, estimated charges and the next steps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle documents shared for online assistance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Only share documents needed for the requested service. Avoid sending passwords, OTPs or unnecessary sensitive information. Ask us how your documents will be used and handled before sharing them."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://saxhamai.com/" }
+    ]
   }
   </script>
 </head>
 
 <body>
-  <div id="progress-bar" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="progress-bar" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
 
-  <header class="main-header">
-    <nav class="navbar" aria-label="Main navigation">
-      <a class="logo" href="index.html" aria-label="SaXham Technologies home">
-        <img src="assets/images/saxham-logo.png" alt="SaXham Technologies" onerror="this.style.display='none'">
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-left">
+        <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Ghansoli, Navi Mumbai</span>
+        <span><i class="fa-solid fa-clock" aria-hidden="true"></i> Mon–Sat, 9:00 AM–7:00 PM</span>
+      </div>
+      <div class="top-right">
+        <a href="tel:+919702855005"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 97028 55005</a>
+        <a href="mailto:founder@saxhamai.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> founder@saxhamai.com</a>
+        <a href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp SaXham Technologies"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header" id="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand" aria-label="SaXham Technologies home">
+        <img src="assets/images/saxham-logo.png" alt="SaXham Technologies logo" class="brand-logo-img" width="56" height="56">
+        <div class="brand-text">
+          <h1>SaXham Technologies</h1>
+          <p>Repair. Digital. Connect.</p>
+        </div>
       </a>
 
-      <button class="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-        <i class="fa-solid fa-bars" aria-hidden="true"></i>
-      </button>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-menu" id="primary-nav">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="computer-services.html" class="nav-link">Computer Services</a></li>
+          <li><a href="digital-solutions.html" class="nav-link">Digital Solutions</a></li>
+          <li><a href="online-services.html" class="nav-link">Online Services</a></li>
+          <li><a href="blog/" class="nav-link">Blog</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
 
-      <ul class="nav-menu">
-        <li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
-        <li><a class="nav-link" href="computer-services.html">Computer Services</a></li>
-        <li><a class="nav-link" href="digital-solutions.html">Digital Solutions</a></li>
-        <li><a class="nav-link" href="online-services.html">Online Services</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      <div class="nav-actions">
+        <a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get Assistance</a>
+      </div>
+
+      <button type="button" class="mobile-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
   </header>
 
-  <div class="mobile-overlay" id="mobileOverlay"></div>
-  <aside class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-    <button class="mobile-close" type="button" aria-label="Close menu">
-      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-    </button>
-    <a class="mobile-link" href="index.html">Home</a>
-    <a class="mobile-link" href="computer-services.html">Computer Services</a>
-    <a class="mobile-link" href="digital-solutions.html">Digital Solutions</a>
-    <a class="mobile-link" href="online-services.html">Online Services</a>
-    <a class="mobile-link" href="about.html">About</a>
-    <a class="mobile-link" href="contact.html">Contact</a>
+  <div class="mobile-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <div class="mobile-brand">
+        <img src="assets/images/saxham-logo.png" alt="" class="mobile-logo" width="48" height="48">
+        <div>
+          <h3>SaXham Technologies</h3>
+          <p>Repair. Digital. Connect.</p>
+        </div>
+      </div>
+      <button type="button" class="mobile-close" aria-label="Close menu"><i class="fas fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <ul class="mobile-nav">
+      <li><a href="index.html" class="mobile-link active" aria-current="page"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+      <li><a href="computer-services.html" class="mobile-link"><i class="fa-solid fa-laptop" aria-hidden="true"></i> Computer Services</a></li>
+      <li><a href="digital-solutions.html" class="mobile-link"><i class="fa-solid fa-globe" aria-hidden="true"></i> Digital Solutions</a></li>
+      <li><a href="online-services.html" class="mobile-link"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Online Services</a></li>
+      <li><a href="blog/" class="mobile-link"><i class="fa-solid fa-newspaper" aria-hidden="true"></i> Blog</a></li>
+      <li><a href="about.html" class="mobile-link"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a></li>
+      <li><a href="contact.html" class="mobile-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a></li>
+    </ul>
     <div class="mobile-actions">
-      <a href="tel:+919702855005"><i class="fa-solid fa-phone"></i> Call Us</a>
-      <a href="https://wa.me/919702855005" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20need%20assistance." class="btn btn-whatsapp btn-block" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
+      <a href="tel:+919702855005" class="btn btn-outline btn-block"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call Now</a>
     </div>
   </aside>
 
-  <main>
-    <section class="home-hero">
-      <div class="home-hero-inner">
+  <main id="main-content">
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-gradient" aria-hidden="true"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="hero-badge"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Your Everyday Technology Partner</p>
+          <h2 id="hero-heading" class="hero-title">Technology Made Simple.<span>Solutions That Work.</span></h2>
+          <p class="hero-subtitle">From computer repairs and upgrades to business websites, branding and online assistance, SaXham Technologies helps individuals and businesses make better use of technology.</p>
+          <div class="hero-actions">
+            <a href="#service-categories" class="btn btn-primary">Explore Our Services</a>
+            <a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20would%20like%20to%20discuss%20a%20service." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
+          </div>
+          <div class="tech-stack" aria-label="Our service areas">
+            <span class="tech-badge"><i class="fa-solid fa-computer" aria-hidden="true"></i> Computer Support</span>
+            <span class="tech-badge"><i class="fa-solid fa-globe" aria-hidden="true"></i> Digital Solutions</span>
+            <span class="tech-badge"><i class="fa-solid fa-file-circle-check" aria-hidden="true"></i> Online Assistance</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-circle hero-circle-1" aria-hidden="true"></div>
+          <div class="hero-circle hero-circle-2" aria-hidden="true"></div>
+          <div class="hero-circle hero-circle-3" aria-hidden="true"></div>
+          <div class="hero-dots" aria-hidden="true"></div>
+          <div class="hero-image-wrapper">
+            <img src="assets/images/hero-consulting.svg" alt="Computer, digital and online technology services" class="hero-main-image" width="520" height="480" fetchpriority="high">
+          </div>
+          <div class="hero-floating-card card-one"><div class="floating-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div><div class="floating-content"><span>Computer</span><strong>Repair &amp; Upgrades</strong></div></div>
+          <div class="hero-floating-card card-two"><div class="floating-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div><div class="floating-content"><span>Business</span><strong>Website &amp; Branding</strong></div></div>
+          <div class="hero-floating-card card-three"><div class="floating-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div><div class="floating-content"><span>Online</span><strong>Document Assistance</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="service-categories" aria-labelledby="service-categories-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What We Do</span>
+          <h2 id="service-categories-heading">Technology Services for Everyday Needs and Business Growth</h2>
+          <p>Choose the support you need. We work with local customers in Navi Mumbai and provide suitable digital services remotely across India.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="enterprise-service-card">
+            <div class="service-header"><div class="service-icon"><i class="fa-solid fa-laptop" aria-hidden="true"></i></div><div><span class="service-category">Local Computer Support</span><h3 class="service-title">Computer Services</h3></div></div>
+            <p class="service-description">Practical help to repair, upgrade and maintain your laptop or desktop computer.</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Laptop and desktop troubleshooting</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> SSD and RAM upgrades</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Windows installation and setup</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Software and performance support</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Data recovery assistance</li>
+            </ul>
+            <div class="service-footer"><a href="computer-services.html" class="service-link">Explore Computer Services <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+          </article>
+
+          <article class="enterprise-service-card">
+            <div class="service-header"><div class="service-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div><div><span class="service-category">For Businesses</span><h3 class="service-title">Digital Solutions</h3></div></div>
+            <p class="service-description">Build a professional digital presence for your business, startup or personal brand.</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Business website development</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Logo and brand identity</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Domain and hosting setup</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Professional business email</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Google Business Profile assistance</li>
+            </ul>
+            <div class="service-footer"><a href="digital-solutions.html" class="service-link">Explore Digital Solutions <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+          </article>
+
+          <article class="enterprise-service-card">
+            <div class="service-header"><div class="service-icon"><i class="fa-solid fa-file-circle-check" aria-hidden="true"></i></div><div><span class="service-category">Remote Assistance</span><h3 class="service-title">Online Services</h3></div></div>
+            <p class="service-description">Convenient assistance with common online applications and digital documents.</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Online form-filling assistance</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Resume and CV preparation</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> PDF editing and conversion</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Document formatting support</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Application and document guidance</li>
+            </ul>
+            <div class="service-footer"><a href="online-services.html" class="service-link">Explore Online Services <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+          </article>
+
+          <article class="enterprise-service-card">
+            <div class="service-header"><div class="service-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></div><div><span class="service-category">Learn and Explore</span><h3 class="service-title">Knowledge Hub</h3></div></div>
+            <p class="service-description">Straightforward articles, practical guides and learning from the world of technology and business.</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Computer hardware and troubleshooting</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Windows and Linux guides</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> AI tools and automation</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Cybersecurity awareness</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Digital business and productivity</li>
+            </ul>
+            <div class="service-footer"><a href="blog/" class="service-link">Visit Knowledge Hub <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="computer-services-heading">
+      <div class="container detail-grid">
         <div>
-          <p class="home-kicker"><i class="fa-solid fa-star"></i> Your local technology partner</p>
-          <h1>Technology Made <span>Simple.</span></h1>
-          <p class="home-hero-copy">
-            From computer and laptop support to digital solutions for your business, SaXham Technologies helps you solve everyday technology challenges with practical, straightforward assistance.
-          </p>
-          <div class="home-hero-actions">
-            <a class="home-btn home-btn-gold" href="contact.html"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
-            <a class="home-btn home-btn-outline" href="https://wa.me/919702855005" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
-          </div>
-          <p class="home-hero-note"><i class="fa-solid fa-location-dot"></i> Based in Ghansoli, Navi Mumbai</p>
+          <span class="section-tag">Computer Repair and Support</span>
+          <h2 id="computer-services-heading">Give Your Computer the Support It Needs</h2>
+          <p>Whether your computer is running slowly, needs an upgrade or requires troubleshooting, we can discuss a practical solution based on the device and the issue.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Laptop and desktop diagnosis</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> SSD installation and storage upgrades</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> RAM upgrades and compatibility guidance</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Windows installation and software setup</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Maintenance and data recovery assistance</li>
+          </ul>
+          <div class="mt-40"><a href="computer-services.html" class="btn btn-primary">View Computer Services</a></div>
+          <p class="form-note">Service availability depends on device type, issue and location. Diagnosis and charges are confirmed before work begins.</p>
         </div>
-
-        <div class="home-visual" aria-label="SaXham Technologies service categories">
-          <div class="home-visual-card">
-            <div class="home-visual-logo"><i class="fa-solid fa-microchip"></i></div>
-            <h2>SaXham Technologies</h2>
-            <p>Practical technology support for individuals, professionals and small businesses.</p>
-            <div class="home-pill-list">
-              <div class="home-pill"><i class="fa-solid fa-screwdriver-wrench"></i> Computer &amp; Laptop Services</div>
-              <div class="home-pill"><i class="fa-solid fa-laptop-code"></i> Digital Solutions</div>
-              <div class="home-pill"><i class="fa-solid fa-file-circle-check"></i> Online Services &amp; Assistance</div>
-            </div>
-          </div>
-        </div>
+        <div><img src="assets/images/hero-consulting.svg" alt="Computer service and technical support illustration" width="560" height="480" loading="lazy"></div>
       </div>
     </section>
 
-    <section class="home-section" id="services">
-      <div class="home-container">
-        <div class="home-section-head">
-          <p class="home-section-label">What we do</p>
-          <h2>Solutions for Your Everyday Needs</h2>
-          <p>Explore our key service areas. Contact us with your requirement and we can discuss the right approach, scope and cost.</p>
-        </div>
-
-        <div class="home-services-grid">
-          <article class="home-service-card">
-            <div class="home-service-icon"><i class="fa-solid fa-computer"></i></div>
-            <h3>Computer &amp; Laptop Services</h3>
-            <p>Support for common computer and laptop issues, upgrades and maintenance.</p>
-            <ul>
-              <li>Computer and laptop troubleshooting</li>
-              <li>SSD and RAM upgrades</li>
-              <li>Operating system and software setup</li>
-              <li>Maintenance and basic network support</li>
-            </ul>
-            <a class="home-card-link" href="computer-services.html">Explore computer services <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
-
-          <article class="home-service-card">
-            <div class="home-service-icon"><i class="fa-solid fa-laptop-code"></i></div>
-            <h3>Digital Solutions</h3>
-            <p>Simple digital setup and creative support to help your business build an online presence.</p>
-            <ul>
-              <li>Website design and development</li>
-              <li>Domain and hosting assistance</li>
-              <li>Business email setup</li>
-              <li>Logo, branding and online presence</li>
-            </ul>
-            <a class="home-card-link" href="digital-solutions.html">Explore digital solutions <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
-
-          <article class="home-service-card">
-            <div class="home-service-icon"><i class="fa-solid fa-file-lines"></i></div>
-            <h3>Online Services &amp; Assistance</h3>
-            <p>Practical help with common digital tasks, document preparation and online processes.</p>
-            <ul>
-              <li>Online form-filling assistance</li>
-              <li>PDF, print and scan support</li>
-              <li>Resume and document formatting</li>
-              <li>Digital upload assistance</li>
-            </ul>
-            <a class="home-card-link" href="online-services.html">Explore online services <i class="fa-solid fa-arrow-right"></i></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="home-section home-about">
-      <div class="home-container home-about-grid">
-        <div class="home-about-art">
-          <div class="home-about-art-inner">
-            <i class="fa-solid fa-gears" aria-hidden="true"></i>
-            <strong>Repair. Digital. Connect.</strong>
-            <span>Useful technology support, made approachable.</span>
-          </div>
-        </div>
-        <div class="home-about-copy">
-          <p class="home-section-label">About SaXham Technologies</p>
-          <h2>Technology Support That Keeps Things Simple</h2>
-          <p>
-            SaXham Technologies is a technology services initiative based in Ghansoli, Navi Mumbai. Our focus is to make everyday technology tasks easier for individuals and small businesses.
-          </p>
-          <p>
-            Whether you need help with a computer, want to establish your business online or need assistance with a digital task, start by telling us what you need.
-          </p>
-          <div class="home-benefits">
-            <div class="home-benefit"><i class="fa-solid fa-check-circle"></i> Clear communication</div>
-            <div class="home-benefit"><i class="fa-solid fa-check-circle"></i> Practical solutions</div>
-            <div class="home-benefit"><i class="fa-solid fa-check-circle"></i> Transparent discussion</div>
-            <div class="home-benefit"><i class="fa-solid fa-check-circle"></i> Customer-focused support</div>
-          </div>
-          <a class="home-text-link" href="about.html">Learn more about us <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="home-section">
-      <div class="home-container">
-        <div class="home-section-head">
-          <p class="home-section-label">How it works</p>
-          <h2>A Simple Process</h2>
-          <p>We keep the first steps straightforward so you know what to expect before work begins.</p>
-        </div>
-        <div class="home-process-grid">
-          <article class="home-process-step">
-            <div class="home-process-number">01</div>
-            <h3>Tell Us Your Need</h3>
-            <p>Contact us by form, phone or WhatsApp and explain what you need help with.</p>
-          </article>
-          <article class="home-process-step">
-            <div class="home-process-number">02</div>
-            <h3>Discuss the Scope</h3>
-            <p>We review the requirement and ask for any details needed to understand the task.</p>
-          </article>
-          <article class="home-process-step">
-            <div class="home-process-number">03</div>
-            <h3>Confirm the Details</h3>
-            <p>We discuss feasibility, estimated charges and timelines before proceeding.</p>
-          </article>
-          <article class="home-process-step">
-            <div class="home-process-number">04</div>
-            <h3>Get Support</h3>
-            <p>Once agreed, we proceed with the service and keep you informed about the work.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="home-cta">
-      <div class="home-cta-inner">
+    <section class="section bg-light" aria-labelledby="digital-solutions-heading">
+      <div class="container detail-grid">
+        <div><img src="assets/images/business-digital-solutions.svg" alt="Business website, branding and digital presence illustration" width="560" height="480" loading="lazy"></div>
         <div>
-          <h2>Have a Technology Requirement?</h2>
-          <p>Tell us what you are trying to solve. We will review your enquiry and get back to you to discuss the next step.</p>
+          <span class="section-tag">Digital Presence for Businesses</span>
+          <h2 id="digital-solutions-heading">Take Your Business Online with Confidence</h2>
+          <p>We help small businesses, professionals and entrepreneurs establish a clear and professional online presence with practical digital solutions.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Responsive business websites</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Logo design and brand identity</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Domain, hosting and business email setup</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Google Business Profile assistance</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Basic SEO and website support</li>
+          </ul>
+          <div class="mt-40"><a href="digital-solutions.html" class="btn btn-primary">Discuss Your Digital Project</a></div>
         </div>
-        <a class="home-btn home-btn-gold" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
       </div>
     </section>
 
-    <section class="home-section home-faq">
-      <div class="home-container">
-        <div class="home-section-head">
-          <p class="home-section-label">FAQs</p>
-          <h2>Frequently Asked Questions</h2>
-          <p>A few quick answers about contacting and using our services.</p>
+    <section class="section" aria-labelledby="online-services-heading">
+      <div class="container detail-grid">
+        <div>
+          <span class="section-tag">Online and Document Assistance</span>
+          <h2 id="online-services-heading">Get Help with Everyday Digital Tasks</h2>
+          <p>Need help preparing a document, completing an online form or organising a PDF? Tell us what you need and we will confirm whether we can assist.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Online form-filling guidance</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Resume and CV formatting</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> PDF merge, split and conversion</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Digital document preparation</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> General application process assistance</li>
+          </ul>
+          <div class="mt-40"><a href="online-services.html" class="btn btn-primary">Request Online Assistance</a></div>
+          <p class="form-note">SaXham Technologies is an independent service provider, not a government department or official government portal. Customers should review and approve all application details before submission.</p>
         </div>
-        <div class="home-faq-list">
-          <div class="home-faq-item">
-            <button class="home-faq-question" type="button" aria-expanded="false" aria-controls="homeFaq1">
-              Where is SaXham Technologies based?
-              <i class="fa-solid fa-plus" aria-hidden="true"></i>
-            </button>
-            <div class="home-faq-answer" id="homeFaq1" hidden>
-              SaXham Technologies is based in Ghansoli, Navi Mumbai. Contact us to discuss your location and service requirement.
-            </div>
+        <div><img src="assets/images/msme.svg" alt="Digital documents and online assistance illustration" width="560" height="480" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="industries-section" aria-labelledby="audiences-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Who We Help</span>
+          <h2 id="audiences-heading">Practical Technology Help for Different Needs</h2>
+          <p>Our services are designed for people and organisations looking for accessible, straightforward technology support.</p>
+        </div>
+        <div class="industries-grid">
+          <article class="industry-card"><div class="industry-icon"><i class="fa-solid fa-house-user" aria-hidden="true"></i></div><h3>Individuals and Families</h3><p>Computer support, upgrades and help with everyday digital tasks.</p></article>
+          <article class="industry-card"><div class="industry-icon"><i class="fa-solid fa-store" aria-hidden="true"></i></div><h3>Small Businesses</h3><p>Websites, branding and digital tools to build an online presence.</p></article>
+          <article class="industry-card"><div class="industry-icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></div><h3>Professionals</h3><p>Resume preparation, document assistance and personal digital presence.</p></article>
+          <article class="industry-card"><div class="industry-icon"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div><h3>Startups and Entrepreneurs</h3><p>Practical digital foundations for new ideas and growing ventures.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light" aria-labelledby="process-heading">
+      <div class="container container-sm">
+        <div class="section-header">
+          <span class="section-tag">How It Works</span>
+          <h2 id="process-heading">A Simple and Clear Service Process</h2>
+          <p>We keep communication straightforward so you know what to expect before work begins.</p>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item"><span class="timeline-dot" aria-hidden="true"></span><div class="timeline-card"><span class="timeline-date">Step 01</span><h3 class="timeline-title">Share Your Requirement</h3><p class="timeline-text">Choose a service and tell us about your requirement through WhatsApp or the enquiry form.</p></div></li>
+          <li class="timeline-item"><span class="timeline-dot" aria-hidden="true"></span><div class="timeline-card"><span class="timeline-date">Step 02</span><h3 class="timeline-title">Review and Discussion</h3><p class="timeline-text">We review the details and ask for any information needed to understand the work.</p></div></li>
+          <li class="timeline-item"><span class="timeline-dot" aria-hidden="true"></span><div class="timeline-card"><span class="timeline-date">Step 03</span><h3 class="timeline-title">Quotation and Timeline</h3><p class="timeline-text">We confirm service availability, estimated charges and the expected timeline.</p></div></li>
+          <li class="timeline-item"><span class="timeline-dot" aria-hidden="true"></span><div class="timeline-card"><span class="timeline-date">Step 04</span><h3 class="timeline-title">Work and Delivery</h3><p class="timeline-text">After your approval, we proceed with the agreed work and share updates as needed.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="founder-heading">
+      <div class="container">
+        <div class="founder-block">
+          <div class="founder-avatar" aria-hidden="true"><i class="fa-solid fa-user-tie"></i></div>
+          <div>
+            <span class="section-tag">About SaXham Technologies</span>
+            <h2 id="founder-heading">Built on a Practical Passion for Technology</h2>
+            <p>SaXham Technologies brings together a passion for computers, IT operations and useful digital tools. The aim is to make technology easier to access and understand, whether someone needs help with a computer, wants to take a business online or needs support with a digital task.</p>
+            <ul class="founder-highlights">
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Practical computer and IT knowledge</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Clear communication and transparent quotations</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Local service enquiries in Navi Mumbai</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Remote digital services across India, where suitable</li>
+            </ul>
+            <div class="mt-40"><a href="about.html" class="btn btn-outline">Know More About Us</a></div>
           </div>
-          <div class="home-faq-item">
-            <button class="home-faq-question" type="button" aria-expanded="false" aria-controls="homeFaq2">
-              How can I request a service?
-              <i class="fa-solid fa-plus" aria-hidden="true"></i>
-            </button>
-            <div class="home-faq-answer" id="homeFaq2" hidden>
-              You can submit the enquiry form on our Contact page, call us or send a WhatsApp message. Please describe your requirement clearly.
-            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights-section" aria-labelledby="why-us-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why SaXham Technologies</span>
+          <h2 id="why-us-heading">Straightforward Support. Practical Solutions.</h2>
+          <p>We focus on understanding the requirement and recommending a suitable next step.</p>
+        </div>
+        <div class="highlight-grid">
+          <article class="highlight-card"><div class="highlight-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div><h3>Clear Communication</h3><p>We explain the requirement, available options and expected costs in simple terms.</p></article>
+          <article class="highlight-card"><div class="highlight-icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></div><h3>Practical Approach</h3><p>Recommendations are based on your actual device, project or service requirement.</p></article>
+          <article class="highlight-card"><div class="highlight-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div><h3>Direct Coordination</h3><p>Discuss your requirement directly and understand the next steps before confirming.</p></article>
+          <article class="highlight-card"><div class="highlight-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div><h3>Local and Remote</h3><p>Local computer service enquiries and suitable remote digital services.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="insights-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Knowledge Hub</span>
+          <h2 id="insights-heading">Explore Technology, Digital Skills and Business Ideas</h2>
+          <p>Useful articles and practical learning across computers, IT, AI tools and digital business.</p>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-image"><img src="assets/images/it-policy-reform.svg" alt="Illustration about the technology workforce" loading="lazy" width="400" height="240"></div>
+            <div class="blog-content"><h3 class="blog-title"><a href="blog/it-employees-protection-exploitation-india.html">India's IT Employees: Protection or Exploitation?</a></h3><p class="blog-excerpt">A look at issues and discussions shaping the IT workforce in India.</p><a href="blog/it-employees-protection-exploitation-india.html" class="blog-readmore">Read Article <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-image"><img src="assets/images/msme.svg" alt="Illustration representing digital transformation for small businesses" loading="lazy" width="400" height="240"></div>
+            <div class="blog-content"><h3 class="blog-title"><a href="blog/paperwork-to-python-msme-transformation.html">From Paperwork to Python: MSME Transformation</a></h3><p class="blog-excerpt">How small businesses can explore practical uses of technology and automation.</p><a href="blog/paperwork-to-python-msme-transformation.html" class="blog-readmore">Read Article <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-image"><img src="assets/images/trust.svg" alt="Illustration representing digital trust" loading="lazy" width="400" height="240"></div>
+            <div class="blog-content"><h3 class="blog-title"><a href="blog/why-trust-matters.html">Why Digital Trust Matters</a></h3><p class="blog-excerpt">Why clear information and trust matter when customers discover a business online.</p><a href="blog/why-trust-matters.html" class="blog-readmore">Read Article <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+          </article>
+        </div>
+        <div class="text-center mt-40"><a href="blog/" class="btn btn-outline">Visit the Knowledge Hub</a></div>
+      </div>
+    </section>
+
+    <section class="section bg-light" aria-labelledby="faq-heading">
+      <div class="container container-sm">
+        <div class="section-header"><span class="section-tag">FAQs</span><h2 id="faq-heading">Frequently Asked Questions</h2></div>
+        <div class="accordion">
+          <div class="accordion-item active">
+            <button type="button" class="accordion-header" aria-expanded="true" aria-controls="faq-answer-1">Where do you provide computer repair services?<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="accordion-body" id="faq-answer-1"><div class="accordion-content"><p>We accept computer service enquiries from Ghansoli and nearby Navi Mumbai areas. Availability depends on the type of work and your location. Contact us to confirm.</p></div></div>
           </div>
-          <div class="home-faq-item">
-            <button class="home-faq-question" type="button" aria-expanded="false" aria-controls="homeFaq3">
-              Do you provide a price before starting work?
-              <i class="fa-solid fa-plus" aria-hidden="true"></i>
-            </button>
-            <div class="home-faq-answer" id="homeFaq3" hidden>
-              We discuss the scope and estimated charges before proceeding wherever reasonably possible. Some computer issues may require inspection before a reliable estimate can be provided.
-            </div>
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false" aria-controls="faq-answer-2">Do you provide digital solutions outside Navi Mumbai?<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="accordion-body" id="faq-answer-2"><div class="accordion-content"><p>Yes. Website development, branding and other suitable digital services can be discussed and delivered remotely across India.</p></div></div>
           </div>
-          <div class="home-faq-item">
-            <button class="home-faq-question" type="button" aria-expanded="false" aria-controls="homeFaq4">
-              Are you a government-authorised service centre?
-              <i class="fa-solid fa-plus" aria-hidden="true"></i>
-            </button>
-            <div class="home-faq-answer" id="homeFaq4" hidden>
-              No. SaXham Technologies is an independent service provider. Any online form or document help is independent assistance, not a government service or guarantee of approval.
-            </div>
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false" aria-controls="faq-answer-3">What online assistance do you provide?<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="accordion-body" id="faq-answer-3"><div class="accordion-content"><p>Online assistance may include form-filling guidance, resume preparation, PDF editing and document support. We confirm the exact service and fee before starting.</p></div></div>
           </div>
-          <div class="home-faq-item">
-            <button class="home-faq-question" type="button" aria-expanded="false" aria-controls="homeFaq5">
-              How will you respond to my enquiry?
-              <i class="fa-solid fa-plus" aria-hidden="true"></i>
-            </button>
-            <div class="home-faq-answer" id="homeFaq5" hidden>
-              We will review the information you submit and contact you using the contact details you provide. For urgent enquiries, you can call or message us directly.
-            </div>
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false" aria-controls="faq-answer-4">Are you an official government service centre?<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="accordion-body" id="faq-answer-4"><div class="accordion-content"><p>No. SaXham Technologies is an independent service provider. We are not a government department or an official government portal. Customers should review and approve application details before submission.</p></div></div>
           </div>
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false" aria-controls="faq-answer-5">How can I request a service or quotation?<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="accordion-body" id="faq-answer-5"><div class="accordion-content"><p>Contact us through WhatsApp, phone or the enquiry form. Share your requirement and we will confirm availability, estimated charges and next steps.</p></div></div>
+          </div>
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false" aria-controls="faq-answer-6">How do you handle documents shared for online assistance?<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <div class="accordion-body" id="faq-answer-6"><div class="accordion-content"><p>Only share documents needed for the requested service. Avoid sending passwords, OTPs or unnecessary sensitive information. Ask us how your documents will be used and handled before sharing them.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-wrapper">
+          <span class="section-tag">Let's Get Started</span>
+          <h2 id="cta-heading">What Can We Help You With Today?</h2>
+          <p>Tell us whether you need computer support, a digital solution for your business or assistance with an online task. We'll help you understand the next step.</p>
+          <div class="cta-buttons">
+            <a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20would%20like%20to%20enquire%20about%20a%20service." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container container-sm">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 id="contact-heading">Tell Us What You Need</h2>
+          <p>Share a few details. We will review your enquiry and get back to you.</p>
+        </div>
+        <div class="card">
+          <form action="https://formsubmit.co/founder@saxhamai.com" method="POST" class="contact-form">
+            <input type="hidden" name="_subject" value="New SaXham Technologies Website Enquiry">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://saxhamai.com/thank-you.html">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="form-honeypot">
+
+            <div class="form-row">
+              <div class="form-group"><label for="contact-name">Full Name</label><input type="text" id="contact-name" name="name" placeholder="Your full name" autocomplete="name" required></div>
+              <div class="form-group"><label for="contact-email">Email Address</label><input type="email" id="contact-email" name="email" placeholder="you@example.com" autocomplete="email" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label for="contact-phone">Mobile Number</label><input type="tel" id="contact-phone" name="phone" placeholder="Your mobile number" autocomplete="tel" inputmode="tel"></div>
+              <div class="form-group">
+                <label for="contact-service">Service Required</label>
+                <select id="contact-service" name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option value="Computer Services">Computer Services</option>
+                  <option value="Digital Solutions">Digital Solutions</option>
+                  <option value="Online Services">Online Services</option>
+                  <option value="Website or Branding">Website or Branding</option>
+                  <option value="Other Enquiry">Other Enquiry</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group"><label for="contact-requirement">Your Requirement</label><textarea id="contact-requirement" name="requirement" rows="6" placeholder="Briefly describe what you need help with..." required></textarea></div>
+            <p class="form-note">Please do not include passwords, OTPs, payment card details or unnecessary identity documents in this form. By submitting, you agree that we may contact you about this enquiry. See our <a href="privacy.html">Privacy Policy</a>.</p>
+            <button type="submit" class="btn btn-primary w-100">Submit Enquiry</button>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="main-footer">
-    <div class="footer-bottom">
-      <p>&copy; <span id="year"></span> SaXham Technologies. All Rights Reserved.</p>
-      <p>Repair. Digital. Connect.</p>
-      <div class="home-footer-legal">
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-brand">
+            <div class="footer-logo"><img src="assets/images/saxham-logo.png" alt="SaXham Technologies" width="48" height="48"></div>
+            <div class="footer-brand-text"><h3>SaXham Technologies</h3><p>Repair. Digital. Connect.</p></div>
+          </div>
+          <p class="footer-description">Computer services, digital solutions and online assistance for individuals, professionals and growing businesses.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/saxhamtechnologies/" target="_blank" rel="noopener noreferrer" aria-label="SaXham Technologies on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer" aria-label="SaXham Technologies on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-title">Our Services</h4>
+          <nav class="footer-links" aria-label="Footer services">
+            <a href="computer-services.html"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Computer Services</a>
+            <a href="digital-solutions.html"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Digital Solutions</a>
+            <a href="online-services.html"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Online Services</a>
+            <a href="blog/"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Knowledge Hub</a>
+          </nav>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-title">Company</h4>
+          <nav class="footer-links" aria-label="Company links">
+            <a href="about.html"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> About Us</a>
+            <a href="blog/"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Blog</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Contact</a>
+            <a href="privacy.html"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Privacy Policy</a>
+            <a href="terms.html"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Terms &amp; Conditions</a>
+          </nav>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+919702855005">+91 97028 55005</a></li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:founder@saxhamai.com">founder@saxhamai.com</a></li>
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Ghansoli, Navi Mumbai, Maharashtra</li>
+            <li><i class="fa-solid fa-clock" aria-hidden="true"></i> Mon–Sat, 9:00 AM–7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p class="footer-copy">&copy; <span id="year"></span> SaXham Technologies. All Rights Reserved.</p>
+          <div class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></div>
+        </div>
       </div>
     </div>
   </footer>
 
-  <a class="floating-whatsapp" href="https://wa.me/919702855005" target="_blank" rel="noopener" aria-label="Chat with SaXham Technologies on WhatsApp">
-    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-  </a>
-  <button id="backToTop" type="button" aria-label="Back to top">
-    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
-  </button>
+  <div class="floating-buttons">
+    <a href="https://wa.me/919702855005?text=Hi%20SaXham%20Technologies%2C%20I%20need%20assistance." class="float-btn float-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with SaXham Technologies on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    <a href="tel:+919702855005" class="float-btn float-call" aria-label="Call SaXham Technologies"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+  </div>
 
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
   <script src="assets/js/main.js" defer></script>
-  <script>
-    // Homepage FAQ interaction (independent of the shared site script).
-    document.querySelectorAll('.home-faq-question').forEach(function (button) {
-      button.addEventListener('click', function () {
-        var isExpanded = button.getAttribute('aria-expanded') === 'true';
-        var answer = document.getElementById(button.getAttribute('aria-controls'));
-        button.setAttribute('aria-expanded', String(!isExpanded));
-        if (answer) answer.hidden = isExpanded;
-      });
-    });
-  </script>
 </body>
 </html>

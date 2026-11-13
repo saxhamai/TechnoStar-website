@@ -3,135 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Practical insights from SaXham Technologies on IT support, digital transformation, business technology and digital trust.">
+  <meta name="theme-color" content="#0b5ed7">
+  <meta name="description" content="Practical technology tips, computer maintenance advice, digital business guides and online service information from SaXham Technologies.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://saxhamai.com/blog/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Blog & Knowledge Hub | SaXham Technologies">
-  <meta property="og:description" content="Practical insights on technology, IT operations and digital solutions.">
-  <meta property="og:url" content="https://saxhamai.com/blog/">
-  <meta property="og:image" content="https://saxhamai.com/assets/images/og-image.jpg">
-  <title>Blog & Knowledge Hub | SaXham Technologies</title>
+  <title>Blog &amp; Tech Guides | SaXham Technologies</title>
   <link rel="icon" type="image/png" href="../assets/images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/style-extra.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
-    .blog-hero{padding:76px 0 64px;background:linear-gradient(135deg,#071d49,#0b397b 58%,#1265a8);color:#fff}
-    .blog-hero .eyebrow{color:#ffd66b;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;margin-bottom:15px}
-    .blog-hero h1{font-family:Poppins,sans-serif;font-size:clamp(2.2rem,5vw,3.5rem);line-height:1.15;max-width:780px;margin:0 0 18px}
-    .blog-hero p{max-width:690px;color:#e1eaf7;line-height:1.8;font-size:1.05rem}
-    .breadcrumb{font-size:.88rem;margin-bottom:22px;color:#d3e0f2}.breadcrumb a{color:#fff;text-decoration:none}
-    .blog-content{padding:64px 0 78px}.blog-heading{max-width:760px;margin-bottom:28px}
-    .blog-heading h2{font-family:Poppins,sans-serif;color:#10264b;font-size:clamp(1.6rem,3vw,2.15rem);margin:0 0 10px}
-    .blog-heading p{color:#637287;line-height:1.7;margin:0}
-    .featured{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:center;background:#f3f7fc;border:1px solid #e4eaf3;border-radius:20px;overflow:hidden;margin-bottom:54px}
-    .featured-art{min-height:270px;display:grid;place-items:center;background:linear-gradient(135deg,#dceaff,#f7faff);color:#174a8c}
-    .featured-art i{font-size:6rem}.featured-copy{padding:28px 32px 28px 0}
-    .tag{display:inline-block;background:#e7efff;color:#174a8c;border-radius:30px;padding:7px 12px;font-size:.76rem;font-weight:700;margin-bottom:13px}
-    .featured h3,.article-card h3{font-family:Poppins,sans-serif;color:#10264b;line-height:1.4}
-    .featured h3{font-size:1.55rem;margin:0 0 12px}.featured p,.article-card p{color:#637287;line-height:1.7}
-    .read-link{display:inline-flex;gap:9px;align-items:center;color:#0c55a0;font-weight:700;text-decoration:none}.read-link:hover{color:#b27b00}
-    .article-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}
-    .article-card{border:1px solid #e5eaf1;border-radius:17px;padding:25px;box-shadow:0 8px 24px rgba(16,38,75,.045);display:flex;flex-direction:column;background:#fff}
-    .article-icon{width:50px;height:50px;border-radius:14px;background:#edf4ff;color:#14549b;display:grid;place-items:center;font-size:1.25rem;margin-bottom:18px}
-    .article-card h3{font-size:1.16rem;margin:0 0 10px}.article-card p{font-size:.94rem;margin:0 0 20px}.article-card .read-link{margin-top:auto}
-    .blog-note{margin-top:42px;padding:22px 25px;border-left:4px solid #d5a32b;background:#fffaf0;border-radius:0 13px 13px 0;color:#5d6570;line-height:1.7}
-    .blog-cta{padding:52px 0;background:#f3f7fc;text-align:center}.blog-cta h2{font-family:Poppins,sans-serif;color:#10264b;margin:0 0 10px}
-    .blog-cta p{max-width:650px;margin:0 auto 22px;color:#637287;line-height:1.7}.cta-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-    @media(max-width:900px){.article-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.featured{grid-template-columns:1fr}.featured-art{min-height:180px}.featured-copy{padding:0 26px 28px}}
-    @media(max-width:600px){.blog-hero{padding:55px 0 45px}.blog-content{padding:45px 0 55px}.article-grid{grid-template-columns:1fr}.featured-art{min-height:150px}.featured-art i{font-size:4.5rem}.featured-copy{padding:0 21px 24px}}
+    .blog-hero{position:relative;overflow:hidden;padding:86px 20px 82px;color:#fff;text-align:center;background:linear-gradient(125deg,#092d62,#0b5ed7 68%,#2678e8)}
+    .blog-hero-inner{position:relative;z-index:1;max-width:800px;margin:0 auto}
+    .blog-eyebrow{margin:0 0 13px;color:#f3d58b;font-size:12px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+    .blog-hero h1{margin:0 0 16px;font:800 clamp(34px,5.5vw,52px)/1.14 'Poppins',sans-serif}
+    .blog-hero p{max-width:680px;margin:0 auto;color:rgba(255,255,255,.88);font-size:17px;line-height:1.75}
+    .blog-hero-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:27px}
+    .blog-hero-actions a,.blog-cta a{display:inline-flex;min-height:46px;align-items:center;justify-content:center;gap:9px;padding:11px 20px;border-radius:8px;font-weight:700;text-decoration:none}
+    .blog-hero-actions .primary,.blog-cta a{color:#10233f;background:#f3d58b}
+    .blog-hero-actions .secondary{color:#fff;border:1px solid rgba(255,255,255,.45)}
+    .blog-wrap{width:min(100% - 36px,1120px);margin:0 auto}
+    .blog-section{padding:66px 0}
+    .blog-section-heading{max-width:720px;margin:0 auto 32px;text-align:center}
+    .blog-section-heading .eyebrow{margin:0 0 9px;color:#0b5ed7;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .blog-section-heading h2{margin:0 0 12px;color:#10233f;font:700 clamp(25px,4vw,34px)/1.25 'Poppins',sans-serif}
+    .blog-section-heading p{margin:0;color:#64748b;font-size:15px;line-height:1.75}
+    .blog-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .blog-topic-card{display:flex;min-height:100%;flex-direction:column;padding:27px;border:1px solid #e5eaf2;border-radius:16px;background:#fff;box-shadow:0 12px 34px rgba(16,35,63,.055);transition:transform .2s ease,box-shadow .2s ease}
+    .blog-topic-card:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(16,35,63,.10)}
+    .blog-topic-icon{width:54px;height:54px;display:grid;place-items:center;margin-bottom:19px;border-radius:14px;color:#0b5ed7;background:#edf4ff;font-size:22px}
+    .blog-topic-card:nth-child(2) .blog-topic-icon{color:#9a6b08;background:#fff6df}
+    .blog-topic-card:nth-child(3) .blog-topic-icon{color:#16834a;background:#eaf8f0}
+    .blog-topic-label{margin:0 0 8px;color:#0b5ed7;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .blog-topic-card h3{margin:0 0 10px;color:#10233f;font:700 19px/1.4 'Poppins',sans-serif}
+    .blog-topic-card p{margin:0 0 20px;color:#64748b;font-size:14px;line-height:1.75}
+    .blog-topic-card a{display:inline-flex;align-items:center;gap:8px;margin-top:auto;color:#0b5ed7;font-size:14px;font-weight:700;text-decoration:none}
+    .blog-topic-card a:hover{gap:12px}
+    .blog-coming-soon{display:inline-flex;align-self:flex-start;margin-top:auto;padding:6px 10px;border-radius:30px;color:#78580e;background:#fff6df;font-size:11px;font-weight:800;letter-spacing:.04em}
+    .blog-note{margin-top:32px;padding:20px 22px;border:1px solid #e5eaf2;border-radius:12px;color:#64748b;background:#f8faff;text-align:center;font-size:14px;line-height:1.7}
+    .blog-cta{padding:58px 20px;color:#fff;text-align:center;background:#10233f}
+    .blog-cta h2{margin:0 0 12px;font:700 clamp(24px,4vw,32px)/1.25 'Poppins',sans-serif}
+    .blog-cta p{max-width:650px;margin:0 auto 23px;color:rgba(255,255,255,.78);font-size:15px;line-height:1.7}
+    @media(max-width:850px){.blog-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:600px){.blog-hero{padding:64px 17px}.blog-hero p{font-size:15px}.blog-wrap{width:min(100% - 30px,540px)}.blog-section{padding:48px 0}.blog-topic-grid{grid-template-columns:1fr;gap:16px}.blog-topic-card{padding:23px}.blog-hero-actions{flex-direction:column}.blog-hero-actions a{width:100%}}
+    @media(prefers-reduced-motion:reduce){.blog-topic-card,.blog-topic-card a{transition:none}.blog-topic-card:hover{transform:none}}
   </style>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Blog","name":"SaXham Technologies Blog & Knowledge Hub","url":"https://saxhamai.com/blog/","description":"Practical insights on IT support, digital solutions, technology and business transformation.","publisher":{"@type":"Organization","name":"SaXham Technologies","url":"https://saxhamai.com/"}}
-  </script>
 </head>
 <body>
   <div id="progress-bar" aria-hidden="true"></div>
-  <div class="top-bar"><div class="container top-bar-inner">
-    <div class="top-bar-left"><span><i class="fa-solid fa-location-dot"></i> Ghansoli, Navi Mumbai</span><span><i class="fa-regular fa-clock"></i> Mon–Sat, 9 AM–7 PM</span></div>
-    <div class="top-bar-right"><a href="tel:+919702855005"><i class="fa-solid fa-phone"></i> +91 97028 55005</a><a href="mailto:founder@saxhamai.com"><i class="fa-regular fa-envelope"></i> founder@saxhamai.com</a></div>
-  </div></div>
   <header class="main-header">
-    <div class="container navbar">
-      <a class="brand" href="../index.html" aria-label="SaXham Technologies home"><img src="../assets/images/saxham-logo.png" alt="SaXham Technologies" class="logo"></a>
-      <button class="mobile-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu"><i class="fa-solid fa-bars"></i></button>
-      <nav class="nav-menu" aria-label="Main navigation">
-        <a class="nav-link" href="../index.html">Home</a><a class="nav-link" href="../computer-services.html">Computer Services</a><a class="nav-link" href="../digital-solutions.html">Digital Solutions</a><a class="nav-link" href="../online-services.html">Online Services</a><a class="nav-link active" href="./" aria-current="page">Blog</a><a class="nav-link" href="../about.html">About</a><a class="nav-link" href="../contact.html">Contact</a>
-      </nav>
-      <a class="btn btn-primary nav-cta" href="../contact.html">Get in Touch</a>
-    </div>
-    <div class="mobile-overlay" id="mobileOverlay"></div>
-    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-      <button class="mobile-close" type="button" aria-label="Close navigation menu"><i class="fa-solid fa-xmark"></i></button>
-      <a class="mobile-link" href="../index.html">Home</a><a class="mobile-link" href="../computer-services.html">Computer Services</a><a class="mobile-link" href="../digital-solutions.html">Digital Solutions</a><a class="mobile-link" href="../online-services.html">Online Services</a><a class="mobile-link active" href="./" aria-current="page">Blog</a><a class="mobile-link" href="../about.html">About</a><a class="mobile-link" href="../contact.html">Contact</a>
-      <div class="mobile-actions"><a class="btn btn-primary" href="../contact.html">Get in Touch</a></div>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="../index.html" aria-label="SaXham Technologies home"><img src="../assets/images/saxham-logo.png" alt="SaXham Technologies" onerror="this.style.display='none'"></a>
+      <button class="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="../index.html">Home</a></li>
+        <li><a class="nav-link" href="../computer-services.html">Computer Services</a></li>
+        <li><a class="nav-link" href="../digital-solutions.html">Digital Solutions</a></li>
+        <li><a class="nav-link" href="../online-services.html">Online Services</a></li>
+        <li><a class="nav-link" href="../about.html">About</a></li>
+        <li><a class="nav-link" href="../contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <button class="mobile-close" type="button" aria-label="Close menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <a class="mobile-link" href="../index.html">Home</a>
+    <a class="mobile-link" href="../computer-services.html">Computer Services</a>
+    <a class="mobile-link" href="../digital-solutions.html">Digital Solutions</a>
+    <a class="mobile-link" href="../online-services.html">Online Services</a>
+    <a class="mobile-link" href="../about.html">About</a>
+    <a class="mobile-link" href="../contact.html">Contact</a>
+    <div class="mobile-actions"><a href="tel:+919702855005"><i class="fa-solid fa-phone"></i> Call Us</a><a href="https://wa.me/919702855005" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
+  </aside>
 
   <main>
-    <section class="blog-hero"><div class="container">
-      <div class="breadcrumb"><a href="../index.html">Home</a> / Blog</div>
-      <div class="eyebrow"><i class="fa-solid fa-lightbulb"></i> SaXham Knowledge Hub</div>
-      <h1>Ideas, insights &amp; practical technology guides.</h1>
-      <p>Explore useful perspectives on IT operations, digital transformation, business technology, and the role of trust in an increasingly digital world.</p>
-    </div></section>
-
-    <section class="blog-content"><div class="container">
-      <div class="blog-heading"><h2>Explore the Knowledge Hub</h2><p>Clear, practical content for individuals, small businesses, and teams looking to understand technology and make better digital decisions.</p></div>
-      <article class="featured">
-        <div class="featured-art" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i></div>
-        <div class="featured-copy">
-          <span class="tag">Featured · Digital transformation</span>
-          <h3>From Paperwork to Python: How MSMEs Can Start Their Digital Transformation</h3>
-          <p>A practical look at how small and medium businesses can move repetitive paperwork and manual processes towards simpler digital workflows, step by step.</p>
-          <a class="read-link" href="paperwork-to-python-msme-transformation.html">Read the article <i class="fa-solid fa-arrow-right"></i></a>
+    <section class="blog-hero">
+      <div class="blog-hero-inner">
+        <p class="blog-eyebrow">SaXham Technologies Knowledge Hub</p>
+        <h1>Practical Tech Tips &amp; Digital Guides</h1>
+        <p>Simple, useful information to help you maintain your computer, understand digital tools and make better use of online services.</p>
+        <div class="blog-hero-actions">
+          <a class="primary" href="#topics"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Explore Topics</a>
+          <a class="secondary" href="../contact.html"><i class="fa-regular fa-message" aria-hidden="true"></i> Ask a Question</a>
         </div>
-      </article>
-
-      <div class="blog-heading"><h2>Latest articles</h2><p>Thoughts and guides covering workplace technology, business processes, and digital trust.</p></div>
-      <div class="article-grid">
-        <article class="article-card">
-          <div class="article-icon"><i class="fa-solid fa-file-lines"></i></div><span class="tag">Workplace · India</span>
-          <h3>IT Employees, Workplace Protection &amp; Exploitation in India</h3>
-          <p>A discussion about workplace challenges faced by IT employees and why awareness, fair practices, and professional support matter.</p>
-          <a class="read-link" href="it-employees-protection-exploitation-india.html">Read article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        <article class="article-card">
-          <div class="article-icon"><i class="fa-solid fa-gears"></i></div><span class="tag">MSME · Automation</span>
-          <h3>From Paperwork to Python: MSME Digital Transformation</h3>
-          <p>Understand how practical automation and simple digital tools can help reduce repetitive work and organise everyday business operations.</p>
-          <a class="read-link" href="paperwork-to-python-msme-transformation.html">Read article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        <article class="article-card">
-          <div class="article-icon"><i class="fa-solid fa-shield-halved"></i></div><span class="tag">Digital trust</span>
-          <h3>Why Trust Matters in the Digital World</h3>
-          <p>Explore the importance of transparency, privacy, communication, and responsible digital services.</p>
-          <a class="read-link" href="why-trust-matters.html">Read article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
       </div>
-      <div class="blog-note"><strong>Our approach:</strong> SaXham Technologies aims to make technology easier to understand through practical information and clear communication. Articles are for general information and should not be treated as legal, financial, or professional advice.</div>
-    </div></section>
+    </section>
 
-    <section class="blog-cta"><div class="container">
-      <h2>Have a technology question?</h2><p>Need help with a computer, a digital setup, or an online task? Tell us what you are trying to do and we’ll help you understand the next step.</p>
-      <div class="cta-actions"><a class="btn btn-primary" href="../contact.html">Contact SaXham Technologies</a><a class="btn btn-outline" href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a></div>
-    </div></section>
+    <section class="blog-section" id="topics">
+      <div class="blog-wrap">
+        <div class="blog-section-heading">
+          <p class="eyebrow">Explore the knowledge hub</p>
+          <h2>Guides for Everyday Technology</h2>
+          <p>Browse the topics we plan to cover. New articles and practical walkthroughs will be added here as they are published.</p>
+        </div>
+        <div class="blog-topic-grid">
+          <article class="blog-topic-card">
+            <div class="blog-topic-icon"><i class="fa-solid fa-laptop" aria-hidden="true"></i></div>
+            <p class="blog-topic-label">Computer &amp; Laptop</p>
+            <h3>Make Your Computer Work Better</h3>
+            <p>Learn about SSD and RAM upgrades, slow computer troubleshooting, basic maintenance, backups and common laptop issues.</p>
+            <a href="../computer-services.html">Explore computer services <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="blog-topic-card">
+            <div class="blog-topic-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+            <p class="blog-topic-label">Digital Solutions</p>
+            <h3>Build Your Business Online</h3>
+            <p>Understand websites, domain names, business email, branding, Google Business Profile and the basics of online visibility.</p>
+            <a href="../digital-solutions.html">Explore digital solutions <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="blog-topic-card">
+            <div class="blog-topic-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
+            <p class="blog-topic-label">Online Services</p>
+            <h3>Get More Confident with Online Tasks</h3>
+            <p>Find helpful information about document preparation, PDFs, online forms, printing, scanning and safe digital practices.</p>
+            <a href="../online-services.html">Explore online services <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="blog-topic-card">
+            <div class="blog-topic-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+            <p class="blog-topic-label">Digital Safety</p>
+            <h3>Stay Safer While Using Technology</h3>
+            <p>Practical reminders about strong passwords, suspicious links, software updates, data backups and protecting personal information.</p>
+            <span class="blog-coming-soon">Articles coming soon</span>
+          </article>
+          <article class="blog-topic-card">
+            <div class="blog-topic-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
+            <p class="blog-topic-label">How-to Guides</p>
+            <h3>Simple Step-by-Step Tutorials</h3>
+            <p>Easy-to-follow walkthroughs for common computer tasks, software setup and everyday technology problems.</p>
+            <span class="blog-coming-soon">Articles coming soon</span>
+          </article>
+          <article class="blog-topic-card">
+            <div class="blog-topic-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
+            <p class="blog-topic-label">Small Business Tech</p>
+            <h3>Useful Digital Tools for Small Businesses</h3>
+            <p>Explore practical ways small businesses can use websites, email, digital documents and simple online tools.</p>
+            <span class="blog-coming-soon">Articles coming soon</span>
+          </article>
+        </div>
+        <div class="blog-note"><strong>Note:</strong> This knowledge hub is being developed. Topic cards marked “Articles coming soon” are planned categories, not published articles.</div>
+      </div>
+    </section>
+
+    <section class="blog-cta">
+      <div class="blog-wrap">
+        <h2>Have a Technology Question?</h2>
+        <p>Tell us what you are trying to solve. We can help you understand the available options and whether our services are suitable for your requirement.</p>
+        <a href="../contact.html"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact SaXham Technologies</a>
+      </div>
+    </section>
   </main>
 
-  <footer class="main-footer"><div class="container footer-grid">
-    <div class="footer-brand"><a href="../index.html" aria-label="SaXham Technologies home"><img src="../assets/images/saxham-logo.png" alt="SaXham Technologies" class="footer-logo"></a><p>Repair. Digital. Connect. Practical technology support and digital solutions for individuals and businesses.</p><div class="footer-social"><a href="https://www.instagram.com/saxhamtechnologies/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-    <div class="footer-links"><h3>Quick Links</h3><a href="../index.html">Home</a><a href="../about.html">About Us</a><a href="../contact.html">Contact</a><a href="./">Blog &amp; Knowledge Hub</a></div>
-    <div class="footer-links"><h3>Our Services</h3><a href="../computer-services.html">Computer Services</a><a href="../digital-solutions.html">Digital Solutions</a><a href="../online-services.html">Online Services</a></div>
-    <div class="footer-contact"><h3>Get in Touch</h3><p><i class="fa-solid fa-location-dot"></i> Ghansoli, Navi Mumbai</p><p><i class="fa-solid fa-phone"></i> <a href="tel:+919702855005">+91 97028 55005</a></p><p><i class="fa-regular fa-envelope"></i> <a href="mailto:founder@saxhamai.com">founder@saxhamai.com</a></p><p><i class="fa-regular fa-clock"></i> Mon–Sat, 9 AM–7 PM</p></div>
-  </div><div class="container footer-bottom"><p>© <span id="year"></span> SaXham Technologies. All rights reserved.</p><div><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms &amp; Conditions</a></div></div></footer>
-
-  <a class="floating-whatsapp" href="https://wa.me/919702855005" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-  <a class="floating-call" href="tel:+919702855005" aria-label="Call SaXham Technologies"><i class="fa-solid fa-phone"></i></a>
-  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <footer class="main-footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> SaXham Technologies. All Rights Reserved.</p>
+      <p>Repair. Digital. Connect.</p>
+      <p><a href="../privacy.html">Privacy Policy</a> | <a href="../terms.html">Terms &amp; Conditions</a> | <a href="../contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <a class="floating-whatsapp" href="https://wa.me/919702855005" target="_blank" rel="noopener" aria-label="Chat with SaXham Technologies on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+  <button id="backToTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
   <script src="../assets/js/main.js" defer></script>
 </body>
 </html>
